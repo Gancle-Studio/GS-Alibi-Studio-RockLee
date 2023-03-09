@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import './breakpoints.scss';
+@import 'include-media';
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: $blackColor;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 8px;
+
+  @include media('>=laptop') {
+    width: 1000px;
+    padding: 0;
+  }
+
+  @include media('>=desktop') {
+    width: 1320px;
+  }
+
+}
+
+a,
+.a {
+  color: inherit;
+  text-decoration: unset;
+
+  &:hover {
+    cursor: pointer;
+    color: inherit;
+  }
+}
+
+h1,
+.h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: $whiteColor;
+
+  @include media('>=laptop') {
+    font-size: 28px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: $whiteColor;
+
+  @include media('>=laptop') {
+    font-size: 26px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: $whiteColor;
+
+  @include media('>=laptop') {
+    font-size: 22px;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: $whiteColor;
+}
+
+p,
+.p {
+  font-size: 16px;
+  font-weight: 500;
+  color: $whiteColor;
+}
+
+p.small {
+  font-size: 14px;
+  font-weight: 500;
+  color: $whiteColor;
+}
+
