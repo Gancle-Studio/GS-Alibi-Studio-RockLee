@@ -1,0 +1,22 @@
+@import 'styles/variables.scss';
+
+.navContainer {
+    padding: 30px 60px;
+    display: flex;
+    align-items: center;
+
+    .logo {
+
+    }
+
+    .navLinks {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        li {
+            margin-left: 30px;
+        }
+    }
+}
