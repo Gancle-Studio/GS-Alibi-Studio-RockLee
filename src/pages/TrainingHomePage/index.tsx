@@ -59,6 +59,54 @@ const TrainingHomePage = () => {
             <h4>NAPISZ DO NAS: alibi@alibistudio.pl</h4>
         </div>
      </div>
+
+     <div className={classNames("container", styles.trainingHomePageContainer)}>
+     <section className={styles.facilitiesSection}>
+        <header>
+            <h2>
+            DOBRA ATMOSFERA JEST DLA NAS NAJWAŻNIEJSZA...
+            </h2>
+            </header>
+        <main>
+            <div className={styles.facilitiesTiles}>
+
+            </div>
+        </main>
+     </section>
+
+     <section className={styles.infoSection}>
+        <header>
+            <h2>NASZE STUDIO NIE JEST TYLKO SIŁOWNIĄ. JEST TO DOM, W KTÓRYM KAŻDY Z WAS JEST MILE WIDZIANY 
+                (ZWŁASZCZA NA TRENINGU  ;) )
+            </h2>
+        </header>
+        <main className={styles.infoTileMain}>
+            <div className={styles.infoTile}>
+                <h4>W Alibi Studio nie obowiązują sztywne godziny otwarcia, zawsze umawiamy <span className={styles.goldText}>indywidualnie godziy treningów</span> tak aby dostosować je do <span className={styles.goldText}>Twoich potrzeb</span> i <span className={styles.goldText}>mozliwości</span>. Kameralna atmosfera oraz industrialny wystrój sprawią, że poczujesz się tutaj <span className={styles.goldText}>jak w domu</span>.</h4>
+                <figure className={styles.infoImage}>
+                    <Image
+                        src='/trainingHomePageImages/image5.png'
+                        alt='zdjęcie z treningu'
+                        layout='fill'
+                    />
+                </figure>
+            </div>
+
+            <div className={styles.infoTile}>
+                <figure className={styles.infoImage}>
+                    <Image
+                        src='/trainingHomePageImages/image6.png'
+                        alt='zdjęcie z treningu'
+                        layout='fill'
+                    />
+                </figure>
+                <h4>Studio składa się z dwóch pomieszczeń. W jednym znajduje się sprzęt do <span className={styles.goldText}>treingu z obciązeniem</span>, w drugim natomiast świetnie wyposażona <span className={styles.goldText}>strefa cardio</span> z wielofunkcyjną bramą do ćwiczeń. Dodatkowo w okresie letnim prowadzimy również <span className={styles.goldText}>treningi na świezym powietrzu</span> w naszym ogródku. 
+                Oprócz stref przeznaczonych do treningu i fizjoterapii, znajduje się tu również <span className={styles.goldText}>kącik relaksu</span>, w którym możesz <span className={styles.goldText}>napić się kawy</span> i <span className={styles.goldText}>omówić z trenerem swoje postępy</span> i <span className={styles.goldText}>cele treningowe</span> lub odpocząć po treningu przy koktajlu białkowym.
+                </h4>
+            </div>
+        </main>
+     </section>
+     </div>
      </>)
 };
 

@@ -2,6 +2,7 @@
 
 .trainingHomePageContainer {
     background-color: $blackColor;
+
     .openingSection {
         display: flex;
         gap: 50px;
@@ -47,6 +48,46 @@
 
            
         }
+    }
+
+    .facilitiesSection {
+        margin: 100px 0 50px 0;
+    }
+
+    .infoSection {
+        h2 {
+            max-width: 835px;
+            text-align: center;
+            margin: 100px auto 50px auto;
+            color: $goldColor;
+        }
+
+        .infoTileMain {
+            display: flex;
+            gap: 50px;
+            flex-direction: column;
+
+            .infoTile {
+                display: flex;
+                gap: 40px;
+                align-items: center;
+    
+                h4 {
+                    max-width: calc(100% - 680px);
+                    
+                    span {
+                        color: $goldColor;
+                    }
+                }
+    
+                .infoImage {
+                    width: 640px;
+                    height: 360px;
+                 
+                }
+            }
+        }
+
     }
 }
 

@@ -12,6 +12,7 @@
 figure {
   padding: 0;
   margin: 0;
+  position: relative;
 }
 
 html,
@@ -67,6 +68,7 @@ h2,
   font-size: 26px;
   font-weight: 600;
   color: $whiteColor;
+  line-height: 39px;
 
   @include media('>=laptop') {
     font-size: 26px;
@@ -90,6 +92,7 @@ h4,
   font-size: 20px;
   font-weight: 600;
   color: $whiteColor;
+  line-height: 33px;
 }
 
 p,
