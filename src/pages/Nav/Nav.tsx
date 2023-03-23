@@ -20,6 +20,7 @@ const Nav = () => {
             layout='fill'
           />
         </figure>
+        <h4>ALIBI STUDIO</h4>
         </div>
         <ul className={styles.navLinks}>
             <li>FIZJOTERAPIA</li>
@@ -28,8 +29,8 @@ const Nav = () => {
             <li>CENNIK</li>
             <li>BLOG</li>
             <li>KONTAKT</li>
-            <li><Icon icon={IconType.FacebookIcon}/></li>
-            <li><Icon icon={IconType.InstagramIcon}/></li>
+            <li className={styles.icon}></li>
+            <li className={styles.icon}></li>
         </ul>
      </nav>;
 };

@@ -1,8 +1,13 @@
 import Nav from "./Nav/Nav";
+import TrainingHomePage from "./TrainingHomePage";
+
 
 const Home = () => {
   return (
-    <Nav />
+<>
+<Nav />
+<TrainingHomePage />
+</>
   )
 }
 

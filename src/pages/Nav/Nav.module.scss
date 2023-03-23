@@ -4,9 +4,21 @@
     padding: 30px 60px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     .logo {
+        display: flex;
+        align-items: center;
 
+        figure {
+            width: 60px;
+            height: 60px;
+            position: relative;
+        }
+
+        h4 {
+            margin-left: 9px;
+        }
     }
 
     .navLinks {
@@ -16,7 +28,14 @@
         justify-content: space-between;
 
         li {
+            color: $whiteColor;
             margin-left: 30px;
         }
+    }
+
+    .icon {
+        background-color: red;
+        width: 20px;
+        height: 20px;
     }
 }

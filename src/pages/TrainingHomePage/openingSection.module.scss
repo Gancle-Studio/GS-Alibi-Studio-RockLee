@@ -1,0 +1,72 @@
+@import 'styles/variables.scss';
+
+.trainingHomePageContainer {
+    background-color: $blackColor;
+    .openingSection {
+        display: flex;
+        gap: 50px;
+        margin-bottom: 50px;
+        
+        .textContainer {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+
+            h3 {
+                span {
+                    color: $goldColor;
+                }
+            }
+        }
+
+        .imagesContainer {
+            display: flex;
+            gap: 20px;
+
+            figure {
+                position: relative;
+            }
+
+            .biggerHomePageImage {
+                height: 480px;
+                width: 270px;
+            }
+
+            .smallerImages {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .homePageImage {
+                    width: 272px;
+                    height: 153px;
+                }
+              
+            }
+
+           
+        }
+    }
+}
+
+.contactBelt {
+    background-color: $redColor;
+    height: 50px;
+    
+    .contactBeltContainer {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+
+        .verticalBelt {
+            height: 33px;
+            width: 4px;
+            background-color: $whiteColor;
+        }
+    }
+}
+
+

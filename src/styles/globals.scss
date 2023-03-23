@@ -3,6 +3,7 @@
 @import 'include-media';
 @import './variables.scss';
 
+
 * {
   box-sizing: border-box;
 
@@ -19,7 +20,7 @@ body {
   font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
-  background-color: $whiteColor;
+  background-color: $blackColor;
 }
 
 .container {
@@ -54,6 +55,7 @@ h1,
   font-size: 30px;
   font-weight: 600;
   color: $whiteColor;
+  line-height: 54px;
 
   @include media('>=laptop') {
     font-size: 28px;
@@ -76,6 +78,7 @@ h3,
   font-size: 22px;
   font-weight: 600;
   color: $whiteColor;
+  line-height: 36px;
 
   @include media('>=laptop') {
     font-size: 22px;
