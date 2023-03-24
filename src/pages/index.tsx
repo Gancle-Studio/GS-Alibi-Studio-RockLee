@@ -1,3 +1,5 @@
+import ContactForm from "./ContactForm/ContactForm";
+import Footer from "./Footer/Footer";
 import Nav from "./Nav/Nav";
 import TrainingHomePage from "./TrainingHomePage";
 
@@ -7,6 +9,8 @@ const Home = () => {
 <>
 <Nav />
 <TrainingHomePage />
+<ContactForm />
+<Footer />
 </>
   )
 }

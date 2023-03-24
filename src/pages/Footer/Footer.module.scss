@@ -1,0 +1,47 @@
+@import 'styles/variables.scss';
+
+.footer {
+  max-width: 600px;
+  border-top: $goldColor 1px solid;
+  margin: 0 auto;
+  padding-top: 50px;
+
+  .logoAndIcons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .icons {
+      display: flex;
+      gap: 34px;
+
+      .icon {
+        background-color: red;
+        width: 20px;
+        height: 20px;
+    }
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+      figure {
+          width: 60px;
+          height: 60px;
+          position: relative;
+      }
+
+      h4 {
+          margin-left: 9px;
+      }
+  }
+    }
+
+    .footerLinks {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+}

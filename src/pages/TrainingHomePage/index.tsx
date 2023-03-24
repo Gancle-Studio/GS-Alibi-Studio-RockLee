@@ -1,8 +1,62 @@
 import classNames from 'classnames';
 import Image from 'next/image';
+import ArticleTile from './ArticleTile/ArticleTile';
+import FacilityTile from './FacilityTile/FacilityTile';
 import styles from './openingSection.module.scss'
 
 const TrainingHomePage = () => {
+    const articleTilesConfig = [
+        {
+            imgSrc: '/articlesImages/image1.png',
+            title: 'Jak się zdrowo odżywiać i o co warto zadbać aby utrzymać dobrą wagę.',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque posuere vulputate ex, ut vehicula purus vestibul'
+        },
+        {
+            imgSrc: '/articlesImages/image2.png',
+            title: 'Jak się zdrowo odżywiać i o co warto zadbać aby utrzymać dobrą wagę.',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque posuere vulputate ex, ut vehicula purus vestibul'
+        },
+        {
+            imgSrc: '/articlesImages/image3.png',
+            title: 'Jak się zdrowo odżywiać i o co warto zadbać aby utrzymać dobrą wagę.',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque posuere vulputate ex, ut vehicula purus vestibul'
+        },
+        {
+            imgSrc: '/articlesImages/image3.png',
+            title: 'Jak się zdrowo odżywiać i o co warto zadbać aby utrzymać dobrą wagę.',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque posuere vulputate ex, ut vehicula purus vestibul'
+        }
+    ];
+
+    const facilityTilesConfig = [
+        {
+            icon: '1',
+            title: 'Zapraszamy na kawę',
+            text: <p>Wpadnij chwilkę przed treningiem lub zostań po, żeby odpocząć i porozmawiać o wszystkim i o niczym.
+            <br/>
+            <br/>
+            U nas zawsze jest ktoś z kim można zamienić parę zdań.</p>
+        },
+        {
+            icon: '2',
+            title: 'Przyprowadź swojego psiaka',
+            text: <p>W naszym studio na stałe mieszka Luna - nasz wspaniały psi kompan i czeka na towarzystwo Twojego psiaka. 
+            Głaskanie i mizianie Twojej pociechy przez trenerów za darmo :)</p>
+        },
+        {
+            icon: '3',
+            title: 'Trening 1:1 z trenerem',
+            text: <p>Trener jest w 100% skupiony na Tobie, układa plan pod Ciebie i dba o Twój rozwój.
+            <br />
+            <br />
+            Chcesz schudnąć, poprawić siłę lub kondycję, zdrowo przybrać  na masie, przygotować się do zawodów? My Ci pomożemy!</p>
+        },
+        {
+            icon: '4',
+            title: 'Masaż z naszym fizjo po treningu',
+            text: <p>Aby w pełni zadbać o regenerację po treningu i jeszcze lepsze efekty, zapraszamy do naszego fizjoterapeuty.</p>
+        }
+    ]
      return (
         <>
      <div className={classNames("container", styles.trainingHomePageContainer)}>
@@ -61,16 +115,14 @@ const TrainingHomePage = () => {
      </div>
 
      <div className={classNames("container", styles.trainingHomePageContainer)}>
-     <section className={styles.facilitiesSection}>
+     <section className={styles.faciliesSection}>
         <header>
             <h2>
             DOBRA ATMOSFERA JEST DLA NAS NAJWAŻNIEJSZA...
             </h2>
             </header>
-        <main>
-            <div className={styles.facilitiesTiles}>
-
-            </div>
+        <main className={styles.facilityTilesContainer}>
+            {facilityTilesConfig.map(facilityTile => <FacilityTile icon={facilityTile.icon} title={facilityTile.title} text={facilityTile.text}/>)}
         </main>
      </section>
 
@@ -104,6 +156,78 @@ const TrainingHomePage = () => {
                 Oprócz stref przeznaczonych do treningu i fizjoterapii, znajduje się tu również <span className={styles.goldText}>kącik relaksu</span>, w którym możesz <span className={styles.goldText}>napić się kawy</span> i <span className={styles.goldText}>omówić z trenerem swoje postępy</span> i <span className={styles.goldText}>cele treningowe</span> lub odpocząć po treningu przy koktajlu białkowym.
                 </h4>
             </div>
+        </main>
+     </section>
+
+        <section className={styles.imagesSection}>
+            <main className={styles.imagesContainer}>
+                <figure className={styles.img}>
+                    <Image
+                        src='/trainingHomePageImages/image5.png'
+                        alt='zdjęcie z treningu'
+                        layout='fill'
+                    />
+                </figure>
+                
+                    <div className={styles.doubleImg}>
+                        <figure className={styles.smallImg}>
+                            <Image
+                                src='/trainingHomePageImages/image5.png'
+                                alt='zdjęcie z treningu'
+                                layout='fill'
+                            />
+                        </figure>
+
+                        <figure className={styles.smallImg}>
+                            <Image
+                                src='/trainingHomePageImages/image5.png'
+                                alt='zdjęcie z treningu'
+                                layout='fill'
+                            />
+                        </figure>
+                    </div>
+
+                <figure className={styles.img}>
+                    <Image
+                        src='/trainingHomePageImages/image5.png'
+                        alt='zdjęcie z treningu'
+                        layout='fill'
+                    />
+                </figure>
+
+                <div className={styles.doubleImg}>
+                        <figure className={styles.smallImg}>
+                            <Image
+                                src='/trainingHomePageImages/image5.png'
+                                alt='zdjęcie z treningu'
+                                layout='fill'
+                            />
+                        </figure>
+
+                        <figure className={styles.smallImg}>
+                            <Image
+                                src='/trainingHomePageImages/image5.png'
+                                alt='zdjęcie z treningu'
+                                layout='fill'
+                            />
+                        </figure>
+                    </div>
+            </main>
+        </section>
+
+        <section className={styles.opinionsSection}>
+        <header className={styles.opinionsHeader}>
+            <h2>OPINIE NASZYCH PODOPIECZNYCH</h2>
+            
+        </header>
+        </section>
+
+     <section className={styles.articlesSection}>
+        <header>
+            <h2>CO U NAS SŁYCHAĆ...</h2>
+        </header>
+        <main className={styles.articleTilesContainer}>
+        {articleTilesConfig.map(articleTile => <ArticleTile imgSrc={articleTile.imgSrc} title={articleTile.title} description={articleTile.description}/>)}
         </main>
      </section>
      </div>

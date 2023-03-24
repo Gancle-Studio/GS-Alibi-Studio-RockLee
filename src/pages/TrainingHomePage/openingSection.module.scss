@@ -3,6 +3,20 @@
 .trainingHomePageContainer {
     background-color: $blackColor;
 
+    span {
+        color: $goldColor;
+    }
+
+    section {
+        header {
+            h2 {
+                margin: 100px 0 50px;
+                color: $goldColor;
+                width: 100%;
+            }
+        }
+    }
+
     .openingSection {
         display: flex;
         gap: 50px;
@@ -14,11 +28,6 @@
             flex-direction: column;
             gap: 20px;
 
-            h3 {
-                span {
-                    color: $goldColor;
-                }
-            }
         }
 
         .imagesContainer {
@@ -50,16 +59,24 @@
         }
     }
 
-    .facilitiesSection {
-        margin: 100px 0 50px 0;
+    .faciliesSection {
+        margin: 100px 0 100px 0;
+
+        .facilityTilesContainer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
     }
 
     .infoSection {
+        margin-bottom: 100px;
+
         h2 {
             max-width: 835px;
             text-align: center;
-            margin: 100px auto 50px auto;
-            color: $goldColor;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .infoTileMain {
@@ -74,7 +91,7 @@
     
                 h4 {
                     max-width: calc(100% - 680px);
-                    
+
                     span {
                         color: $goldColor;
                     }
@@ -88,6 +105,47 @@
             }
         }
 
+    }
+
+    .imagesSection {
+        .imagesContainer {
+            display: flex;
+            gap: 22px;
+
+            .img {
+                width: 225px;
+                height: 400px;
+            }
+
+            .doubleImg {
+                display: flex;
+                flex-direction: column;
+                gap: 22px;
+
+                .smallImg {
+                    width: 336px;
+                    height: 189px;
+                }
+            }
+        }
+    }
+
+    .opinionsSection {
+        
+    }
+
+    .articlesSection {
+        margin-bottom: 100px;
+        h2 {
+            text-align: left;
+        }
+
+        .articleTilesContainer {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            width: 100%;
+        }
     }
 }
 
