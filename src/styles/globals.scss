@@ -3,10 +3,8 @@
 @import 'include-media';
 @import './variables.scss';
 
-
 * {
   box-sizing: border-box;
-
 }
 
 figure {
@@ -37,7 +35,6 @@ body {
   @include media('>=desktop') {
     width: 1320px;
   }
-
 }
 
 a,
@@ -108,4 +105,3 @@ p.small {
   font-weight: 500;
   color: $whiteColor;
 }
-

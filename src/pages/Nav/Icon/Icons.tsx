@@ -2,8 +2,8 @@ import FacebookIcon from './Icons/FacebookIcon';
 import InstagramIcon from './Icons/InstagramIcon';
 
 export enum IconType {
-    FacebookIcon = 'FacebookIcon',
-    InstagramIcon= 'InstagramIcon'
+  FacebookIcon = 'FacebookIcon',
+  InstagramIcon = 'InstagramIcon'
 }
 
 export interface IIconProps {

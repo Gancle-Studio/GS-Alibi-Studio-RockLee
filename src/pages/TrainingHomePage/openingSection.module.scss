@@ -1,195 +1,186 @@
 @import 'styles/variables.scss';
 
 .trainingHomePageContainer {
-    background-color: $blackColor;
+  background-color: $blackColor;
 
-    span {
-        color: $goldColor;
+  span {
+    color: $goldColor;
+  }
+
+  section {
+    header {
+      margin: 100px 0 50px;
+      color: $goldColor;
+      width: 100%;
+    }
+  }
+
+  .openingSection {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+
+    .textContainer {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
     }
 
-    section {
-        header {
-                margin: 100px 0 50px;
-                color: $goldColor;
-                width: 100%;
-        }
-    }
+    .imagesContainer {
+      display: flex;
+      gap: 20px;
 
-    .openingSection {
+      figure {
+        position: relative;
+      }
+
+      .biggerHomePageImage {
+        height: 480px;
+        width: 270px;
+      }
+
+      .smallerImages {
         display: flex;
-        gap: 50px;
-        margin-bottom: 50px;
-        
-        .textContainer {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            gap: 20px;
+        flex-direction: column;
+        gap: 10px;
 
+        .homePageImage {
+          width: 272px;
+          height: 153px;
         }
+      }
+    }
+  }
 
-        .imagesContainer {
-            display: flex;
-            gap: 20px;
+  .faciliesSection {
+    margin: 100px 0 100px 0;
 
-            figure {
-                position: relative;
-            }
+    .facilityTilesContainer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
 
-            .biggerHomePageImage {
-                height: 480px;
-                width: 270px;
-            }
+  .infoSection {
+    margin-bottom: 100px;
 
-            .smallerImages {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-
-                .homePageImage {
-                    width: 272px;
-                    height: 153px;
-                }
-              
-            }
-
-           
-        }
+    h2 {
+      max-width: 835px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    .faciliesSection {
-        margin: 100px 0 100px 0;
+    .infoTileMain {
+      display: flex;
+      gap: 50px;
+      flex-direction: column;
 
-        .facilityTilesContainer {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-    }
-
-    .infoSection {
-        margin-bottom: 100px;
-
-        h2 {
-            max-width: 835px;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .infoTileMain {
-            display: flex;
-            gap: 50px;
-            flex-direction: column;
-
-            .infoTile {
-                display: flex;
-                gap: 40px;
-                align-items: center;
-    
-                h4 {
-                    max-width: calc(100% - 680px);
-
-                    span {
-                        color: $goldColor;
-                    }
-                }
-    
-                .infoImage {
-                    width: 640px;
-                    height: 360px;
-                 
-                }
-            }
-        }
-
-    }
-
-    .imagesSection {
+      .infoTile {
         display: flex;
-        justify-content: center;
+        gap: 40px;
+        align-items: center;
 
-        .imagesContainer {
-            display: flex;
-            gap: 22px;
+        h4 {
+          max-width: calc(100% - 680px);
 
-            .img {
-                width: 225px;
-                height: 400px;
-            }
-
-            .doubleImg {
-                display: flex;
-                flex-direction: column;
-                gap: 22px;
-
-                .smallImg {
-                    width: 336px;
-                    height: 189px;
-                }
-            }
+          span {
+            color: $goldColor;
+          }
         }
+
+        .infoImage {
+          width: 640px;
+          height: 360px;
+        }
+      }
+    }
+  }
+
+  .imagesSection {
+    display: flex;
+    justify-content: center;
+
+    .imagesContainer {
+      display: flex;
+      gap: 22px;
+
+      .img {
+        width: 225px;
+        height: 400px;
+      }
+
+      .doubleImg {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+
+        .smallImg {
+          width: 336px;
+          height: 189px;
+        }
+      }
+    }
+  }
+
+  .opinionsSection {
+    .opinionsHeader {
+      display: flex;
+      gap: 100px;
+      justify-content: center;
+
+      h2 {
+        position: relative;
+
+        .arrows {
+          display: flex;
+          gap: 30px;
+          position: absolute;
+          bottom: 0;
+          left: 541px;
+
+          .icon {
+            width: 40px;
+            height: 40px;
+            background-color: red;
+          }
+        }
+      }
+    }
+  }
+
+  .articlesSection {
+    margin-bottom: 100px;
+    h2 {
+      text-align: left;
     }
 
-    .opinionsSection {
-        .opinionsHeader {
-            display: flex;
-            gap: 100px;
-            justify-content: center;
-
-            h2 {
-                position: relative;
-
-                .arrows {
-                    display: flex;
-                    gap: 30px;
-                    position: absolute;
-                    bottom: 0;
-                    left: 541px;
-    
-                    .icon {
-                        width: 40px;
-                        height: 40px;
-                        background-color: red;
-                    }
-                }
-            }
-
-        }
+    .articleTilesContainer {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      width: 100%;
     }
-
-    .articlesSection {
-        margin-bottom: 100px;
-        h2 {
-            text-align: left;
-        }
-
-        .articleTilesContainer {
-            display: flex;
-            gap: 30px;
-            flex-wrap: wrap;
-            width: 100%;
-        }
-    }
+  }
 }
 
 .contactBelt {
-    background-color: $redColor;
-    height: 50px;
-    
-    .contactBeltContainer {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 100px;
+  background-color: $redColor;
+  height: 50px;
 
-        .verticalBelt {
-            height: 33px;
-            width: 4px;
-            background-color: $whiteColor;
-        }
+  .contactBeltContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+    .verticalBelt {
+      height: 33px;
+      width: 4px;
+      background-color: $whiteColor;
     }
+  }
 }
-
-
