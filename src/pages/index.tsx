@@ -1,4 +1,4 @@
-import ContactForm from "./ContactForm/ContactForm";
+import ContactForm from "./ContactForm/Form";
 import Footer from "./Footer/Footer";
 import Nav from "./Nav/Nav";
 import TrainingHomePage from "./TrainingHomePage";

@@ -17,11 +17,38 @@
     align-items: center;
     justify-content: center;
 
+    .contacts {
+      display: flex;
+      gap: 30px;
+      flex-direction: column;
+      margin-bottom: 64px;
+
+      .contactFiled {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        width: fit-content;
+        width: 100%;
+
+        .icon {
+          background-color: red;
+          width: 50px;
+          height: 50px;
+        }
+
+        .contactText {
+          p {
+            width: max-content;
+          }
+        }
+      }
+    }
+
   }
 }
 
 .form {
-    width: 100%;
+    width: 450px;
 
   input, textarea {
     max-width: 450px;
@@ -60,6 +87,7 @@
       font-size: 22px;
       line-height: 32px;
       color: $whiteColor;
+      margin-bottom: 30px;
     }
   }
 }

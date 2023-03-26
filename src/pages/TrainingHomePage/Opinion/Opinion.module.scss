@@ -1,0 +1,26 @@
+@import 'styles/variables.scss';
+
+.opinionContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  h4 {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 30px auto;
+  }
+
+
+  .opinionsBelt {
+    width: 120px;
+    height: 1px;
+    background-color: $whiteColor;
+    margin: 10px auto;
+  }
+
+  p {
+    text-align: center;
+  }
+}

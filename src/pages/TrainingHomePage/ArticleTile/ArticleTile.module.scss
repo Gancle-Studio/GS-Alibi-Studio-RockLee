@@ -2,10 +2,69 @@
 
 .articleTile {
   width: 300px;
+
+  &:hover {
+    cursor: pointer;
+
+    .articleTileImg {
+        &::after {
+          width: 100%;
+        }
+
+        .iconContainer {
+          .icon {
+            opacity: 1;
+          }
+        }
+    }
+
+    .articleTileTitle {
+      text-decoration: underline;
+    } 
+  }
+
     .articleTileImg {
       width: 100%;
       height: 400px;
       margin-bottom: 20px;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        transition: all linear 0.3s;
+        height: 100%;
+        width: 0%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: black;
+        opacity: 0.6;
+      }
+
+      .iconContainer {
+        background: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+          width: 50px;
+          height: 50px;
+          background-color: red;
+          z-index: 2;
+          opacity: 0;
+          transition: all linear 0.3s;
+        }
+      }
+
+
     }
 
     .articleTileTitle {

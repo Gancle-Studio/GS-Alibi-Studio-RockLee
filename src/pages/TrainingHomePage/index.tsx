@@ -3,6 +3,7 @@ import Image from 'next/image';
 import ArticleTile from './ArticleTile/ArticleTile';
 import FacilityTile from './FacilityTile/FacilityTile';
 import styles from './openingSection.module.scss'
+import Opinion from './Opinion/Opinion';
 
 const TrainingHomePage = () => {
     const articleTilesConfig = [
@@ -54,7 +55,8 @@ const TrainingHomePage = () => {
         {
             icon: '4',
             title: 'Masaż z naszym fizjo po treningu',
-            text: <p>Aby w pełni zadbać o regenerację po treningu i jeszcze lepsze efekty, zapraszamy do naszego fizjoterapeuty.</p>
+            text: <p>Aby w pełni zadbać o regenerację po treningu i jeszcze lepsze efekty, zapraszamy do naszego fizjoterapeuty.</p>,
+            link: true
         }
     ]
      return (
@@ -122,7 +124,7 @@ const TrainingHomePage = () => {
             </h2>
             </header>
         <main className={styles.facilityTilesContainer}>
-            {facilityTilesConfig.map(facilityTile => <FacilityTile icon={facilityTile.icon} title={facilityTile.title} text={facilityTile.text}/>)}
+            {facilityTilesConfig.map(facilityTile => <FacilityTile icon={facilityTile.icon} title={facilityTile.title} text={facilityTile.text} link={false || facilityTile.link}/>)}
         </main>
      </section>
 
@@ -163,7 +165,7 @@ const TrainingHomePage = () => {
             <main className={styles.imagesContainer}>
                 <figure className={styles.img}>
                     <Image
-                        src='/trainingHomePageImages/image5.png'
+                        src='/imagesSectionImages/image1.png'
                         alt='zdjęcie z treningu'
                         layout='fill'
                     />
@@ -172,7 +174,7 @@ const TrainingHomePage = () => {
                     <div className={styles.doubleImg}>
                         <figure className={styles.smallImg}>
                             <Image
-                                src='/trainingHomePageImages/image5.png'
+                                src='/imagesSectionImages/image2.png'
                                 alt='zdjęcie z treningu'
                                 layout='fill'
                             />
@@ -180,7 +182,7 @@ const TrainingHomePage = () => {
 
                         <figure className={styles.smallImg}>
                             <Image
-                                src='/trainingHomePageImages/image5.png'
+                                src='/imagesSectionImages/image3.png'
                                 alt='zdjęcie z treningu'
                                 layout='fill'
                             />
@@ -189,7 +191,7 @@ const TrainingHomePage = () => {
 
                 <figure className={styles.img}>
                     <Image
-                        src='/trainingHomePageImages/image5.png'
+                        src='/imagesSectionImages/image4.png'
                         alt='zdjęcie z treningu'
                         layout='fill'
                     />
@@ -198,7 +200,7 @@ const TrainingHomePage = () => {
                 <div className={styles.doubleImg}>
                         <figure className={styles.smallImg}>
                             <Image
-                                src='/trainingHomePageImages/image5.png'
+                                src='/imagesSectionImages/image5.png'
                                 alt='zdjęcie z treningu'
                                 layout='fill'
                             />
@@ -206,7 +208,7 @@ const TrainingHomePage = () => {
 
                         <figure className={styles.smallImg}>
                             <Image
-                                src='/trainingHomePageImages/image5.png'
+                                src='/imagesSectionImages/image6.png'
                                 alt='zdjęcie z treningu'
                                 layout='fill'
                             />
@@ -217,9 +219,18 @@ const TrainingHomePage = () => {
 
         <section className={styles.opinionsSection}>
         <header className={styles.opinionsHeader}>
-            <h2>OPINIE NASZYCH PODOPIECZNYCH</h2>
-            
+            <h2>OPINIE NASZYCH PODOPIECZNYCH
+            <div className={styles.arrows}>
+                <div className={styles.icon}></div>
+                <div className={styles.icon}></div>
+            </div>
+            </h2>
         </header>
+        <main>
+            <Opinion opinion='Miejsce dla ciała i duszy! Cudowni ludzie, profesjonalni trenerzy, gorąco polecam!'
+            author='Patrycja Kucharczyk'
+            role='Podopieczna w Alibi Studio' />
+        </main>
         </section>
 
      <section className={styles.articlesSection}>

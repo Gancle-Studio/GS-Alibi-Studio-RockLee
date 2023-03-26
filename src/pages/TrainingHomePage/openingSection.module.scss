@@ -9,11 +9,9 @@
 
     section {
         header {
-            h2 {
                 margin: 100px 0 50px;
                 color: $goldColor;
                 width: 100%;
-            }
         }
     }
 
@@ -108,6 +106,9 @@
     }
 
     .imagesSection {
+        display: flex;
+        justify-content: center;
+
         .imagesContainer {
             display: flex;
             gap: 22px;
@@ -131,7 +132,30 @@
     }
 
     .opinionsSection {
-        
+        .opinionsHeader {
+            display: flex;
+            gap: 100px;
+            justify-content: center;
+
+            h2 {
+                position: relative;
+
+                .arrows {
+                    display: flex;
+                    gap: 30px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 541px;
+    
+                    .icon {
+                        width: 40px;
+                        height: 40px;
+                        background-color: red;
+                    }
+                }
+            }
+
+        }
     }
 
     .articlesSection {
