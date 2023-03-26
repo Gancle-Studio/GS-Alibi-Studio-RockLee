@@ -1,13 +1,11 @@
 import styles from './Nav.module.scss';
-import { igIcon } from './igIcon';
-import { fbIcon } from './fbIcon';
-import Icon from './Icon/Icon';
-import { IconType } from './Icon/Icons';
 import Image from 'next/image';
+import Icon, { IconType } from 'components/Icon/Icon';
+import classNames from 'classnames';
 
 const Nav = () => {
   return (
-    <nav className={styles.navContainer}>
+    <nav className={classNames('container', styles.navContainer)}>
       <div className={styles.logo}>
         <figure
           className={styles.logo}
@@ -30,8 +28,12 @@ const Nav = () => {
         <li>CENNIK</li>
         <li>BLOG</li>
         <li>KONTAKT</li>
-        <li className={styles.icon}></li>
-        <li className={styles.icon}></li>
+        <li>
+          <Icon icon={IconType.Facebook} />
+        </li>
+        <li>
+          <Icon icon={IconType.Instagram} />
+        </li>
       </ul>
     </nav>
   );
