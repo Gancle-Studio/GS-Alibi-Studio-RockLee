@@ -2,13 +2,13 @@ import ArticlesSection from 'components/ArticlesSection/ArticlesSection';
 import ContactForm from 'components/ContactForm/ContactForm';
 import Footer from 'components/Footer/Footer';
 import Nav from 'components/Nav/Nav';
-import PersonalTriningPageTemplate from 'templates/PersonalTriningPageTemplate/PersonalTriningPageTemplate';
+import PriceListTemplate from 'templates/PriceListTemplate/PriceListTemplate';
 
-const PersonalTrainingPage = () => {
+const PriceList = () => {
   return (
     <>
       <Nav />
-      <PersonalTriningPageTemplate />
+      <PriceListTemplate />
       <ContactForm />
       <ArticlesSection />
       <Footer />
@@ -16,4 +16,4 @@ const PersonalTrainingPage = () => {
   );
 };
 
-export default PersonalTrainingPage;
+export default PriceList;

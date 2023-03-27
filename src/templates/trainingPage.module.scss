@@ -1,0 +1,94 @@
+@import 'styles/variables.scss';
+
+.medicalTrainingPageContetContainer,
+.personalTrainingPageContetContainer {
+  width: 100%;
+
+  h3 {
+    color: $goldColor;
+  }
+
+  .belt {
+    width: 300px;
+    height: 1px;
+    background-color: $whiteColor;
+    margin: 10px 0 30px 0;
+  }
+
+  .textwithoutImages {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .text {
+      max-width: 800px;
+    }
+
+    .belt {
+      width: 500px;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+  }
+
+  .textAndImages {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+    img {
+      border-radius: 20px;
+    }
+
+    .text {
+      max-width: 650px;
+    }
+
+    .images {
+      display: flex;
+      gap: 20px;
+
+      .img {
+        height: 480px;
+        width: 270px;
+      }
+
+      .smallImages {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .img {
+          width: 272px;
+          height: 153px;
+        }
+      }
+    }
+  }
+
+  .gallery {
+    display: grid;
+    grid-template: repeat(4, 1fr) / 225px 336px 336px 225px;
+    grid-auto-flow: dense;
+    grid-gap: 22px;
+    margin: 0 auto 100px auto;
+    width: fit-content;
+
+    img {
+      border-radius: 20px;
+    }
+
+    .img {
+      width: 336px;
+      height: 189px;
+    }
+
+    .verticalImg {
+      width: 225px;
+      height: 400px;
+      grid-row: span 2;
+    }
+  }
+}

@@ -30,8 +30,12 @@ const Nav = () => {
         <li>
           <Link href='/nasze-treningi/trening-personalny'>TRENINGI</Link>
         </li>
-        <li>CENNIK</li>
-        <li>BLOG</li>
+        <li>
+          <Link href='/cennik'>CENNIK</Link>
+        </li>
+        <li>
+          <Link href='/cennik'>BLOG</Link>
+        </li>
         <li>KONTAKT</li>
         <li>
           <Icon icon={IconType.Facebook} />

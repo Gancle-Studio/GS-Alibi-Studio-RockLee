@@ -19,33 +19,27 @@
   }
 }
 
-.pageContet {
-  .chooseBelt {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 100px;
+.paginationContainer {
+  display: flex;
+  gap: 20px;
 
-    .belt {
-      width: 1px;
-      height: 39px;
+  .icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pagination {
+    display: flex;
+    gap: 20px;
+
+    .numberTile {
+      width: 30px;
+      height: 30px;
+      border-radius: 6px;
       background-color: $whiteColor;
     }
-  }
-}
-
-.activeSection {
-  color: $goldColor;
-}
-
-.textAddition {
-  h3 {
-    color: $whiteColor;
-  }
-
-  .marginBottom50 {
-    margin-bottom: 50px;
-    color: $goldColor;
   }
 }
