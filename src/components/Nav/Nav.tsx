@@ -28,7 +28,7 @@ const Nav = () => {
           <Link href='/o-nas'>O NAS</Link>
         </li>
         <li>
-          <Link href='/treningi'>TRENINGI</Link>
+          <Link href='/nasze-treningi/trening-personalny'>TRENINGI</Link>
         </li>
         <li>CENNIK</li>
         <li>BLOG</li>
