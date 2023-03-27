@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import Icon, { IconType } from 'components/Icon/Icon';
 import Image from 'next/image';
 import styles from './ArticleTile.module.scss';
 
@@ -14,7 +15,9 @@ const ArticleTile = ({ imgSrc, title, description }: IArtcileTileProps) => {
       <figure className={styles.articleTileImg}>
         <Image src={imgSrc} alt='zdjęcie z treningu' layout='fill' />
         <div className={styles.iconContainer}>
-          <div className={styles.icon}></div>
+          <div className={styles.icon}>
+            <Icon icon={IconType.GrayArrowRight} />
+          </div>
         </div>
       </figure>
       <p className={styles.articleTileTitle}>{title}</p>

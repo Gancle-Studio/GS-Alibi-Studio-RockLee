@@ -2,6 +2,7 @@ import styles from './Nav.module.scss';
 import Image from 'next/image';
 import Icon, { IconType } from 'components/Icon/Icon';
 import classNames from 'classnames';
+import Link from 'next/link';
 
 const Nav = () => {
   return (
@@ -23,8 +24,12 @@ const Nav = () => {
       </div>
       <ul className={styles.navLinks}>
         <li>FIZJOTERAPIA</li>
-        <li>O NAS</li>
-        <li>TRENINGI</li>
+        <li>
+          <Link href='/o-nas'>O NAS</Link>
+        </li>
+        <li>
+          <Link href='/treningi'>TRENINGI</Link>
+        </li>
         <li>CENNIK</li>
         <li>BLOG</li>
         <li>KONTAKT</li>

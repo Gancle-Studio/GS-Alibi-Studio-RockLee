@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 import styles from './FacilityTile.module.scss';
 
 interface IFacilityTileProps {
-  icon: string;
+  icon: JSX.Element;
   title: string;
   text: ReactElement;
   link?: boolean;

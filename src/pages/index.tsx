@@ -1,7 +1,9 @@
+import ArticlesSection from 'components/ArticlesSection/ArticlesSection';
 import TrainingHomePageTemplate from 'templates/TrainingHomePageTemplate/TrainingHomePageTemplate';
-import ContactForm from '../components/ContactForm/Form';
+import ContactForm from '../components/ContactForm/ContactForm';
 import Footer from '../components/Footer/Footer';
 import Nav from '../components/Nav/Nav';
+import Icon, { IconType } from 'components/Icon/Icon';
 
 export const articleTilesConfig = [
   {
@@ -37,7 +39,7 @@ export const articleTilesConfig = [
 const Home = () => {
   const facilityTilesConfig = [
     {
-      icon: '1',
+      icon: <Icon icon={IconType.Coffe} />,
       title: 'Zapraszamy na kawę',
       text: (
         <p>
@@ -49,7 +51,7 @@ const Home = () => {
       )
     },
     {
-      icon: '2',
+      icon: <Icon icon={IconType.Paw} />,
       title: 'Przyprowadź swojego psiaka',
       text: (
         <p>
@@ -60,7 +62,7 @@ const Home = () => {
       )
     },
     {
-      icon: '3',
+      icon: <Icon icon={IconType.Solo} />,
       title: 'Trening 1:1 z trenerem',
       text: (
         <p>
@@ -74,7 +76,7 @@ const Home = () => {
       )
     },
     {
-      icon: '4',
+      icon: <Icon icon={IconType.Physio} />,
       title: 'Masaż z naszym fizjo po treningu',
       text: (
         <p>
@@ -91,6 +93,7 @@ const Home = () => {
       <Nav />
       <TrainingHomePageTemplate facilityTilesConfig={facilityTilesConfig} />
       <ContactForm />
+      <ArticlesSection />
       <Footer />
     </>
   );

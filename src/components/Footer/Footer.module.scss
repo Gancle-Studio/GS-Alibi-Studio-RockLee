@@ -16,9 +16,12 @@
       gap: 34px;
 
       .icon {
-        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 20px;
         height: 20px;
+        @include addHoverEffectBlackToGold;
       }
     }
 
@@ -34,6 +37,7 @@
 
       h4 {
         margin-left: 9px;
+        @include addHoverEffectBlackToGold;
       }
     }
   }

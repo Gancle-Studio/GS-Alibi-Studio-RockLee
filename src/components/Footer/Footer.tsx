@@ -1,3 +1,4 @@
+import Icon, { IconType } from 'components/Icon/Icon';
 import Image from 'next/image';
 import styles from './Footer.module.scss';
 
@@ -21,8 +22,12 @@ const Footer = () => {
           <h4>ALIBI STUDIO</h4>
         </div>
         <div className={styles.icons}>
-          <div className={styles.icon}></div>
-          <div className={styles.icon}></div>
+          <div className={styles.icon}>
+            <Icon icon={IconType.Facebook} />
+          </div>
+          <div className={styles.icon}>
+            <Icon icon={IconType.Instagram} />
+          </div>
         </div>
       </div>
       <ul className={styles.footerLinks}>

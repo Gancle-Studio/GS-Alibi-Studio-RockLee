@@ -12,6 +12,10 @@
       margin: 100px 0 50px;
       color: $goldColor;
       width: 100%;
+
+      h2 {
+        color: $goldColor;
+      }
     }
   }
 
@@ -126,6 +130,8 @@
   }
 
   .opinionsSection {
+    margin-bottom: 100px;
+
     .opinionsHeader {
       display: flex;
       gap: 100px;
@@ -142,26 +148,14 @@
           left: 541px;
 
           .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 40px;
             height: 40px;
-            background-color: red;
           }
         }
       }
-    }
-  }
-
-  .articlesSection {
-    margin-bottom: 100px;
-    h2 {
-      text-align: left;
-    }
-
-    .articleTilesContainer {
-      display: flex;
-      gap: 30px;
-      flex-wrap: wrap;
-      width: 100%;
     }
   }
 }

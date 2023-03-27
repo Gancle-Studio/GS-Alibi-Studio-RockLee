@@ -1,0 +1,32 @@
+@import 'styles/variables.scss';
+
+.personContainer {
+  display: flex;
+  gap: 100px;
+
+  .personImg {
+    border-radius: 20px;
+    height: 544px;
+    width: 306px;
+  }
+
+  .content {
+    width: calc(100% - 306px);
+
+    .belt {
+      width: 300px;
+      height: 1px;
+      background-color: $whiteColor;
+      margin: 10px 0;
+    }
+
+    h2,
+    .services {
+      color: $goldColor;
+    }
+
+    .services {
+      margin-bottom: 30px;
+    }
+  }
+}

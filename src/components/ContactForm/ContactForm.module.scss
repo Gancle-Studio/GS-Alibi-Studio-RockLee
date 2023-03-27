@@ -31,7 +31,9 @@
         width: 100%;
 
         .icon {
-          background-color: red;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           width: 50px;
           height: 50px;
         }
@@ -88,6 +90,13 @@
       line-height: 32px;
       color: $whiteColor;
       margin-bottom: 30px;
+      transition: all 0.3s linear;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $blackColor;
+        color: $goldColor;
+      }
     }
   }
 }

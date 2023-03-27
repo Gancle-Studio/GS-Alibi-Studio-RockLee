@@ -54,3 +54,21 @@ $whiteColor: #dfdfdf;
     width: 100%;
   }
 }
+
+@mixin landingImageStyles {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  top: -120px;
+  left: 0;
+
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  h1 {
+    position: relative;
+    z-index: 10;
+  }
+}

@@ -1,0 +1,23 @@
+@import 'styles/variables.scss';
+
+.articlesSection {
+  margin-bottom: 100px;
+
+  header {
+    margin: 100px 0 50px;
+    color: $goldColor;
+    width: 100%;
+  }
+
+  h2 {
+    text-align: left;
+    color: $goldColor;
+  }
+
+  .articleTilesContainer {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}

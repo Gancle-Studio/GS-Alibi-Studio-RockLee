@@ -5,10 +5,11 @@ import Opinion from 'components/Opinion/Opinion';
 import Image from 'next/image';
 import { articleTilesConfig } from 'pages';
 import styles from './TrainingHomePageTemplate.module.scss';
+import Icon, { IconType } from 'components/Icon/Icon';
 
 interface ITrainingHomePageTemplateProps {
   facilityTilesConfig: {
-    icon: string;
+    icon: JSX.Element;
     title: string;
     text: JSX.Element;
     link?: boolean;
@@ -230,8 +231,12 @@ const TrainingHomePageTemplate = ({
             <h2>
               OPINIE NASZYCH PODOPIECZNYCH
               <div className={styles.arrows}>
-                <div className={styles.icon}></div>
-                <div className={styles.icon}></div>
+                <div className={styles.icon}>
+                  <Icon icon={IconType.GoldArrowLeft} />
+                </div>
+                <div className={styles.icon}>
+                  <Icon icon={IconType.GoldArrowRight} />
+                </div>
               </div>
             </h2>
           </header>
@@ -241,21 +246,6 @@ const TrainingHomePageTemplate = ({
               author='Patrycja Kucharczyk'
               role='Podopieczna w Alibi Studio'
             />
-          </main>
-        </section>
-
-        <section className={styles.articlesSection}>
-          <header>
-            <h2>CO U NAS SŁYCHAĆ...</h2>
-          </header>
-          <main className={styles.articleTilesContainer}>
-            {articleTilesConfig.map((articleTile) => (
-              <ArticleTile
-                imgSrc={articleTile.imgSrc}
-                title={articleTile.title}
-                description={articleTile.description}
-              />
-            ))}
           </main>
         </section>
       </div>

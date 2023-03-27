@@ -1,2 +1,13 @@
 export { default as Facebook } from './facebook.svg';
 export { default as Instagram } from './instagram.svg';
+export { default as Address } from './address.svg';
+export { default as Coffe } from './coffe.svg';
+export { default as GoldArrowRight } from './goldArrowRight.svg';
+export { default as GoldArrowLeft } from './goldArrowLeft.svg';
+export { default as Mail } from './mail.svg';
+export { default as Paw } from './paw.svg';
+export { default as Payment } from './payment.svg';
+export { default as Phone } from './phone.svg';
+export { default as Physio } from './physio.svg';
+export { default as Solo } from './solo.svg';
+export { default as GrayArrowRight } from './grayArrowRight.svg';
