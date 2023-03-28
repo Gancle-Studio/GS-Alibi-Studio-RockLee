@@ -33,7 +33,7 @@ const PhysiotherapyAboutPage = () => {
 
   return (
     <>
-      <Nav />
+      <Nav page='PHYSIO' />
       <PhysiotherapyAboutPageTemplate
         physiotherapistsConfig={physiotherapistsConfig}
       />

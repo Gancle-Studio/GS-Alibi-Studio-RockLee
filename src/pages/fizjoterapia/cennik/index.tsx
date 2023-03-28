@@ -7,7 +7,7 @@ import PhysiotherapistPriceListTemplate from 'templates/PhysiotherapistPriceList
 const PhysiotherapistPriceList = () => {
   return (
     <>
-      <Nav />
+      <Nav page='PHYSIO' />
       <PhysiotherapistPriceListTemplate />
       <ContactForm />
       <ArticlesSection />

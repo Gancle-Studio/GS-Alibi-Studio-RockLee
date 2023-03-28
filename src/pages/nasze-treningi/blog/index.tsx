@@ -6,7 +6,7 @@ import BlogPageTemplate from 'templates/BlogPageTemplate/BlogPageTemplate';
 const Blog = () => {
   return (
     <>
-      <Nav />
+      <Nav page='TRAININGS' />
       <BlogPageTemplate />
       <ContactForm />
       <Footer />

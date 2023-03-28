@@ -7,7 +7,7 @@ import MotorPreparationPageTemplate from 'templates/MotorPreparationPageTemplate
 const MotorPreparationPage = () => {
   return (
     <>
-      <Nav />
+      <Nav page='TRAININGS' />
       <MotorPreparationPageTemplate />
       <ContactForm />
       <ArticlesSection />

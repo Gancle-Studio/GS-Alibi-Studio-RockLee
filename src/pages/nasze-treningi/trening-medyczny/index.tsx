@@ -7,7 +7,7 @@ import MedicalTrainigPageTemplate from 'templates/MedicalTrainigPageTemplate/Med
 const MedicalTrainingPage = () => {
   return (
     <>
-      <Nav />
+      <Nav page='TRAININGS' />
       <MedicalTrainigPageTemplate />
       <ContactForm />
       <ArticlesSection />

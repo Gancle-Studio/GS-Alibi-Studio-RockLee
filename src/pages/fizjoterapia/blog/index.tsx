@@ -6,7 +6,7 @@ import PhysiotherapistBlogPageTemplate from 'templates/PhysiotherapistBlogPageTe
 const PhysiotherapistBlogPage = () => {
   return (
     <>
-      <Nav />
+      <Nav page='PHYSIO' />
       <PhysiotherapistBlogPageTemplate />
       <ContactForm />
       <Footer />

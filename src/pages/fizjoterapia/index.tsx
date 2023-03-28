@@ -26,7 +26,7 @@ const PhysiotherapyHomePage = () => {
   ];
   return (
     <>
-      <Nav />
+      <Nav page='PHYSIO' />
       <PhysiotherapyHomePageTemplate
         physiotherapyFacilityTilesConfig={physiotherapyFacilityTilesConfig}
       />

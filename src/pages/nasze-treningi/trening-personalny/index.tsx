@@ -7,7 +7,7 @@ import PersonalTriningPageTemplate from 'templates/PersonalTriningPageTemplate/P
 const PersonalTrainingPage = () => {
   return (
     <>
-      <Nav />
+      <Nav page='TRAININGS' />
       <PersonalTriningPageTemplate />
       <ContactForm />
       <ArticlesSection />

@@ -90,7 +90,7 @@ const Home = () => {
 
   return (
     <>
-      <Nav />
+      <Nav page='TRAININGS' />
       <TrainingHomePageTemplate facilityTilesConfig={facilityTilesConfig} />
       <ContactForm />
       <ArticlesSection />

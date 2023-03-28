@@ -7,7 +7,7 @@ import PriceListTemplate from 'templates/PriceListTemplate/PriceListTemplate';
 const PriceList = () => {
   return (
     <>
-      <Nav />
+      <Nav page='TRAININGS' />
       <PriceListTemplate />
       <ContactForm />
       <ArticlesSection />
