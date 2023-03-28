@@ -109,10 +109,7 @@ const TrainingHomePageTemplate = ({
 
         <section className={styles.infoSection}>
           <header>
-            <h2>
-              NASZE STUDIO NIE JEST TYLKO SIŁOWNIĄ. JEST TO DOM, W KTÓRYM KAŻDY
-              Z WAS JEST MILE WIDZIANY (ZWŁASZCZA NA TRENINGU ;) )
-            </h2>
+            <h2>NASZE ZABIEGI</h2>
           </header>
           <main className={styles.infoTileMain}>
             <div className={styles.infoTile}>

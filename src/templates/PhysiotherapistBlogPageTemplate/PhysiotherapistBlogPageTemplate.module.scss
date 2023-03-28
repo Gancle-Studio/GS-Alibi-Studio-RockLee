@@ -26,28 +26,3 @@
   flex-wrap: wrap;
   margin-bottom: 100px;
 }
-
-.paginationContainer {
-  display: flex;
-  gap: 20px;
-
-  .icon {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .pagination {
-    display: flex;
-    gap: 20px;
-
-    .numberTile {
-      width: 30px;
-      height: 30px;
-      border-radius: 6px;
-      background-color: $whiteColor;
-    }
-  }
-}

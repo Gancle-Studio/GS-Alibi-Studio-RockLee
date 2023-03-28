@@ -11,7 +11,11 @@ import {
   Payment,
   Phone,
   Physio,
-  Solo
+  Solo,
+  Balance,
+  HappyHeart,
+  Bic,
+  Calm
 } from './Icons';
 
 export enum IconType {
@@ -27,7 +31,11 @@ export enum IconType {
   Payment = 'Payment',
   Phone = 'Phone',
   Physio = 'Physio',
-  Solo = 'Solo'
+  Solo = 'Solo',
+  HappyHeart = 'HappyHeart',
+  Calm = 'Calm',
+  Bic = 'Bic',
+  Balance = 'Balance'
 }
 
 const getIcon = (icon: IconType) => {
@@ -58,6 +66,14 @@ const getIcon = (icon: IconType) => {
       return Physio.src;
     case IconType.Solo:
       return Solo.src;
+    case IconType.Bic:
+      return Bic.src;
+    case IconType.Calm:
+      return Calm.src;
+    case IconType.Balance:
+      return Balance.src;
+    case IconType.HappyHeart:
+      return HappyHeart.src;
     default:
       break;
   }

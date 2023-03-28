@@ -1,11 +1,11 @@
 import classNames from 'classnames';
-import Image from 'next/image';
-import styles from './BlogPageTemplate.module.scss';
-import { articleTilesConfig } from 'pages';
 import ArticleTile from 'components/ArticleTile/ArticleTile';
 import Icon, { IconType } from 'components/Icon/Icon';
+import Image from 'next/image';
+import { articleTilesConfig } from 'pages';
+import styles from './PhysiotherapistBlogPageTemplate.module.scss';
 
-const BlogPageTemplate = () => {
+const PhysiotherapistBlogPageTemplate = () => {
   return (
     <>
       <section className={styles.landingSection}>
@@ -17,7 +17,7 @@ const BlogPageTemplate = () => {
           />
         </figure>
         <div className={classNames('container', styles.textContainer)}>
-          <h1>Zobacz co dla Ciebie przygotowaliśmy</h1>
+          <h1>Zobacz co u nas słychać</h1>
         </div>
       </section>
       <section className='container'>
@@ -30,18 +30,9 @@ const BlogPageTemplate = () => {
             />
           ))}
         </main>
-        <div className={styles.paginationContainer}>
-          <div className={styles.icon}>
-            <Icon icon={IconType.GoldArrowLeft} />
-          </div>
-          <div className={styles.pagination}></div>
-          <div className={styles.icon}>
-            <Icon icon={IconType.GoldArrowRight} />
-          </div>
-        </div>
       </section>
     </>
   );
 };
 
-export default BlogPageTemplate;
+export default PhysiotherapistBlogPageTemplate;

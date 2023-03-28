@@ -11,3 +11,7 @@ export { default as Phone } from './phone.svg';
 export { default as Physio } from './physio.svg';
 export { default as Solo } from './solo.svg';
 export { default as GrayArrowRight } from './grayArrowRight.svg';
+export { default as Bic } from './bic.svg';
+export { default as Calm } from './calm.svg';
+export { default as Balance } from './balance.svg';
+export { default as HappyHeart } from './happyHeart.svg';
