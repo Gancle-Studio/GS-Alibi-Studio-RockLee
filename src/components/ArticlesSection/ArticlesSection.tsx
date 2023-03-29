@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import ArticleTile from 'components/ArticleTile/ArticleTile';
 import { articleTilesConfig } from 'pages';
+import getUUID from 'utility/getUUID';
 import styles from './ArticlesSection.module.scss';
 
 const ArticlesSection = () => {
@@ -12,6 +13,7 @@ const ArticlesSection = () => {
       <main className={styles.articleTilesContainer}>
         {articleTilesConfig.map((articleTile) => (
           <ArticleTile
+            key={getUUID()}
             imgSrc={articleTile.imgSrc}
             title={articleTile.title}
             description={articleTile.description}

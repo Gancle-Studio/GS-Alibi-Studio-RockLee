@@ -3,6 +3,7 @@ import ArticleTile from 'components/ArticleTile/ArticleTile';
 import Icon, { IconType } from 'components/Icon/Icon';
 import Image from 'next/image';
 import { articleTilesConfig } from 'pages';
+import getUUID from 'utility/getUUID';
 import styles from './PhysiotherapistBlogPageTemplate.module.scss';
 
 const PhysiotherapistBlogPageTemplate = () => {
@@ -24,6 +25,7 @@ const PhysiotherapistBlogPageTemplate = () => {
         <main className={styles.articleTilesContainer}>
           {articleTilesConfig.map((articleTile) => (
             <ArticleTile
+              key={getUUID()}
               imgSrc={articleTile.imgSrc}
               title={articleTile.title}
               description={articleTile.description}

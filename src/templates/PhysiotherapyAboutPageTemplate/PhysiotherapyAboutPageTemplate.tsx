@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import PersonalTrainerDescription from 'components/PersonalTrainerDescription/PersonalTrainerDescription';
 import Image from 'next/image';
+import getUUID from 'utility/getUUID';
 import styles from './PhysiotherapyAboutPageTemplate.module.scss';
 
 interface IPhysiotherapyAboutPageTemplateProps {
@@ -34,6 +35,7 @@ const PhysiotherapyAboutPageTemplate = ({
       >
         {physiotherapistsConfig.map((physiotherapist) => (
           <PersonalTrainerDescription
+            key={getUUID()}
             imgSrc={physiotherapist.imgSrc}
             name={physiotherapist.name}
             services={physiotherapist.services}

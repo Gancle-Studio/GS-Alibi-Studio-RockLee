@@ -3,6 +3,7 @@ import Icon, { IconType } from 'components/Icon/Icon';
 import Opinion from 'components/Opinion/Opinion';
 import PhysiotherapyFacilityTile from 'components/PhysiotherapyFacilityTile/PhysiotherapyFacilityTile';
 import Image from 'next/image';
+import getUUID from 'utility/getUUID';
 import styles from './PhysiotherapyHomePageTemplate.module.scss';
 
 interface IPhysiotherapyHomePageTemplateProps {
@@ -90,6 +91,7 @@ const PhysiotherapyHomePageTemplate = ({
           <main className={styles.facilityTilesContainer}>
             {physiotherapyFacilityTilesConfig.map((facilityTile) => (
               <PhysiotherapyFacilityTile
+                key={getUUID()}
                 text={facilityTile.text}
                 icon={facilityTile.icon}
               />

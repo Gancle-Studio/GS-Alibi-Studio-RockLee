@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { articleTilesConfig } from 'pages';
 import styles from './TrainingHomePageTemplate.module.scss';
 import Icon, { IconType } from 'components/Icon/Icon';
+import getUUID from 'utility/getUUID';
 
 interface ITrainingHomePageTemplateProps {
   facilityTilesConfig: {
@@ -98,6 +99,7 @@ const TrainingHomePageTemplate = ({
           <main className={styles.facilityTilesContainer}>
             {facilityTilesConfig.map((facilityTile) => (
               <FacilityTile
+                key={getUUID()}
                 icon={facilityTile.icon}
                 title={facilityTile.title}
                 text={facilityTile.text}

@@ -4,6 +4,7 @@ import styles from './BlogPageTemplate.module.scss';
 import { articleTilesConfig } from 'pages';
 import ArticleTile from 'components/ArticleTile/ArticleTile';
 import Icon, { IconType } from 'components/Icon/Icon';
+import getUUID from 'utility/getUUID';
 
 const BlogPageTemplate = () => {
   return (
@@ -24,6 +25,7 @@ const BlogPageTemplate = () => {
         <main className={styles.articleTilesContainer}>
           {articleTilesConfig.map((articleTile) => (
             <ArticleTile
+              key={getUUID()}
               imgSrc={articleTile.imgSrc}
               title={articleTile.title}
               description={articleTile.description}
