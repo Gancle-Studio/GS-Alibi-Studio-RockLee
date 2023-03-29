@@ -3,6 +3,16 @@
 .trainingHomePageContainer {
   background-color: $blackColor;
 
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    @include media('<=laptop') {
+      text-align: center;
+    }
+  }
+
   span {
     color: $goldColor;
   }
@@ -15,6 +25,10 @@
 
       h2 {
         color: $goldColor;
+
+        @include media('<=laptop') {
+          text-align: center;
+        }
       }
     }
   }
@@ -23,6 +37,17 @@
     display: flex;
     gap: 50px;
     margin-bottom: 50px;
+
+    @include media('<=laptop') {
+      flex-direction: column;
+    }
+
+    h1,
+    h3 {
+      @include media('<=laptop') {
+        text-align: center;
+      }
+    }
 
     .textContainer {
       display: flex;
@@ -35,6 +60,10 @@
       display: flex;
       gap: 20px;
 
+      @include media('<=laptop') {
+        justify-content: center;
+      }
+
       figure {
         position: relative;
       }
@@ -42,12 +71,23 @@
       .biggerHomePageImage {
         height: 480px;
         width: 270px;
+
+        @include media('<=tablet') {
+          display: none;
+        }
       }
 
       .smallerImages {
         display: flex;
         flex-direction: column;
         gap: 10px;
+
+        @include media('<=tablet') {
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 30px;
+        }
 
         .homePageImage {
           width: 272px;
@@ -64,6 +104,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
+      justify-content: center;
     }
   }
 
@@ -87,8 +128,22 @@
         gap: 40px;
         align-items: center;
 
+        @include media('<=desktop') {
+          flex-direction: column;
+          justify-content: center;
+
+          &:last-of-type {
+            flex-direction: column-reverse;
+          }
+        }
+
         h4 {
           max-width: calc(100% - 680px);
+
+          @include media('<=desktop') {
+            max-width: 100%;
+            width: 100%;
+          }
 
           span {
             color: $goldColor;
@@ -98,6 +153,16 @@
         .infoImage {
           width: 640px;
           height: 360px;
+
+          @include media('<=tablet') {
+            width: 410px;
+            height: 230px;
+          }
+
+          @include media('<=mobile') {
+            width: 300px;
+            height: 170px;
+          }
         }
       }
     }
@@ -110,6 +175,29 @@
     .imagesContainer {
       display: flex;
       gap: 22px;
+
+      @include media('<=desktop') {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      @include media('<=laptop') {
+        gap: 30px;
+      }
+
+      span {
+        display: flex;
+        gap: 22px;
+
+        @include media('<=desktop') {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        @include media('<=laptop') {
+          gap: 30px;
+        }
+      }
 
       .img {
         width: 225px;
@@ -147,6 +235,13 @@
           bottom: 0;
           left: 541px;
 
+          @include media('<=laptop') {
+            position: relative;
+            left: auto;
+            justify-content: center;
+            margin-top: 20px;
+          }
+
           .icon {
             display: flex;
             justify-content: center;
@@ -164,6 +259,14 @@
   background-color: $redColor;
   height: 50px;
 
+  @include media('<=laptop') {
+    height: 120px;
+  }
+
+  @include media('<=mobile') {
+    height: 150px;
+  }
+
   .contactBeltContainer {
     height: 100%;
     display: flex;
@@ -171,10 +274,25 @@
     justify-content: center;
     gap: 100px;
 
+    @include media('<=laptop') {
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 0;
+
+      h4 {
+        text-align: center;
+      }
+    }
+
     .verticalBelt {
       height: 33px;
       width: 4px;
       background-color: $whiteColor;
+
+      @include media('<=laptop') {
+        width: 120px;
+        height: 2px;
+      }
     }
   }
 }

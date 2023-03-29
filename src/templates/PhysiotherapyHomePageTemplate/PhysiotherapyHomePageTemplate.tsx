@@ -212,57 +212,61 @@ const PhysiotherapyHomePageTemplate = ({
 
         <section className={styles.imagesSection}>
           <main className={styles.imagesContainer}>
-            <figure className={styles.img}>
-              <Image
-                src='/imagesSectionImages/image1.png'
-                alt='zdjęcie z treningu'
-                layout='fill'
-              />
-            </figure>
-
-            <div className={styles.doubleImg}>
-              <figure className={styles.smallImg}>
+            <span>
+              <figure className={styles.img}>
                 <Image
-                  src='/imagesSectionImages/image2.png'
+                  src='/imagesSectionImages/image1.png'
                   alt='zdjęcie z treningu'
                   layout='fill'
                 />
               </figure>
 
-              <figure className={styles.smallImg}>
+              <div className={styles.doubleImg}>
+                <figure className={styles.smallImg}>
+                  <Image
+                    src='/imagesSectionImages/image2.png'
+                    alt='zdjęcie z treningu'
+                    layout='fill'
+                  />
+                </figure>
+
+                <figure className={styles.smallImg}>
+                  <Image
+                    src='/imagesSectionImages/image3.png'
+                    alt='zdjęcie z treningu'
+                    layout='fill'
+                  />
+                </figure>
+              </div>
+            </span>
+
+            <span>
+              <figure className={styles.img}>
                 <Image
-                  src='/imagesSectionImages/image3.png'
+                  src='/imagesSectionImages/image4.png'
                   alt='zdjęcie z treningu'
                   layout='fill'
                 />
               </figure>
-            </div>
 
-            <figure className={styles.img}>
-              <Image
-                src='/imagesSectionImages/image4.png'
-                alt='zdjęcie z treningu'
-                layout='fill'
-              />
-            </figure>
+              <div className={styles.doubleImg}>
+                <figure className={styles.smallImg}>
+                  <Image
+                    src='/imagesSectionImages/image5.png'
+                    alt='zdjęcie z treningu'
+                    layout='fill'
+                  />
+                </figure>
 
-            <div className={styles.doubleImg}>
-              <figure className={styles.smallImg}>
-                <Image
-                  src='/imagesSectionImages/image5.png'
-                  alt='zdjęcie z treningu'
-                  layout='fill'
-                />
-              </figure>
-
-              <figure className={styles.smallImg}>
-                <Image
-                  src='/imagesSectionImages/image6.png'
-                  alt='zdjęcie z treningu'
-                  layout='fill'
-                />
-              </figure>
-            </div>
+                <figure className={styles.smallImg}>
+                  <Image
+                    src='/imagesSectionImages/image6.png'
+                    alt='zdjęcie z treningu'
+                    layout='fill'
+                  />
+                </figure>
+              </div>
+            </span>
           </main>
         </section>
 

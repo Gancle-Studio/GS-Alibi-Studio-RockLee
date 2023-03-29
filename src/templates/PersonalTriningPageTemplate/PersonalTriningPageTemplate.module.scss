@@ -27,10 +27,25 @@
     gap: 30px;
     margin-bottom: 100px;
 
+    @include media('<=laptop') {
+      flex-direction: column;
+      gap: 20px;
+
+      h2 {
+        text-align: center;
+      }
+    }
+
     .belt {
       width: 1px;
       height: 39px;
       background-color: $whiteColor;
+
+      @include media('<=laptop') {
+        flex-direction: column;
+        width: 120px;
+        height: 2px;
+      }
     }
   }
 }

@@ -6,6 +6,10 @@
 
   h3 {
     color: $goldColor;
+
+    @include media('<=laptop') {
+      text-align: center;
+    }
   }
 
   .belt {
@@ -13,6 +17,10 @@
     height: 1px;
     background-color: $whiteColor;
     margin: 10px 0 30px 0;
+
+    @include media('<=laptop') {
+      margin: 10px auto 30px auto;
+    }
   }
 
   .textwithoutImages {
@@ -38,21 +46,47 @@
     justify-content: space-between;
     margin-bottom: 100px;
 
+    @include media('<=desktop') {
+      flex-direction: column;
+    }
+
     img {
       border-radius: 20px;
     }
 
     .text {
       max-width: 650px;
+
+      @include media('<=desktop') {
+        margin-bottom: 50px;
+        max-width: 100%;
+        width: 100%;
+      }
+
+      @include media('<=laptop') {
+        text-align: center;
+      }
     }
 
     .images {
       display: flex;
       gap: 20px;
 
+      @include media('<=tablet') {
+        gap: 30px;
+      }
+
+      @include media('<=desktop') {
+        justify-content: center;
+      }
+
       .img {
         height: 480px;
         width: 270px;
+
+        @include media('<=tablet') {
+          display: none;
+        }
       }
 
       .smallImages {
@@ -60,9 +94,20 @@
         flex-direction: column;
         gap: 10px;
 
+        @include media('<=tablet') {
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 30px;
+        }
+
         .img {
           width: 272px;
           height: 153px;
+
+          @include media('<=tablet') {
+            display: initial;
+          }
         }
       }
     }
