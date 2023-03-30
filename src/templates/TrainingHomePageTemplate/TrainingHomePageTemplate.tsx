@@ -3,7 +3,7 @@ import ArticleTile from 'components/ArticleTile/ArticleTile';
 import FacilityTile from 'components/FacilityTile/FacilityTile';
 import Opinion from 'components/Opinion/Opinion';
 import Image from 'next/image';
-import { articleTilesConfig } from 'pages';
+import { articleTilesConfig } from 'pages/nasze-treningi';
 import styles from './TrainingHomePageTemplate.module.scss';
 import Icon, { IconType } from 'components/Icon/Icon';
 import getUUID from 'utility/getUUID';

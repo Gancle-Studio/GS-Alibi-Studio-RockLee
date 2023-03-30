@@ -1,8 +1,8 @@
 import ArticlesSection from 'components/ArticlesSection/ArticlesSection';
 import TrainingHomePageTemplate from 'templates/TrainingHomePageTemplate/TrainingHomePageTemplate';
-import ContactForm from '../components/ContactForm/ContactForm';
-import Footer from '../components/Footer/Footer';
-import Nav from '../components/Nav/Nav';
+import ContactForm from '../../components/ContactForm/ContactForm';
+import Footer from '../../components/Footer/Footer';
+import Nav from '../../components/Nav/Nav';
 import Icon, { IconType } from 'components/Icon/Icon';
 
 export const articleTilesConfig = [

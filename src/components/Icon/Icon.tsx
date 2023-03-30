@@ -15,7 +15,8 @@ import {
   Balance,
   HappyHeart,
   Bic,
-  Calm
+  Calm,
+  Copy
 } from './Icons';
 
 export enum IconType {
@@ -35,7 +36,8 @@ export enum IconType {
   HappyHeart = 'HappyHeart',
   Calm = 'Calm',
   Bic = 'Bic',
-  Balance = 'Balance'
+  Balance = 'Balance',
+  Copy = 'Copy'
 }
 
 const getIcon = (icon: IconType) => {
@@ -74,6 +76,8 @@ const getIcon = (icon: IconType) => {
       return Balance.src;
     case IconType.HappyHeart:
       return HappyHeart.src;
+    case IconType.Copy:
+      return Copy.src;
     default:
       break;
   }

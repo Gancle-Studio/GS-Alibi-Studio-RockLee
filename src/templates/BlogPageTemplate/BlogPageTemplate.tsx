@@ -1,12 +1,21 @@
 import classNames from 'classnames';
 import Image from 'next/image';
 import styles from './BlogPageTemplate.module.scss';
-import { articleTilesConfig } from 'pages';
+import { articleTilesConfig } from 'pages/nasze-treningi';
 import ArticleTile from 'components/ArticleTile/ArticleTile';
 import Icon, { IconType } from 'components/Icon/Icon';
 import getUUID from 'utility/getUUID';
+import urlBuilder from '@sanity/image-url';
+import { createClient } from 'next-sanity';
 
-const BlogPageTemplate = () => {
+const sanityClient = createClient({
+  projectId: 'mkxtoiab',
+  dataset: 'production',
+  apiVersion: '2022-03-25',
+  useCdn: false
+});
+
+const BlogPageTemplate = ({ articles }: any) => {
   return (
     <>
       <section className={styles.landingSection}>
@@ -23,12 +32,16 @@ const BlogPageTemplate = () => {
       </section>
       <section className='container'>
         <main className={styles.articleTilesContainer}>
-          {articleTilesConfig.map((articleTile) => (
+          {articles.map((article: any) => (
             <ArticleTile
               key={getUUID()}
-              imgSrc={articleTile.imgSrc}
-              title={articleTile.title}
-              description={articleTile.description}
+              imgSrc={
+                urlBuilder(sanityClient)
+                  .image(article.mainImage.asset)
+                  .url() as string
+              }
+              title={article.title}
+              description={article.teaser}
             />
           ))}
         </main>

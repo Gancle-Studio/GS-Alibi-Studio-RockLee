@@ -15,3 +15,4 @@ export { default as Bic } from './bic.svg';
 export { default as Calm } from './calm.svg';
 export { default as Balance } from './balance.svg';
 export { default as HappyHeart } from './happyHeart.svg';
+export { default as Copy } from './copy.svg';

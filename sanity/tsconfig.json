@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -13,17 +13,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true,
-    "paths": {
-      "*": ["./src/*"]
-    }
+    "incremental": true
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "src/templates/PhysiotherapyHomePageTemplate",
-    "sanity/schemas/article.js"
-  ],
+  "include": ["**/*.ts", "**/*.tsx", "schemas/article.js"],
   "exclude": ["node_modules"]
 }
