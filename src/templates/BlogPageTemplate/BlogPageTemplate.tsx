@@ -1,7 +1,6 @@
 import classNames from 'classnames';
 import Image from 'next/image';
 import styles from './BlogPageTemplate.module.scss';
-import { articleTilesConfig } from 'pages/nasze-treningi';
 import ArticleTile from 'components/ArticleTile/ArticleTile';
 import Icon, { IconType } from 'components/Icon/Icon';
 import getUUID from 'utility/getUUID';
