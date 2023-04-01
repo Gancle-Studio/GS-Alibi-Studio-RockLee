@@ -41,6 +41,8 @@ const PhysiotherapistBlogPageTemplate = ({ articles }: any) => {
               }
               title={article.title}
               description={article.teaser}
+              slug={article.slug}
+              page='PHYSIO'
             />
           ))}
         </main>
