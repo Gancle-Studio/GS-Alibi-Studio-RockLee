@@ -1,5 +1,7 @@
 import styles from './ContactForm.module.scss';
 import { useFormik } from 'formik';
+import axios from 'axios';
+import { useState } from 'react';
 
 // const validate = (values: any) => {
 //   const errors = {};
@@ -22,6 +24,7 @@ import { useFormik } from 'formik';
 // };
 
 const FormContact = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const formik = useFormik({
     initialValues: {
       name: '',
@@ -29,8 +32,10 @@ const FormContact = () => {
       message: ''
     },
     // validate,
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+    onSubmit: (values: any, { resetForm }) => {
+      axios.post('api/email', values);
+      resetForm();
+      setIsSubmitted(!isSubmitted);
     }
   });
   return (
@@ -77,9 +82,14 @@ const FormContact = () => {
       </div>
 
       <div className={styles.submitBtnContainer}>
-        <button type='submit' className={styles.submitBtn}>
-          Wyślij
-        </button>
+        {!isSubmitted && (
+          <div className={styles.submitBtnContainer}>
+            <button type='submit' className={styles.submitBtn}>
+              Wyślij
+            </button>
+          </div>
+        )}
+        {isSubmitted && <p>Wiadomość wysłano pomyślnie</p>}
       </div>
     </form>
   );

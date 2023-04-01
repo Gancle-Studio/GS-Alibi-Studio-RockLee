@@ -15,11 +15,11 @@ const sanityClient = createClient({
 });
 
 const ArticlePageTemplate = ({ article, page }: any) => {
-  const { title, mainImage, date, content } = article;
-
   if (!article) {
     return null;
   }
+
+  const { title, mainImage, date, content } = article;
 
   console.log(content);
 

@@ -2,7 +2,6 @@ import classNames from 'classnames';
 import ArticleTile from 'components/ArticleTile/ArticleTile';
 import Icon, { IconType } from 'components/Icon/Icon';
 import Image from 'next/image';
-import { articleTilesConfig } from 'pages/nasze-treningi';
 import getUUID from 'utility/getUUID';
 import styles from './PhysiotherapistBlogPageTemplate.module.scss';
 import urlBuilder from '@sanity/image-url';
@@ -42,6 +41,8 @@ const PhysiotherapistBlogPageTemplate = ({ articles }: any) => {
               }
               title={article.title}
               description={article.teaser}
+              slug={article.slug}
+              page='PHYSIO'
             />
           ))}
         </main>

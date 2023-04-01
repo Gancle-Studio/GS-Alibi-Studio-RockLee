@@ -26,7 +26,8 @@ const ArticlesSection = () => {
         date,
         mainImage,
         title,
-        teaser
+        teaser,
+        slug
       }
       `,
         {}
@@ -54,6 +55,8 @@ const ArticlesSection = () => {
               }
               title={article.title}
               description={article.teaser}
+              slug={article.slug.current}
+              page={'PHYSIO'}
             />
           );
         })}
