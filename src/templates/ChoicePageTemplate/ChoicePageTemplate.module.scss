@@ -80,8 +80,6 @@
 
   width: calc(50vw - 3px);
   height: 100vh;
-  height: fill-available;
-  height: -webkit-fill-available;
 
   cursor: pointer;
   overflow: hidden;
@@ -99,7 +97,7 @@
 
   @include media('<=laptop') {
     width: 100vw;
-    height: calc(50vh - 3px);
+    height: calc(50dvh - 3px);
   }
 
   .trainingsShadow {
@@ -149,8 +147,6 @@
 
   width: calc(50vw - 3px);
   height: 100vh;
-  height: fill-available;
-  height: -webkit-fill-available;
 
   cursor: pointer;
   overflow: hidden;
@@ -168,7 +164,7 @@
 
   @include media('<=laptop') {
     width: 100vw;
-    height: calc(50vh - 3px);
+    height: calc(50dvh - 3px);
   }
 
   .physioShadow {
@@ -222,8 +218,6 @@
 .divider {
   width: 6px;
   height: 100vh;
-  height: fill-available;
-  height: -webkit-fill-available;
 
   z-index: 999;
 
