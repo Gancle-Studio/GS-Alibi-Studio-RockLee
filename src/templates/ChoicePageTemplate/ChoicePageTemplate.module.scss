@@ -1,0 +1,44 @@
+@import 'styles/variables.scss';
+
+.choicePage {
+  display: flex;
+}
+
+.trainings {
+  position: relative;
+
+  width: calc(50vw - 3px);
+  height: 100vh;
+
+  figure {
+    position: relative;
+  }
+
+  .trainingsImage {
+    width: calc(50vw - 3px);
+    height: 100vh;
+  }
+}
+
+.physio {
+  position: relative;
+
+  width: calc(50vw - 3px);
+  height: 100vh;
+
+  figure {
+    position: relative;
+  }
+
+  .physioImage {
+    width: calc(50vw - 3px);
+    height: 100vh;
+  }
+}
+
+.divider {
+  width: 6px;
+  height: 100vh;
+
+  background-color: $goldColor;
+}

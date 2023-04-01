@@ -25,7 +25,7 @@ const Nav = () => {
       <ul className={styles.navLinks}>
         <li>FIZJOTERAPIA</li>
         <li>
-          <Link href='/o-nas'>O NAS</Link>
+          <Link href='/nasze-treningi/o-nas'>O NAS</Link>
         </li>
         <li>
           <Link href='/nasze-treningi/trening-personalny'>TRENINGI</Link>
