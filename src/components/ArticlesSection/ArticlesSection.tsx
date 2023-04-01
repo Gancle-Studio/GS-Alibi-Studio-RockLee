@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import ArticleTile from 'components/ArticleTile/ArticleTile';
-import { articleTilesConfig } from 'pages/nasze-treningi';
 import getUUID from 'utility/getUUID';
 import styles from './ArticlesSection.module.scss';
 import { createClient } from 'next-sanity';
@@ -32,7 +31,6 @@ const ArticlesSection = () => {
       `,
         {}
       );
-      console.log(articlesData);
       setAtricles(articlesData);
     };
 
