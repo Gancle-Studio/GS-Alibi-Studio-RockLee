@@ -118,13 +118,13 @@
     @include media('<=tablet') {
       padding-left: 30px;
       padding-right: 30px;
+      justify-content: center;
+      text-align: center;
     }
 
     @include media('<=mobile') {
       padding-left: 0;
       padding: 0 8px;
-      justify-content: center;
-      text-align: center;
     }
   }
 
@@ -191,13 +191,13 @@
     @include media('<=tablet') {
       padding-left: 30px;
       padding-right: 30px;
+      justify-content: center;
+      text-align: center;
     }
 
     @include media('<=mobile') {
       padding-left: 0;
       padding: 0 8px;
-      justify-content: center;
-      text-align: center;
     }
   }
 
