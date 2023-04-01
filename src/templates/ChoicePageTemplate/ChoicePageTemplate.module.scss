@@ -13,6 +13,7 @@
 
   p {
     font-size: 20px;
+    font-weight: 500;
     margin: 15px 0;
     line-height: 32px;
   }
@@ -79,6 +80,8 @@
 
   width: calc(50vw - 3px);
   height: 100vh;
+  height: fill-available;
+  height: -webkit-fill-available;
 
   cursor: pointer;
   overflow: hidden;
@@ -146,6 +149,8 @@
 
   width: calc(50vw - 3px);
   height: 100vh;
+  height: fill-available;
+  height: -webkit-fill-available;
 
   cursor: pointer;
   overflow: hidden;
@@ -217,6 +222,8 @@
 .divider {
   width: 6px;
   height: 100vh;
+  height: fill-available;
+  height: -webkit-fill-available;
 
   z-index: 999;
 
