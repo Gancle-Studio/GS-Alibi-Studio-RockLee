@@ -12,6 +12,10 @@
   h2 {
     text-align: left;
     color: $goldColor;
+
+    @include media('<=laptop') {
+      text-align: center;
+    }
   }
 
   .articleTilesContainer {
@@ -19,5 +23,6 @@
     gap: 30px;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
   }
 }

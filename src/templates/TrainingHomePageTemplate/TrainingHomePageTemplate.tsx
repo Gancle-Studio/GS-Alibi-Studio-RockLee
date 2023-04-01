@@ -5,6 +5,7 @@ import Opinion from 'components/Opinion/Opinion';
 import Image from 'next/image';
 import styles from './TrainingHomePageTemplate.module.scss';
 import Icon, { IconType } from 'components/Icon/Icon';
+import getUUID from 'utility/getUUID';
 
 interface ITrainingHomePageTemplateProps {
   facilityTilesConfig: {
@@ -97,6 +98,7 @@ const TrainingHomePageTemplate = ({
           <main className={styles.facilityTilesContainer}>
             {facilityTilesConfig.map((facilityTile) => (
               <FacilityTile
+                key={getUUID()}
                 icon={facilityTile.icon}
                 title={facilityTile.title}
                 text={facilityTile.text}
@@ -108,16 +110,18 @@ const TrainingHomePageTemplate = ({
 
         <section className={styles.infoSection}>
           <header>
-            <h2>
-              NASZE STUDIO NIE JEST TYLKO SIŁOWNIĄ. JEST TO DOM, W KTÓRYM KAŻDY
-              Z WAS JEST MILE WIDZIANY (ZWŁASZCZA NA TRENINGU ;) )
-            </h2>
+            <h2>NASZE STUDIO NIE JEST TYLKO SIŁOWNIĄ ...</h2>
           </header>
           <main className={styles.infoTileMain}>
             <div className={styles.infoTile}>
               <h4>
-                W Alibi Studio nie obowiązują sztywne godziny otwarcia, zawsze
-                umawiamy{' '}
+                <span className={styles.goldText}>
+                  JEST TO DOM, W KTÓRYM KAŻDY Z WAS JEST MILE WIDZIANY
+                  (ZWŁASZCZA NA TRENINGU ;) )
+                </span>
+                <br />
+                <br />W Alibi Studio nie obowiązują sztywne godziny otwarcia,
+                zawsze umawiamy{' '}
                 <span className={styles.goldText}>
                   indywidualnie godziy treningów
                 </span>{' '}
@@ -171,57 +175,61 @@ const TrainingHomePageTemplate = ({
 
         <section className={styles.imagesSection}>
           <main className={styles.imagesContainer}>
-            <figure className={styles.img}>
-              <Image
-                src='/imagesSectionImages/image1.png'
-                alt='zdjęcie z treningu'
-                layout='fill'
-              />
-            </figure>
-
-            <div className={styles.doubleImg}>
-              <figure className={styles.smallImg}>
+            <span>
+              <figure className={styles.img}>
                 <Image
-                  src='/imagesSectionImages/image2.png'
+                  src='/imagesSectionImages/image1.png'
                   alt='zdjęcie z treningu'
                   layout='fill'
                 />
               </figure>
 
-              <figure className={styles.smallImg}>
+              <div className={styles.doubleImg}>
+                <figure className={styles.smallImg}>
+                  <Image
+                    src='/imagesSectionImages/image2.png'
+                    alt='zdjęcie z treningu'
+                    layout='fill'
+                  />
+                </figure>
+
+                <figure className={styles.smallImg}>
+                  <Image
+                    src='/imagesSectionImages/image3.png'
+                    alt='zdjęcie z treningu'
+                    layout='fill'
+                  />
+                </figure>
+              </div>
+            </span>
+
+            <span>
+              <figure className={styles.img}>
                 <Image
-                  src='/imagesSectionImages/image3.png'
+                  src='/imagesSectionImages/image4.png'
                   alt='zdjęcie z treningu'
                   layout='fill'
                 />
               </figure>
-            </div>
 
-            <figure className={styles.img}>
-              <Image
-                src='/imagesSectionImages/image4.png'
-                alt='zdjęcie z treningu'
-                layout='fill'
-              />
-            </figure>
+              <div className={styles.doubleImg}>
+                <figure className={styles.smallImg}>
+                  <Image
+                    src='/imagesSectionImages/image5.png'
+                    alt='zdjęcie z treningu'
+                    layout='fill'
+                  />
+                </figure>
 
-            <div className={styles.doubleImg}>
-              <figure className={styles.smallImg}>
-                <Image
-                  src='/imagesSectionImages/image5.png'
-                  alt='zdjęcie z treningu'
-                  layout='fill'
-                />
-              </figure>
-
-              <figure className={styles.smallImg}>
-                <Image
-                  src='/imagesSectionImages/image6.png'
-                  alt='zdjęcie z treningu'
-                  layout='fill'
-                />
-              </figure>
-            </div>
+                <figure className={styles.smallImg}>
+                  <Image
+                    src='/imagesSectionImages/image6.png'
+                    alt='zdjęcie z treningu'
+                    layout='fill'
+                  />
+                </figure>
+              </div>
+            </span>
           </main>
         </section>
 

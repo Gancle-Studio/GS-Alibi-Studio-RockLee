@@ -27,27 +27,29 @@
     gap: 30px;
     margin-bottom: 100px;
 
+    @include media('<=laptop') {
+      flex-direction: column;
+      gap: 20px;
+
+      h2 {
+        text-align: center;
+      }
+    }
+
     .belt {
       width: 1px;
       height: 39px;
       background-color: $whiteColor;
+
+      @include media('<=laptop') {
+        flex-direction: column;
+        width: 120px;
+        height: 2px;
+      }
     }
   }
 }
 
 .activeSection {
   color: $goldColor;
-}
-
-.personalTrainingPageContetContainer {
-  h3 {
-    color: $goldColor;
-  }
-
-  .belt {
-    width: 300px;
-    height: 1px;
-    background-color: $whiteColor;
-    margin: 10px 0 30px 0;
-  }
 }

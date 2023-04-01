@@ -1,0 +1,35 @@
+@import 'styles/variables.scss';
+
+.articleContainer {
+  margin: 50px auto 100px auto;
+  max-width: 900px;
+  width: 100%;
+
+  .mainImg {
+    aspect-ratio: 16 / 9;
+    width: 900px;
+    margin-bottom: 50px;
+  }
+
+  .dateAndIcons {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 50px 0;
+
+    .icons {
+      display: flex;
+      gap: 30px;
+    }
+  }
+
+  .back {
+    margin-top: 30px;
+    text-decoration: underline;
+    transition: all linear 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      color: $goldColor;
+    }
+  }
+}

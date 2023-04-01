@@ -16,8 +16,16 @@
     height: 50px;
   }
 
+  h3,
+  p {
+    @include media('<=laptop') {
+      text-align: start !important;
+    }
+  }
+
   h3 {
     margin-bottom: 15px;
+    margin-top: 10px;
   }
 
   .linkContainer {

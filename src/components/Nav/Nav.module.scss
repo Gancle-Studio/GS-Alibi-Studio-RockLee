@@ -11,6 +11,8 @@
   .logo {
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 1e6;
 
     figure {
       width: 60px;

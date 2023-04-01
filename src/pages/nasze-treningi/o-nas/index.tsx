@@ -113,7 +113,7 @@ const AboutPage = () => {
 
   return (
     <>
-      <Nav />
+      <Nav page='TRAININGS' />
       <TrainingAboutPageTemplate
         personaleTrainersConfig={personaleTrainersConfig}
       />

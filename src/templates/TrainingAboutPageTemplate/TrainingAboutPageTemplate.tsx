@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import PersonalTrainerDescription from 'components/PersonalTrainerDescription/PersonalTrainerDescription';
 import Image from 'next/image';
+import getUUID from 'utility/getUUID';
 import styles from './TrainingAboutPageTemplate.module.scss';
 
 interface ITrainingAboutPageTemplateProps {
@@ -34,6 +35,7 @@ const TrainingAboutPageTemplate = ({
       >
         {personaleTrainersConfig.map((personaleTrainer) => (
           <PersonalTrainerDescription
+            key={getUUID()}
             imgSrc={personaleTrainer.imgSrc}
             name={personaleTrainer.name}
             services={personaleTrainer.services}

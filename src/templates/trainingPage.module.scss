@@ -1,0 +1,139 @@
+@import 'styles/variables.scss';
+
+.medicalTrainingPageContetContainer,
+.personalTrainingPageContetContainer {
+  width: 100%;
+
+  h3 {
+    color: $goldColor;
+
+    @include media('<=laptop') {
+      text-align: center;
+    }
+  }
+
+  .belt {
+    width: 300px;
+    height: 1px;
+    background-color: $whiteColor;
+    margin: 10px 0 30px 0;
+
+    @include media('<=laptop') {
+      margin: 10px auto 30px auto;
+    }
+  }
+
+  .textwithoutImages {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .text {
+      max-width: 800px;
+    }
+
+    .belt {
+      width: 500px;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+  }
+
+  .textAndImages {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+    @include media('<=desktop') {
+      flex-direction: column;
+    }
+
+    img {
+      border-radius: 20px;
+    }
+
+    .text {
+      max-width: 650px;
+
+      @include media('<=desktop') {
+        margin-bottom: 50px;
+        max-width: 100%;
+        width: 100%;
+      }
+
+      @include media('<=laptop') {
+        text-align: center;
+      }
+    }
+
+    .images {
+      display: flex;
+      gap: 20px;
+
+      @include media('<=tablet') {
+        gap: 30px;
+      }
+
+      @include media('<=desktop') {
+        justify-content: center;
+      }
+
+      .img {
+        height: 480px;
+        width: 270px;
+
+        @include media('<=tablet') {
+          display: none;
+        }
+      }
+
+      .smallImages {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        @include media('<=tablet') {
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 30px;
+        }
+
+        .img {
+          width: 272px;
+          height: 153px;
+
+          @include media('<=tablet') {
+            display: initial;
+          }
+        }
+      }
+    }
+  }
+
+  .gallery {
+    display: grid;
+    grid-template: repeat(4, 1fr) / 225px 336px 336px 225px;
+    grid-auto-flow: dense;
+    grid-gap: 22px;
+    margin: 0 auto 100px auto;
+    width: fit-content;
+
+    img {
+      border-radius: 20px;
+    }
+
+    .img {
+      width: 336px;
+      height: 189px;
+    }
+
+    .verticalImg {
+      width: 225px;
+      height: 400px;
+      grid-row: span 2;
+    }
+  }
+}

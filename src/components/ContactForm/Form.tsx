@@ -1,6 +1,26 @@
 import styles from './ContactForm.module.scss';
 import { useFormik } from 'formik';
 
+// const validate = (values: any) => {
+//   const errors = {};
+//   if (!values.name) {
+//     errors.name = 'To pole jest wymagane!';
+//   }
+
+//   if (!values.contactData) {
+//     errors.contactData = 'To pole jest wymagane!';
+//   } else if (
+//     !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(values.contactData) ||
+//     !/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test(
+//       values.contactData
+//     )
+//   ) {
+//     errors.contactData = 'Numer telefonu lub adres e-mail jest niepoprawny!';
+//   }
+
+//   return errors;
+// };
+
 const FormContact = () => {
   const formik = useFormik({
     initialValues: {
@@ -8,6 +28,7 @@ const FormContact = () => {
       contactData: '',
       message: ''
     },
+    // validate,
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
     }

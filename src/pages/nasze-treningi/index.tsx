@@ -1,40 +1,9 @@
 import ArticlesSection from 'components/ArticlesSection/ArticlesSection';
 import TrainingHomePageTemplate from 'templates/TrainingHomePageTemplate/TrainingHomePageTemplate';
+import ContactForm from '../../components/ContactForm/ContactForm';
+import Footer from '../../components/Footer/Footer';
+import Nav from '../../components/Nav/Nav';
 import Icon, { IconType } from 'components/Icon/Icon';
-import ContactForm from 'components/ContactForm/ContactForm';
-import Nav from 'components/Nav/Nav';
-import Footer from 'components/Footer/Footer';
-
-export const articleTilesConfig = [
-  {
-    imgSrc: '/articlesImages/image1.png',
-    title:
-      'Jak się zdrowo odżywiać i o co warto zadbać aby utrzymać dobrą wagę.',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque posuere vulputate ex, ut vehicula purus vestibul'
-  },
-  {
-    imgSrc: '/articlesImages/image2.png',
-    title:
-      'Jak się zdrowo odżywiać i o co warto zadbać aby utrzymać dobrą wagę.',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque posuere vulputate ex, ut vehicula purus vestibul'
-  },
-  {
-    imgSrc: '/articlesImages/image3.png',
-    title:
-      'Jak się zdrowo odżywiać i o co warto zadbać aby utrzymać dobrą wagę.',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque posuere vulputate ex, ut vehicula purus vestibul'
-  },
-  {
-    imgSrc: '/articlesImages/image3.png',
-    title:
-      'Jak się zdrowo odżywiać i o co warto zadbać aby utrzymać dobrą wagę.',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque posuere vulputate ex, ut vehicula purus vestibul'
-  }
-];
 
 const TrainingsHomePage = () => {
   const facilityTilesConfig = [
@@ -90,7 +59,7 @@ const TrainingsHomePage = () => {
 
   return (
     <>
-      <Nav />
+      <Nav page='TRAININGS' />
       <TrainingHomePageTemplate facilityTilesConfig={facilityTilesConfig} />
       <ContactForm />
       <ArticlesSection />

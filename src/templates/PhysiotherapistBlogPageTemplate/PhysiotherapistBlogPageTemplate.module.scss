@@ -1,0 +1,28 @@
+@import 'styles/variables.scss';
+
+.landingSection {
+  position: relative;
+  height: 380px;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 50px;
+
+  .textContainer {
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .landingImage {
+    height: 500px;
+    @include landingImageStyles;
+  }
+}
+
+.articleTilesContainer {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}

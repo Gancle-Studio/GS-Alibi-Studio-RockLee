@@ -1,0 +1,65 @@
+@import 'styles/variables.scss';
+
+.landingSection {
+  position: relative;
+  height: 380px;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 50px;
+
+  .textContainer {
+    position: relative;
+    margin-bottom: 50px;
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    p {
+      max-width: 800px;
+    }
+  }
+
+  .landingImage {
+    height: 500px;
+    @include landingImageStyles;
+  }
+}
+
+.pageContet {
+  h2 {
+    color: $goldColor;
+  }
+
+  .belt {
+    width: 200px;
+    height: 1px;
+    background-color: $whiteColor;
+    margin: 10px 0;
+  }
+
+  p {
+    max-width: 400px;
+    margin-bottom: 30px;
+  }
+
+  h4 {
+    margin-bottom: 100px;
+  }
+
+  .personalTrainingsPriceList {
+    margin-bottom: 50px;
+
+    li {
+      max-width: 950px;
+      width: 950px;
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+}
