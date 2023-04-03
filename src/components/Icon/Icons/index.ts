@@ -16,3 +16,4 @@ export { default as Calm } from './calm.svg';
 export { default as Balance } from './balance.svg';
 export { default as HappyHeart } from './happyHeart.svg';
 export { default as Copy } from './copy.svg';
+export { default as AlibiChoiceLogo } from './alibiChoiceLogo.svg';

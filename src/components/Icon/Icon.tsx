@@ -16,7 +16,8 @@ import {
   HappyHeart,
   Bic,
   Calm,
-  Copy
+  Copy,
+  AlibiChoiceLogo
 } from './Icons';
 
 export enum IconType {
@@ -37,7 +38,8 @@ export enum IconType {
   Calm = 'Calm',
   Bic = 'Bic',
   Balance = 'Balance',
-  Copy = 'Copy'
+  Copy = 'Copy',
+  AlibiChoiceLogo = 'AlibiChoiceLogo'
 }
 
 const getIcon = (icon: IconType) => {
@@ -78,6 +80,8 @@ const getIcon = (icon: IconType) => {
       return HappyHeart.src;
     case IconType.Copy:
       return Copy.src;
+    case IconType.AlibiChoiceLogo:
+      return AlibiChoiceLogo.src;
     default:
       break;
   }
