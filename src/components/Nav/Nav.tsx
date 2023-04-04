@@ -3,19 +3,21 @@ import Image from 'next/image';
 import Icon, { IconType } from 'components/Icon/Icon';
 import classNames from 'classnames';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import useWindowSize from 'hooks/useWindowSize';
 import HamburgerMenu from './HamburgerMenu/HamburgerMenu';
+import PageModeContext, { PageModeContextType } from 'contexts/PageModeContext';
 
-type pageType = 'PHYSIO' | 'TRAININGS';
+type PageType = 'HOME' | 'TRENING' | 'O NAS' | 'CENNIK' | 'BLOG';
 
 interface INavProps {
-  page: pageType;
+  page: PageType;
 }
 
 const Nav = ({ page }: INavProps) => {
   const windowSize = useWindowSize();
   const [logoClicked, setLogoClicked] = useState(false);
+  const { mode } = useContext(PageModeContext) as PageModeContextType;
 
   return (
     <nav className={classNames('container', styles.navContainer)}>
@@ -33,61 +35,12 @@ const Nav = ({ page }: INavProps) => {
           />
         </figure>
         <h4>
-          <Link href={page === 'PHYSIO' ? '/fizjoterapia' : '/nasze-treningi'}>
+          <Link href={mode === 'PHYSIO' ? '/fizjoterapia' : '/nasze-treningi'}>
             ALIBI STUDIO
           </Link>
         </h4>
       </div>
-      {windowSize.width >= 1024 && (
-        <ul className={styles.navLinks}>
-          <li>
-            <Link href='/fizjoterapia'>FIZJOTERAPIA</Link>
-          </li>
-          <li>
-            <Link
-              href={
-                page === 'PHYSIO'
-                  ? '/fizjoterapia/o-nas'
-                  : '/nasze-treningi/o-nas'
-              }
-            >
-              O NAS
-            </Link>
-          </li>
-          <li>
-            <Link href='/nasze-treningi/trening-personalny'>TRENINGI</Link>
-          </li>
-          <li>
-            <Link
-              href={
-                page === 'PHYSIO'
-                  ? '/fizjoterapia/cennik'
-                  : '/nasze-treningi/cennik'
-              }
-            >
-              CENNIK
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={
-                page === 'PHYSIO'
-                  ? '/fizjoterapia/blog'
-                  : '/nasze-treningi/blog'
-              }
-            >
-              BLOG
-            </Link>
-          </li>
-          <li>KONTAKT</li>
-          <li>
-            <Icon icon={IconType.Facebook} />
-          </li>
-          <li>
-            <Icon icon={IconType.Instagram} />
-          </li>
-        </ul>
-      )}
+      {windowSize.width >= 1024 && getNavItems(mode, page)}
 
       {windowSize.width < 1024 && (
         <div className={styles.hamburgerMenu}>
@@ -95,6 +48,63 @@ const Nav = ({ page }: INavProps) => {
         </div>
       )}
     </nav>
+  );
+};
+
+const getNavItems = (
+  mode: 'TRAININGS' | 'PHYSIO',
+  page: PageType
+): JSX.Element => {
+  if (mode === 'PHYSIO') {
+    return (
+      <ul className={styles.navLinks}>
+        <li>
+          <Link href='/nasze-treningi'>TRENING</Link>
+        </li>
+        <li className={page === 'O NAS' ? styles.activeNavItem : ''}>
+          <Link href='/fizjoterapia/o-nas'>O NAS</Link>
+        </li>
+        <li className={page === 'CENNIK' ? styles.activeNavItem : ''}>
+          <Link href='/fizjoterapia/cennik'>CENNIK</Link>
+        </li>
+        <li className={page === 'BLOG' ? styles.activeNavItem : ''}>
+          <Link href='/fizjoterapia/blog'>BLOG</Link>
+        </li>
+        <li>KONTAKT</li>
+        <li>
+          <Icon icon={IconType.Facebook} />
+        </li>
+        <li>
+          <Icon icon={IconType.Instagram} />
+        </li>
+      </ul>
+    );
+  }
+  return (
+    <ul className={styles.navLinks}>
+      <li>
+        <Link href='/fizjoterapia'>FIZJOTERAPIA</Link>
+      </li>
+      <li className={page === 'O NAS' ? styles.activeNavItem : ''}>
+        <Link href='/nasze-treningi/o-nas'>O NAS</Link>
+      </li>
+      <li className={page === 'TRENING' ? styles.activeNavItem : ''}>
+        <Link href='/nasze-treningi/trening-personalny'>TRENINGI</Link>
+      </li>
+      <li className={page === 'CENNIK' ? styles.activeNavItem : ''}>
+        <Link href='/nasze-treningi/cennik'>CENNIK</Link>
+      </li>
+      <li className={page === 'BLOG' ? styles.activeNavItem : ''}>
+        <Link href='/nasze-treningi/blog'>BLOG</Link>
+      </li>
+      <li>KONTAKT</li>
+      <li>
+        <Icon icon={IconType.Facebook} />
+      </li>
+      <li>
+        <Icon icon={IconType.Instagram} />
+      </li>
+    </ul>
   );
 };
 

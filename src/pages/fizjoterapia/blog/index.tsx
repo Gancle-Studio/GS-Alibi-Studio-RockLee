@@ -3,6 +3,8 @@ import Footer from 'components/Footer/Footer';
 import Nav from 'components/Nav/Nav';
 import PhysiotherapistBlogPageTemplate from 'templates/PhysiotherapistBlogPageTemplate/PhysiotherapistBlogPageTemplate';
 import { createClient } from 'next-sanity';
+import { useContext } from 'react';
+import PageModeContext, { PageModeContextType } from 'contexts/PageModeContext';
 
 const sanityClient = createClient({
   projectId: 'mkxtoiab',
@@ -12,9 +14,15 @@ const sanityClient = createClient({
 });
 
 const PhysiotherapistBlogPage = ({ articles }: any) => {
+  const { handleThemeChange } = useContext(
+    PageModeContext
+  ) as PageModeContextType;
+
+  handleThemeChange('PHYSIO');
+
   return (
     <>
-      <Nav page='PHYSIO' />
+      <Nav page='BLOG' />
       <PhysiotherapistBlogPageTemplate articles={articles} />
       <ContactForm />
       <Footer />

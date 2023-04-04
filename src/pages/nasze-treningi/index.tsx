@@ -4,8 +4,16 @@ import ContactForm from '../../components/ContactForm/ContactForm';
 import Footer from '../../components/Footer/Footer';
 import Nav from '../../components/Nav/Nav';
 import Icon, { IconType } from 'components/Icon/Icon';
+import { useContext } from 'react';
+import PageModeContext, { PageModeContextType } from 'contexts/PageModeContext';
 
 const TrainingsHomePage = () => {
+  const { handleThemeChange } = useContext(
+    PageModeContext
+  ) as PageModeContextType;
+
+  handleThemeChange('TRAININGS');
+
   const facilityTilesConfig = [
     {
       icon: <Icon icon={IconType.Coffe} />,
@@ -59,7 +67,7 @@ const TrainingsHomePage = () => {
 
   return (
     <>
-      <Nav page='TRAININGS' />
+      <Nav page='HOME' />
       <TrainingHomePageTemplate facilityTilesConfig={facilityTilesConfig} />
       <ContactForm />
       <ArticlesSection />

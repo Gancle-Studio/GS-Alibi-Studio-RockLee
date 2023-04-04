@@ -2,9 +2,17 @@ import ArticlesSection from 'components/ArticlesSection/ArticlesSection';
 import ContactForm from 'components/ContactForm/ContactForm';
 import Footer from 'components/Footer/Footer';
 import Nav from 'components/Nav/Nav';
+import PageModeContext, { PageModeContextType } from 'contexts/PageModeContext';
+import { useContext } from 'react';
 import PhysiotherapyAboutPageTemplate from 'templates/PhysiotherapyAboutPageTemplate/PhysiotherapyAboutPageTemplate';
 
 const PhysiotherapyAboutPage = () => {
+  const { handleThemeChange } = useContext(
+    PageModeContext
+  ) as PageModeContextType;
+
+  handleThemeChange('PHYSIO');
+
   const physiotherapistsConfig = [
     {
       imgSrc: '/personalTrainersImages/image4.png',
@@ -33,7 +41,7 @@ const PhysiotherapyAboutPage = () => {
 
   return (
     <>
-      <Nav page='PHYSIO' />
+      <Nav page='O NAS' />
       <PhysiotherapyAboutPageTemplate
         physiotherapistsConfig={physiotherapistsConfig}
       />

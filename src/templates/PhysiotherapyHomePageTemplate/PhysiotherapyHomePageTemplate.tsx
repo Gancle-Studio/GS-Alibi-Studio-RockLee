@@ -39,34 +39,34 @@ const PhysiotherapyHomePageTemplate = ({
           <div className={styles.imagesContainer}>
             <figure className={styles.biggerHomePageImage}>
               <Image
-                src='/trainingHomePageImages/image1.png'
+                src='/physiotherapyHomePageImages/image1.png'
                 alt='zdjęcie z treningu'
-                layout='fill'
+                fill
               />
             </figure>
 
             <div className={styles.smallerImages}>
               <figure className={styles.homePageImage}>
                 <Image
-                  src='/trainingHomePageImages/image2.png'
+                  src='/physiotherapyHomePageImages/image2.png'
                   alt='zdjęcie z treningu'
-                  layout='fill'
+                  fill
                 />
               </figure>
 
               <figure className={styles.homePageImage}>
                 <Image
-                  src='/trainingHomePageImages/image3.png'
+                  src='/physiotherapyHomePageImages/image3.png'
                   alt='zdjęcie z treningu'
-                  layout='fill'
+                  fill
                 />
               </figure>
 
               <figure className={styles.homePageImage}>
                 <Image
-                  src='/trainingHomePageImages/image4.png'
+                  src='/physiotherapyHomePageImages/image4.png'
                   alt='zdjęcie z treningu'
-                  layout='fill'
+                  fill
                 />
               </figure>
             </div>
@@ -101,10 +101,7 @@ const PhysiotherapyHomePageTemplate = ({
 
         <section className={styles.infoSection}>
           <header>
-            <h2>
-              NASZE STUDIO NIE JEST TYLKO SIŁOWNIĄ. JEST TO DOM, W KTÓRYM KAŻDY
-              Z WAS JEST MILE WIDZIANY (ZWŁASZCZA NA TRENINGU ;) )
-            </h2>
+            <h2>NASZE ZABIEGI</h2>
           </header>
           <main className={styles.infoTileMain}>
             <div className={styles.infoTile}>
@@ -114,7 +111,7 @@ const PhysiotherapyHomePageTemplate = ({
                 </div>
                 <figure className={styles.infoImage}>
                   <Image
-                    src='/trainingHomePageImages/image5.png'
+                    src='/physiotherapyHomePageImages/image5.png'
                     alt='zdjęcie z treningu'
                     layout='fill'
                   />
@@ -137,10 +134,6 @@ const PhysiotherapyHomePageTemplate = ({
                     trawiennego.
                   </li>
                 </ul>
-                <br /> <br />
-                Fizjoterapeuta pomoże Ci również lepiej traktować swoje ciało
-                każdego dnia, zaproponuje zestaw ćwiczeń oraz zmianę codziennych
-                nawyków.
               </h4>
             </div>
 
@@ -151,7 +144,7 @@ const PhysiotherapyHomePageTemplate = ({
                 </div>
                 <figure className={styles.infoImage}>
                   <Image
-                    src='/trainingHomePageImages/image5.png'
+                    src='/physiotherapyHomePageImages/image6.png'
                     alt='zdjęcie z treningu'
                     layout='fill'
                   />
@@ -166,15 +159,6 @@ const PhysiotherapyHomePageTemplate = ({
                 obniżeniem narządów rodnych, zaburzeniami proktologicznymi. Z
                 fizjoterapii uroginekologicznej może skorzystać kobieta w każdym
                 wieku.
-                <br /> <br />
-                Pierwsza wizyta rozpoczyna się od dokładnego wywiadu gdzie
-                pacjentka szczegółowo opisuje swoje dolegliwości. Następnym
-                krokiem terapii jest sprawdzenie postawy ciała, dzięki czemu
-                można holistycznie dopasować terapię/trening do pacjentki.
-                Kolejno specjalista (jeśli jest to potrzebne do postawienie
-                diagnozy) wykonuje badanie per vaginam – badanie przez pochwę.
-                Na pierwszą wizytę zabierz ze sobą dokumentację medyczną (jeżeli
-                posiadasz) oraz wygodny luźny strój, nie musi być sportowy
               </h4>
             </div>
 
@@ -188,7 +172,7 @@ const PhysiotherapyHomePageTemplate = ({
                 </div>
                 <figure className={styles.infoImage}>
                   <Image
-                    src='/trainingHomePageImages/image5.png'
+                    src='/physiotherapyHomePageImages/image7.png'
                     alt='zdjęcie z treningu'
                     layout='fill'
                   />
@@ -197,16 +181,9 @@ const PhysiotherapyHomePageTemplate = ({
 
               <h4>
                 Nasze studio oferuje również zabiegi odnowy biologicznej.
+                <br /> <br />
                 Czujesz że potrzebujesz relaksu i rozluźnienia? Przyjdź do nas
                 na masaż gorącymi kamieniami czy bańką chińską.
-                <br /> <br />
-                asaż kamieniami bazaltowymi lub marmurowymi można również
-                wykonać na zimno, to znaczy że najpierw kamienie się schładza, a
-                potem używa do zabiegu. W niektórych przypadkach sprawdza się
-                łączenie dwóch technik czyli na zimno i na gorąco. Technika ta
-                określana jako wyścig energii, szczególnie dedykowana osobom
-                mającym problemy z przemianą materii, przemęczonym oraz często
-                chorującym.
               </h4>
             </div>
           </main>

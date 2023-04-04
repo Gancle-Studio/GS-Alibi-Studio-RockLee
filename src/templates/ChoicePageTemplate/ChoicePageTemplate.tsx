@@ -2,8 +2,23 @@ import Image from 'next/image';
 import styles from './ChoicePageTemplate.module.scss';
 import Icon, { IconType } from 'components/Icon/Icon';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useContext } from 'react';
+import PageModeContext, { PageModeContextType } from 'contexts/PageModeContext';
 
 const ChoicePageTemplate = () => {
+  const router = useRouter();
+
+  const { handleThemeChange } = useContext(
+    PageModeContext
+  ) as PageModeContextType;
+
+  const handleClick = (e: any, _mode: 'TRAININGS' | 'PHYSIO', path: string) => {
+    e.preventDefault();
+    handleThemeChange(_mode);
+    router.push(path);
+  };
+
   return (
     <main className={styles.choicePage}>
       <header className={styles.header}>
@@ -11,7 +26,7 @@ const ChoicePageTemplate = () => {
         <p>ALIBI STUDIO</p>
       </header>
       <section className={styles.trainings}>
-        <Link href='/nasze-treningi'>
+        <div onClick={(e) => handleClick(e, 'TRAININGS', '/nasze-treningi')}>
           <figure className={styles.trainingsImage}>
             <Image
               src='/choicePageImages/trainingsChoiceImage.jpeg'
@@ -27,11 +42,11 @@ const ChoicePageTemplate = () => {
               <p>Przygotowanie motoryczne dla sportowców</p>
             </div>
           </div>
-        </Link>
+        </div>
       </section>
       <div className={styles.divider}></div>
       <section className={styles.physio}>
-        <Link href='/fizjoterapia'>
+        <div onClick={(e) => handleClick(e, 'PHYSIO', '/fizjoterapia')}>
           <figure className={styles.physioImage}>
             <Image
               src='/choicePageImages/physioChoiceImage.jpeg'
@@ -47,7 +62,7 @@ const ChoicePageTemplate = () => {
               <p>Fizjoterapia uroginekologiczna</p>
             </div>
           </div>
-        </Link>
+        </div>
       </section>
     </main>
   );
