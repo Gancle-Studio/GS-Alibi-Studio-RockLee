@@ -80,7 +80,7 @@ const ContactForm = () => {
           </div>
         </div>
       </section>
-      <p
+      {/* <p
         onClick={() => {
           setIsTextDisplayed;
         }}
@@ -92,7 +92,7 @@ const ContactForm = () => {
         className={styles.displayText}
       >
         Skopiowano
-      </p>
+      </p> */}
     </>
   );
 };
