@@ -38,11 +38,23 @@ const ArticlePageTemplate = ({ article, page }: any) => {
           </div>
 
           <div className={styles.icon}>
-            <Icon icon={IconType.Facebook} />
+            <a
+              href='https://www.facebook.com/ALIBISTUDIOTRENINGU'
+              target='_blank'
+              rel='norefferrer noopener'
+            >
+              <Icon icon={IconType.Facebook} />
+            </a>
           </div>
 
           <div className={styles.icon}>
-            <Icon icon={IconType.Instagram} />
+            <a
+              href='https://www.instagram.com/alibi_studio/'
+              target='_blank'
+              rel='norefferrer noopener'
+            >
+              <Icon icon={IconType.Instagram} />
+            </a>
           </div>
         </div>
       </div>
