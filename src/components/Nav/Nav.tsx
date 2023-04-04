@@ -70,12 +70,33 @@ const getNavItems = (
         <li className={page === 'BLOG' ? styles.activeNavItem : ''}>
           <Link href='/fizjoterapia/blog'>BLOG</Link>
         </li>
-        <li>KONTAKT</li>
-        <li>
-          <Icon icon={IconType.Facebook} />
+        <li
+          onClick={() => {
+            const contactEl = document.querySelector('#contact');
+            if (contactEl) {
+              contactEl.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
+        >
+          KONTAKT
         </li>
         <li>
-          <Icon icon={IconType.Instagram} />
+          <a
+            href='https://www.facebook.com/profile.php?id=100086469343751'
+            target='_blank'
+            rel='norefferrer noopener'
+          >
+            <Icon icon={IconType.Facebook} />
+          </a>
+        </li>
+        <li>
+          <a
+            href='https://www.instagram.com/alibi_studio/'
+            target='_blank'
+            rel='norefferrer noopener'
+          >
+            <Icon icon={IconType.Instagram} />
+          </a>
         </li>
       </ul>
     );
@@ -108,10 +129,22 @@ const getNavItems = (
         KONTAKT
       </li>
       <li>
-        <Icon icon={IconType.Facebook} />
+        <a
+          href='https://www.facebook.com/ALIBISTUDIOTRENINGU'
+          target='_blank'
+          rel='norefferrer noopener'
+        >
+          <Icon icon={IconType.Facebook} />
+        </a>
       </li>
       <li>
-        <Icon icon={IconType.Instagram} />
+        <a
+          href='https://www.instagram.com/alibi_studio/'
+          target='_blank'
+          rel='norefferrer noopener'
+        >
+          <Icon icon={IconType.Instagram} />
+        </a>
       </li>
     </ul>
   );

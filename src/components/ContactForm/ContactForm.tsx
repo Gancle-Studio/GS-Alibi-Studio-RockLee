@@ -94,11 +94,6 @@ const ContactForm = () => {
         onClick={() => {
           setIsTextDisplayed;
         }}
-        style={{
-          top: `${window.screenY}px`,
-          left: `${window.screenX}px`,
-          display: isTextDisplayed ? 'block' : 'none'
-        }}
         className={styles.displayText}
       >
         Skopiowano

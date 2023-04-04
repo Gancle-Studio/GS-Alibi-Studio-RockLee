@@ -21,8 +21,6 @@ const ArticlePageTemplate = ({ article, page }: any) => {
 
   const { title, mainImage, date, content } = article;
 
-  console.log(content);
-
   return (
     <article className={classNames('container', styles.articleContainer)}>
       <h1>{title}</h1>
