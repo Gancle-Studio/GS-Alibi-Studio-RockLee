@@ -70,7 +70,7 @@ const TrainingsHomePage = () => {
       <Nav page='HOME' />
       <TrainingHomePageTemplate facilityTilesConfig={facilityTilesConfig} />
       <ContactForm />
-      <ArticlesSection />
+      <ArticlesSection page={'TRAININGS'} />
       <Footer />
     </>
   );

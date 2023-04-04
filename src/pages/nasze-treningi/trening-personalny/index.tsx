@@ -18,7 +18,7 @@ const PersonalTrainingPage = () => {
       <Nav page='TRENING' />
       <PersonalTriningPageTemplate />
       <ContactForm />
-      <ArticlesSection />
+      <ArticlesSection page={'TRAININGS'} />
       <Footer />
     </>
   );

@@ -18,7 +18,7 @@ const PriceList = () => {
       <Nav page='CENNIK' />
       <PriceListTemplate />
       <ContactForm />
-      <ArticlesSection />
+      <ArticlesSection page={'TRAININGS'} />
       <Footer />
     </>
   );

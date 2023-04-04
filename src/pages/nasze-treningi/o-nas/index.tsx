@@ -126,7 +126,7 @@ const AboutPage = () => {
         personaleTrainersConfig={personaleTrainersConfig}
       />
       <ContactForm />
-      <ArticlesSection />
+      <ArticlesSection page={'TRAININGS'} />
       <Footer />
     </>
   );

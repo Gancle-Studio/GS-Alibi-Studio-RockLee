@@ -39,7 +39,7 @@ const PhysiotherapyHomePage = () => {
         physiotherapyFacilityTilesConfig={physiotherapyFacilityTilesConfig}
       />
       <ContactForm />
-      <ArticlesSection />
+      <ArticlesSection page={'PHYSIO'} />
       <Footer />
     </>
   );
