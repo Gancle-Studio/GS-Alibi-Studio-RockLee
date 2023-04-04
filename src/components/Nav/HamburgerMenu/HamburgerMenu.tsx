@@ -29,12 +29,12 @@ function HamburgerMenu({ logoClicked, page }: any) {
       </div>
 
       {isHamburgerMenuOpen && (
-        <div className={styles.hamburgerMenu}>
-          <div className={styles.navItem} onClick={onNavClick}>
+        <ul className={styles.hamburgerMenu}>
+          <li className={styles.navItem} onClick={onNavClick}>
             <Link href='/fizjoterapia'>FIZJOTERAPIA</Link>
-          </div>
+          </li>
 
-          <div className={styles.navItem} onClick={onNavClick}>
+          <li className={styles.navItem} onClick={onNavClick}>
             <Link
               href={
                 page === 'PHYSIO'
@@ -44,13 +44,13 @@ function HamburgerMenu({ logoClicked, page }: any) {
             >
               O NAS
             </Link>
-          </div>
+          </li>
 
-          <div className={styles.navItem} onClick={onNavClick}>
+          <li className={styles.navItem} onClick={onNavClick}>
             <Link href='/nasze-treningi/trening-personalny'>TRENINGI</Link>
-          </div>
+          </li>
 
-          <div className={styles.navItem} onClick={onNavClick}>
+          <li className={styles.navItem} onClick={onNavClick}>
             <Link
               href={
                 page === 'PHYSIO'
@@ -60,9 +60,9 @@ function HamburgerMenu({ logoClicked, page }: any) {
             >
               CENNIK
             </Link>
-          </div>
+          </li>
 
-          <div className={styles.navItem} onClick={onNavClick}>
+          <li className={styles.navItem} onClick={onNavClick}>
             <Link
               href={
                 page === 'PHYSIO'
@@ -72,20 +72,29 @@ function HamburgerMenu({ logoClicked, page }: any) {
             >
               BLOG
             </Link>
-          </div>
+          </li>
 
-          <div className={styles.navItem} onClick={onNavClick}>
-            <li>KONTAKT</li>
-          </div>
+          <li
+            className={styles.navItem}
+            onClick={() => {
+              setIsHamburgerMenuOpen(false);
+              const contactEl = document.querySelector('#contact');
+              if (contactEl) {
+                contactEl.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+          >
+            KONTAKT
+          </li>
 
-          <div className={styles.navItem} onClick={onNavClick}>
+          <li className={styles.navItem} onClick={onNavClick}>
             <Icon icon={IconType.Facebook} />
-          </div>
+          </li>
 
-          <div className={styles.navItem} onClick={onNavClick}>
+          <li className={styles.navItem} onClick={onNavClick}>
             <Icon icon={IconType.Instagram} />
-          </div>
-        </div>
+          </li>
+        </ul>
       )}
     </>
   );

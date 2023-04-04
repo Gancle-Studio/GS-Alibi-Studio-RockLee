@@ -97,7 +97,16 @@ const getNavItems = (
       <li className={page === 'BLOG' ? styles.activeNavItem : ''}>
         <Link href='/nasze-treningi/blog'>BLOG</Link>
       </li>
-      <li>KONTAKT</li>
+      <li
+        onClick={() => {
+          const contactEl = document.querySelector('#contact');
+          if (contactEl) {
+            contactEl.scrollIntoView({ behavior: 'smooth' });
+          }
+        }}
+      >
+        KONTAKT
+      </li>
       <li>
         <Icon icon={IconType.Facebook} />
       </li>

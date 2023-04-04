@@ -33,7 +33,7 @@ const FormContact = () => {
     },
     // validate,
     onSubmit: (values: any, { resetForm }) => {
-      axios.post('api/email', values);
+      axios.post('/api/email', values);
       resetForm();
       setIsSubmitted(!isSubmitted);
     }
