@@ -41,7 +41,7 @@ const PhysiotherapistBlogPageTemplate = ({ articles }: any) => {
               }
               title={article.title}
               description={article.teaser}
-              slug={article.slug}
+              slug={article.slug.current}
               page='PHYSIO'
             />
           ))}

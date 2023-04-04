@@ -28,8 +28,11 @@
     height: 400px;
     margin-bottom: 20px;
     position: relative;
-    object-fit: cover;
-    object-position: center;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
 
     &::after {
       content: '';

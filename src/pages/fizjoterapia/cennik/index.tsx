@@ -18,7 +18,7 @@ const PhysiotherapistPriceList = () => {
       <Nav page='CENNIK' />
       <PhysiotherapistPriceListTemplate />
       <ContactForm />
-      <ArticlesSection />
+      <ArticlesSection page={'PHYSIO'} />
       <Footer />
     </>
   );

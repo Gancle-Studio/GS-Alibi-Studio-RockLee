@@ -15,6 +15,7 @@ const sanityClient = createClient({
 });
 
 const BlogPageTemplate = ({ articles }: any) => {
+  console.log(articles);
   return (
     <>
       <section className={styles.landingSection}>
@@ -41,7 +42,7 @@ const BlogPageTemplate = ({ articles }: any) => {
               }
               title={article.title}
               description={article.teaser}
-              slug={article.slug}
+              slug={article.slug.current}
               page={'TRAININGS'}
             />
           ))}

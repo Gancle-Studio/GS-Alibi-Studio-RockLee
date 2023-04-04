@@ -13,7 +13,11 @@ const sanityClient = createClient({
   useCdn: false
 });
 
-const ArticlesSection = () => {
+interface IArticleSectionProps {
+  page: string;
+}
+
+const ArticlesSection = ({ page }: IArticleSectionProps) => {
   const [articles, setAtricles] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
@@ -56,7 +60,7 @@ const ArticlesSection = () => {
               title={article.title}
               description={article.teaser}
               slug={article.slug.current}
-              page={'PHYSIO'}
+              page={page}
             />
           );
         })}

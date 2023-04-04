@@ -46,7 +46,7 @@ const PhysiotherapyAboutPage = () => {
         physiotherapistsConfig={physiotherapistsConfig}
       />
       <ContactForm />
-      <ArticlesSection />
+      <ArticlesSection page={'PHYSIO'} />
       <Footer />
     </>
   );

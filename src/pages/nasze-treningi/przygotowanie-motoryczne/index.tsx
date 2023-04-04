@@ -18,7 +18,7 @@ const MotorPreparationPage = () => {
       <Nav page='TRENING' />
       <MotorPreparationPageTemplate />
       <ContactForm />
-      <ArticlesSection />
+      <ArticlesSection page={'TRAININGS'} />
       <Footer />
     </>
   );
