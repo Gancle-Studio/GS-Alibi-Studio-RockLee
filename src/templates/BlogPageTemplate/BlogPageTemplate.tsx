@@ -20,7 +20,7 @@ const BlogPageTemplate = ({ articles }: any) => {
       <section className={styles.landingSection}>
         <figure className={styles.landingImage}>
           <Image
-            src={'/aboutPageLandingImage.png'}
+            src={'/blogLandingImage.png'}
             alt='zdjęcie trenera personalnego'
             layout='fill'
           />

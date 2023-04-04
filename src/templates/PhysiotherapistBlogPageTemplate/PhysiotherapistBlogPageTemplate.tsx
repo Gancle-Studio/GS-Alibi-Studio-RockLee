@@ -20,7 +20,7 @@ const PhysiotherapistBlogPageTemplate = ({ articles }: any) => {
       <section className={styles.landingSection}>
         <figure className={styles.landingImage}>
           <Image
-            src={'/aboutPageLandingImage.png'}
+            src={'/blogPhysioLandingImage.png'}
             alt='zdjęcie trenera personalnego'
             layout='fill'
           />

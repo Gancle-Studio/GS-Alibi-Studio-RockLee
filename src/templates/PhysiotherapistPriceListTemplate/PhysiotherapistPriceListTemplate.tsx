@@ -8,7 +8,7 @@ const PhysiotherapistPriceListTemplate = () => {
       <section className={styles.landingSection}>
         <figure className={styles.landingImage}>
           <Image
-            src={'/aboutPageLandingImage.png'}
+            src={'/pricePhysioLandingImage.png'}
             alt='zdjęcie trenera personalnego'
             layout='fill'
           />
@@ -29,27 +29,35 @@ const PhysiotherapistPriceListTemplate = () => {
         <ul className={styles.personalTrainingsPriceList}>
           <li className='h4'>
             Terapia manualna (50 min.)
-            .................................................................
+            <div className={styles.dots}>
+              ......................................................................................................................................................................................................
+            </div>
             <span>120 zł</span>
           </li>
           <li className='h4'>
             Trening medyczny (60 min.)
-            ..................................................................
+            <div className={styles.dots}>
+              ......................................................................................................................................................................................................
+            </div>
             <span>120 zł</span>
           </li>
         </ul>
-        <h2>TFizjoterapia uroginekologiczna</h2>
+        <h2>Fizjoterapia uroginekologiczna</h2>
         <div className={styles.belt}></div>
         <ul className={styles.personalTrainingsPriceList}>
           <li className='h4'>
             Pierwsza wizyta (60 min.)
-            .......................................................................
+            <div className={styles.dots}>
+              ......................................................................................................................................................................................................
+            </div>
             <span>160 zł</span>
           </li>
 
           <li className='h4'>
             Kolejna wizyta (50 min.)
-            ..........................................................................
+            <div className={styles.dots}>
+              ......................................................................................................................................................................................................
+            </div>
             <span>150 zł</span>
           </li>
         </ul>
@@ -58,24 +66,33 @@ const PhysiotherapistPriceListTemplate = () => {
         <ul className={styles.personalTrainingsPriceList}>
           <li className='h4'>
             Masaż relaksacyjny całego ciała (45 min.)
-            .....................................
+            <div className={styles.dots}>
+              ......................................................................................................................................................................................................
+            </div>
             <span>120 zł</span>
           </li>
 
           <li className='h4'>
             Masaż częściowy (30 min.)
-            .....................................................................
+            <div className={styles.dots}>
+              ......................................................................................................................................................................................................
+            </div>
             <span>70 zł</span>
           </li>
 
           <li className='h4'>
             Masaż kamieniami (50 min.)
-            .................................................................
+            <div className={styles.dots}>
+              ......................................................................................................................................................................................................
+            </div>
             <span>150 zł</span>
           </li>
 
           <li className='h4'>
-            Bańki chińskie z masażem antycelulitowym (45 min.) .................
+            Bańki chińskie z masażem antycelulitowym (45 min.)
+            <div className={styles.dots}>
+              ......................................................................................................................................................................................................
+            </div>
             <span>100 zł</span>
           </li>
         </ul>

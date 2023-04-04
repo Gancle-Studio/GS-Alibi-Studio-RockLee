@@ -10,7 +10,7 @@ const MotorPreparationPageTemplate = () => {
       <section className={styles.landingSection}>
         <figure className={styles.landingImage}>
           <Image
-            src={'/aboutPageLandingImage.png'}
+            src={'/trainingsLanding.png'}
             alt='zdjęcie trenera personalnego'
             layout='fill'
           />

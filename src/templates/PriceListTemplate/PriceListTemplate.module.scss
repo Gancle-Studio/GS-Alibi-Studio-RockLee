@@ -56,10 +56,17 @@
       width: 950px;
       display: flex;
       justify-content: space-between;
+      position: relative;
 
       span {
         margin-left: 10px;
       }
     }
   }
+}
+
+.dots {
+  padding-left: 10px;
+  flex: 1;
+  overflow: hidden;
 }

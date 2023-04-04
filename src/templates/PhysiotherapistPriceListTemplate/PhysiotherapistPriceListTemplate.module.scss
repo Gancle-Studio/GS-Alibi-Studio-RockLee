@@ -36,7 +36,7 @@
     width: 200px;
     height: 1px;
     background-color: $whiteColor;
-    margin: 10px 0;
+    margin: 10px 0 30px;
   }
 
   p {
@@ -66,4 +66,10 @@
       margin-bottom: 100px;
     }
   }
+}
+
+.dots {
+  padding-left: 10px;
+  flex: 1;
+  overflow: hidden;
 }

@@ -21,7 +21,7 @@ const PhysiotherapyAboutPageTemplate = ({
       <section className={styles.landingSection}>
         <figure className={styles.landingImage}>
           <Image
-            src={'/aboutPageLandingImage.png'}
+            src={'/aboutPagePhysioImage.png'}
             alt='zdjęcie trenera personalnego'
             layout='fill'
           />

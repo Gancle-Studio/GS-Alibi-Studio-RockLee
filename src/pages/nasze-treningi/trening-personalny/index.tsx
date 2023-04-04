@@ -4,7 +4,7 @@ import Footer from 'components/Footer/Footer';
 import Nav from 'components/Nav/Nav';
 import PageModeContext, { PageModeContextType } from 'contexts/PageModeContext';
 import { useContext } from 'react';
-import PersonalTriningPageTemplate from 'templates/PersonalTriningPageTemplate/PersonalTriningPageTemplate';
+import PersonalTrainingPageTemplate from 'templates/PersonalTrainingPageTemplate/PersonalTrainingPageTemplate';
 
 const PersonalTrainingPage = () => {
   const { handleThemeChange } = useContext(
@@ -16,7 +16,7 @@ const PersonalTrainingPage = () => {
   return (
     <>
       <Nav page='TRENING' />
-      <PersonalTriningPageTemplate />
+      <PersonalTrainingPageTemplate />
       <ContactForm />
       <ArticlesSection />
       <Footer />
