@@ -22,6 +22,7 @@
   justify-content: flex-start;
   padding-top: 150px;
   color: white;
+  gap: 30px;
 
   .navItem {
     font-size: 18px;
@@ -30,8 +31,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 20px;
+    padding: 0 !important;
+
     color: white;
+    @include addHoverEffectBlackToGold;
 
     svg {
       margin-left: 15px;
@@ -58,38 +61,5 @@
         }
       }
     }
-  }
-}
-
-.hamburgerMenu {
-  a,
-  a:after,
-  a:before {
-    transition: all 0.3s;
-  }
-  a:hover {
-    color: $goldColor;
-  }
-
-  /* stroke */
-  .navItem a {
-    position: relative;
-  }
-
-  .navItem a:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    content: '.';
-    color: transparent;
-    background: #aaa;
-    height: 2px;
-  }
-
-  .navItem a:hover:after {
-    width: 100%;
   }
 }

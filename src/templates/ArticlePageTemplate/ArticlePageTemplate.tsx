@@ -30,7 +30,12 @@ const ArticlePageTemplate = ({ article, page }: any) => {
       <div className={styles.dateAndIcons}>
         <p>{date}</p>
         <div className={styles.icons}>
-          <div className={styles.icon}>
+          <div
+            className={styles.icon}
+            onClick={() => {
+              navigator.clipboard.writeText(window.location.href);
+            }}
+          >
             <Icon icon={IconType.Copy} />
           </div>
 
