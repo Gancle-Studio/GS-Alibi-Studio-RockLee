@@ -90,14 +90,14 @@ const ContactForm = () => {
           </div>
         </div>
       </section>
-      <p
+      {/* <p
         onClick={() => {
           setIsTextDisplayed;
         }}
         className={styles.displayText}
       >
         Skopiowano
-      </p>
+      </p> */}
     </>
   );
 };
