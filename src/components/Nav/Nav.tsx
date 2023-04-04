@@ -36,7 +36,11 @@ const Nav = ({ page }: INavProps) => {
         </figure>
         <h4>
           <Link href={mode === 'PHYSIO' ? '/fizjoterapia' : '/nasze-treningi'}>
-            ALIBI STUDIO
+            {mode === 'PHYSIO' ? (
+              <span>ALIBI ZDROWIE</span>
+            ) : (
+              <span>ALIBI STUDIO</span>
+            )}
           </Link>
         </h4>
       </div>

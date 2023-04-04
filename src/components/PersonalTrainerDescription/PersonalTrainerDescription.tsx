@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import Image from 'next/image';
 import styles from './PersonalTrainerDescription.module.scss';
 
@@ -22,7 +23,7 @@ const PersonalTrainerDescription = ({
       <div className={styles.content}>
         <h2>{name}</h2>
         <div className={styles.belt}></div>
-        <p className='small'>{services}</p>
+        <p className={classNames('small', styles.services)}>{services}</p>
         {description}
       </div>
     </div>
