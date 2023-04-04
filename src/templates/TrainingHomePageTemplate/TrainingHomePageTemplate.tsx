@@ -8,6 +8,7 @@ import Icon, { IconType } from 'components/Icon/Icon';
 import getUUID from 'utility/getUUID';
 import { useContext } from 'react';
 import PageModeContext, { PageModeContextType } from 'contexts/PageModeContext';
+import Link from 'next/link';
 
 interface ITrainingHomePageTemplateProps {
   facilityTilesConfig: {
@@ -86,9 +87,13 @@ const TrainingHomePageTemplate = ({
       </div>
       <div className={styles.contactBelt}>
         <div className={classNames('container', styles.contactBeltContainer)}>
-          <h4>ZADZWOŃ: +48 728 974 997</h4>
+          <Link href='tel:728-974-997'>
+            <h4>ZADZWOŃ: +48 728 974 997</h4>
+          </Link>
           <div className={styles.verticalBelt}></div>
-          <h4>NAPISZ DO NAS: alibi@alibistudio.pl</h4>
+          <Link href='mailto:alibi@alibistudio.pl'>
+            <h4>NAPISZ DO NAS: alibi@alibistudio.pl</h4>
+          </Link>
         </div>
       </div>
 

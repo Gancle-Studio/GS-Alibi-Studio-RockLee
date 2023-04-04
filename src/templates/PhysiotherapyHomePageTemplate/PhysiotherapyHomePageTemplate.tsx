@@ -3,6 +3,7 @@ import Icon, { IconType } from 'components/Icon/Icon';
 import Opinion from 'components/Opinion/Opinion';
 import PhysiotherapyFacilityTile from 'components/PhysiotherapyFacilityTile/PhysiotherapyFacilityTile';
 import Image from 'next/image';
+import Link from 'next/link';
 import getUUID from 'utility/getUUID';
 import styles from './PhysiotherapyHomePageTemplate.module.scss';
 
@@ -75,9 +76,13 @@ const PhysiotherapyHomePageTemplate = ({
       </div>
       <div className={styles.contactBelt}>
         <div className={classNames('container', styles.contactBeltContainer)}>
-          <h4>ZADZWOŃ: +48 728 974 997</h4>
+          <Link href='tel:728-974-997'>
+            <h4>ZADZWOŃ: +48 728 974 997</h4>
+          </Link>
           <div className={styles.verticalBelt}></div>
-          <h4>NAPISZ DO NAS: alibi@alibistudio.pl</h4>
+          <Link href='mailto:alibi@alibistudio.pl'>
+            <h4>NAPISZ DO NAS: alibi@alibistudio.pl</h4>
+          </Link>
         </div>
       </div>
 
