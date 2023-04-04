@@ -2,9 +2,17 @@ import ArticlesSection from 'components/ArticlesSection/ArticlesSection';
 import ContactForm from 'components/ContactForm/ContactForm';
 import Footer from 'components/Footer/Footer';
 import Nav from 'components/Nav/Nav';
+import PageModeContext, { PageModeContextType } from 'contexts/PageModeContext';
+import { useContext } from 'react';
 import TrainingAboutPageTemplate from 'templates/TrainingAboutPageTemplate/TrainingAboutPageTemplate';
 
 const AboutPage = () => {
+  const { handleThemeChange } = useContext(
+    PageModeContext
+  ) as PageModeContextType;
+
+  handleThemeChange('TRAININGS');
+
   const personaleTrainersConfig = [
     {
       imgSrc: '/personalTrainersImages/image1.png',
@@ -113,7 +121,7 @@ const AboutPage = () => {
 
   return (
     <>
-      <Nav page='TRAININGS' />
+      <Nav page='O NAS' />
       <TrainingAboutPageTemplate
         personaleTrainersConfig={personaleTrainersConfig}
       />

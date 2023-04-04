@@ -3,6 +3,8 @@ import Footer from 'components/Footer/Footer';
 import Nav from 'components/Nav/Nav';
 import BlogPageTemplate from 'templates/BlogPageTemplate/BlogPageTemplate';
 import { createClient } from 'next-sanity';
+import { useContext } from 'react';
+import PageModeContext, { PageModeContextType } from 'contexts/PageModeContext';
 
 const sanityClient = createClient({
   projectId: 'mkxtoiab',
@@ -12,9 +14,15 @@ const sanityClient = createClient({
 });
 
 const Blog = ({ articles }: any) => {
+  const { handleThemeChange } = useContext(
+    PageModeContext
+  ) as PageModeContextType;
+
+  handleThemeChange('TRAININGS');
+
   return (
     <>
-      <Nav page='TRAININGS' />
+      <Nav page='BLOG' />
       <BlogPageTemplate articles={articles} />
       <ContactForm />
       <Footer />

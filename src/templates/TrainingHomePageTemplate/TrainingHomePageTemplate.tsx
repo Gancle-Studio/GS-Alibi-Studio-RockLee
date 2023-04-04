@@ -6,6 +6,8 @@ import Image from 'next/image';
 import styles from './TrainingHomePageTemplate.module.scss';
 import Icon, { IconType } from 'components/Icon/Icon';
 import getUUID from 'utility/getUUID';
+import { useContext } from 'react';
+import PageModeContext, { PageModeContextType } from 'contexts/PageModeContext';
 
 interface ITrainingHomePageTemplateProps {
   facilityTilesConfig: {
@@ -19,6 +21,8 @@ interface ITrainingHomePageTemplateProps {
 const TrainingHomePageTemplate = ({
   facilityTilesConfig
 }: ITrainingHomePageTemplateProps) => {
+  const { mode } = useContext(PageModeContext) as PageModeContextType;
+
   return (
     <>
       <div

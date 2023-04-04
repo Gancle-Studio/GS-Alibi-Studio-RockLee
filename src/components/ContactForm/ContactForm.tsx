@@ -3,13 +3,23 @@ import Link from 'next/link';
 import { useState } from 'react';
 import styles from './ContactForm.module.scss';
 import FormContact from './Form';
+import PageModeContext, { PageModeContextType } from 'contexts/PageModeContext';
+import { useContext } from 'react';
+import classNames from 'classnames';
 
 const ContactForm = () => {
   const [isTextDisplayed, setIsTextDisplayed] = useState(false);
+  const { mode } = useContext(PageModeContext) as PageModeContextType;
 
   return (
     <>
-      <section className={styles.ContactForm} id='contact'>
+      <section
+        className={classNames(
+          styles.ContactForm,
+          mode === 'PHYSIO' && styles.physioBgColor
+        )}
+        id='contact'
+      >
         <div className='container'>
           <header>
             <h2>SKONTAKTUJ SIĘ Z NAMI</h2>
