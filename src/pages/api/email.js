@@ -12,9 +12,9 @@ export default (req, res) => {
   `;
 
   const data = {
-    to: 'sz.chwila@gmail.com',
+    to: 'jakub.pisula@wp.pl',
     from: 'biuro@gancle-studio.pl',
-    subject: 'Tytul maili ze stronki alibi',
+    subject: 'Formularz kontaktowy',
     html: content
   };
 
