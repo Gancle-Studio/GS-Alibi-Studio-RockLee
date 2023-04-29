@@ -43,29 +43,30 @@ const ArticlesSection = ({ page }: IArticleSectionProps) => {
   }, []);
 
   return (
-    <section className={classNames('container', styles.articlesSection)}>
-      <header>
-        <h2>CO U NAS SŁYCHAĆ...</h2>
-      </header>
-      <main className={styles.articleTilesContainer}>
-        {articles.map((article: any) => {
-          return (
-            <ArticleTile
-              key={getUUID()}
-              imgSrc={
-                urlBuilder(sanityClient)
-                  .image(article.mainImage.asset)
-                  .url() as string
-              }
-              title={article.title}
-              description={article.teaser}
-              slug={article.slug.current}
-              page={page}
-            />
-          );
-        })}
-      </main>
-    </section>
+    <></>
+    // <section className={classNames('container', styles.articlesSection)}>
+    //   <header>
+    //     <h2>CO U NAS SŁYCHAĆ...</h2>
+    //   </header>
+    //   <main className={styles.articleTilesContainer}>
+    //     {articles.map((article: any) => {
+    //       return (
+    //         <ArticleTile
+    //           key={getUUID()}
+    //           imgSrc={
+    //             urlBuilder(sanityClient)
+    //               .image(article.mainImage.asset)
+    //               .url() as string
+    //           }
+    //           title={article.title}
+    //           description={article.teaser}
+    //           slug={article.slug.current}
+    //           page={page}
+    //         />
+    //       );
+    //     })}
+    //   </main>
+    // </section>
   );
 };
 
