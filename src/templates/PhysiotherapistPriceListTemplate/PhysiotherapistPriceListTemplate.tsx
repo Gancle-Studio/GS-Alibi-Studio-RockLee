@@ -28,18 +28,25 @@ const PhysiotherapistPriceListTemplate = () => {
 
         <ul className={styles.personalTrainingsPriceList}>
           <li className='h4'>
-            Terapia manualna (50 min.)
+            Terapia manualna (jednorazowa wizyta)
             <div className={styles.dots}>
               ......................................................................................................................................................................................................
             </div>
-            <span>120 zł</span>
+            <span>150 zł</span>
+          </li>
+          <li className='h4'>
+            Pakiet 8 wizyt
+            <div className={styles.dots}>
+              ......................................................................................................................................................................................................
+            </div>
+            <span>1120 zł (140 zł / trening)</span>
           </li>
           <li className='h4'>
             Trening medyczny (60 min.)
             <div className={styles.dots}>
               ......................................................................................................................................................................................................
             </div>
-            <span>120 zł</span>
+            <span>140 zł</span>
           </li>
         </ul>
         <h2>Fizjoterapia uroginekologiczna</h2>
@@ -65,11 +72,11 @@ const PhysiotherapistPriceListTemplate = () => {
         <div className={styles.belt}></div>
         <ul className={styles.personalTrainingsPriceList}>
           <li className='h4'>
-            Masaż relaksacyjny całego ciała (45 min.)
+            Masaż relaksacyjny całego ciała (50 min.)
             <div className={styles.dots}>
               ......................................................................................................................................................................................................
             </div>
-            <span>120 zł</span>
+            <span>130 zł</span>
           </li>
 
           <li className='h4'>
@@ -77,11 +84,11 @@ const PhysiotherapistPriceListTemplate = () => {
             <div className={styles.dots}>
               ......................................................................................................................................................................................................
             </div>
-            <span>70 zł</span>
+            <span>90 zł</span>
           </li>
 
           <li className='h4'>
-            Masaż kamieniami (50 min.)
+            Masaż kamieniami (45 min.)
             <div className={styles.dots}>
               ......................................................................................................................................................................................................
             </div>
