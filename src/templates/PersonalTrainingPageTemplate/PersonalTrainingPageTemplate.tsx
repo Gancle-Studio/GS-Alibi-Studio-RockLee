@@ -64,7 +64,7 @@ const PersonalTrainingPageTemplate = () => {
               Więcej informacji na ten temat znajdziesz w zakładce przygotowanie
               motoryczne.
             </h4>
-            <div className={commonStyles.images}>
+            {/* <div className={commonStyles.images}>
               <figure className={commonStyles.img}>
                 <Image
                   src={'/aboutPageLandingImage.png'}
@@ -95,10 +95,10 @@ const PersonalTrainingPageTemplate = () => {
                   />
                 </figure>
               </div>
-            </div>
+            </div> */}
           </div>
 
-          <div className={commonStyles.gallery}>
+          {/* <div className={commonStyles.gallery}>
             <figure className={commonStyles.verticalImg}>
               <Image
                 src={'/aboutPageLandingImage.png'}
@@ -184,7 +184,7 @@ const PersonalTrainingPageTemplate = () => {
                 layout='fill'
               />
             </figure>
-          </div>
+          </div> */}
         </main>
       </section>
     </>

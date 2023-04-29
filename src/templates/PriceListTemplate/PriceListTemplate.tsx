@@ -80,7 +80,7 @@ const PriceListTemplate = () => {
           Przygotowanie do zawodów/ egzaminów - współpraca w zakresie
           przygotowania motorycznego, fizjoterapii, diety.
         </p>
-        <h4>
+        <h4 className={styles.offerForSportsmen}>
           OFERTA TYLKO DLA PROFESJONALNYCH SPORTOWCÓW 1M, 3M, 6 MC.
           <br /> CENA USTALANA INDYWIDUALNIE
         </h4>

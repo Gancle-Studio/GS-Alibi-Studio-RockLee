@@ -1,10 +1,11 @@
 import Icon, { IconType } from 'components/Icon/Icon';
 import Image from 'next/image';
 import styles from './Footer.module.scss';
+import classNames from 'classnames';
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={classNames('container', styles.footer)}>
       <div className={styles.logoAndIcons}>
         <div className={styles.logo}>
           <figure

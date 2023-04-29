@@ -62,10 +62,6 @@ const getNavItems = (
         </li>
 
         <li className={styles.navItem} onClick={onNavClick}>
-          <Link href='/nasze-treningi/trening-personalny'>TRENINGI</Link>
-        </li>
-
-        <li className={styles.navItem} onClick={onNavClick}>
           <Link href='/fizjoterapia/cennik'>CENNIK</Link>
         </li>
 
@@ -108,6 +104,7 @@ const getNavItems = (
       </ul>
     );
   }
+
   return (
     <ul className={styles.hamburgerMenu}>
       <li className={styles.navItem} onClick={onNavClick}>

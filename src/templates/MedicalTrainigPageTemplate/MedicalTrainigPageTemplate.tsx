@@ -65,7 +65,7 @@ const MedicalTrainigPageTemplate = () => {
               Więcej informacji na ten temat znajdziesz w zakładce przygotowanie
               motoryczne.
             </h4>
-            <div className={commonStyles.images}>
+            {/* <div className={commonStyles.images}>
               <figure className={commonStyles.img}>
                 <Image
                   src={'/aboutPageLandingImage.png'}
@@ -96,10 +96,10 @@ const MedicalTrainigPageTemplate = () => {
                   />
                 </figure>
               </div>
-            </div>
+            </div> */}
           </div>
 
-          <div className={commonStyles.textwithoutImages}>
+          <div className={commonStyles.textAndImages}>
             <h3>Elastyczne podejście</h3>
             <div className={commonStyles.belt}></div>
             <div className={commonStyles.textAndImages}>

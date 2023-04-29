@@ -15,7 +15,6 @@ const sanityClient = createClient({
 });
 
 const BlogPageTemplate = ({ articles }: any) => {
-  console.log(articles);
   return (
     <>
       <section className={styles.landingSection}>
@@ -47,7 +46,7 @@ const BlogPageTemplate = ({ articles }: any) => {
             />
           ))}
         </main>
-        <div className={styles.paginationContainer}>
+        {/* <div className={styles.paginationContainer}>
           <div className={styles.icon}>
             <Icon icon={IconType.GoldArrowLeft} />
           </div>
@@ -55,7 +54,7 @@ const BlogPageTemplate = ({ articles }: any) => {
           <div className={styles.icon}>
             <Icon icon={IconType.GoldArrowRight} />
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );

@@ -72,7 +72,7 @@ const MotorPreparationPageTemplate = () => {
                 <h3 className={styles.marginBottom50}>
                   Popraw siłę, szybkość i wytrzymałość
                 </h3>
-                <div className={commonStyles.images}>
+                {/* <div className={commonStyles.images}>
                   <figure className={commonStyles.img}>
                     <Image
                       src={'/aboutPageLandingImage.png'}
@@ -103,11 +103,11 @@ const MotorPreparationPageTemplate = () => {
                       />
                     </figure>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
-            <div className={commonStyles.gallery}>
+            {/* <div className={commonStyles.gallery}>
               <figure className={commonStyles.verticalImg}>
                 <Image
                   src={'/aboutPageLandingImage.png'}
@@ -193,7 +193,7 @@ const MotorPreparationPageTemplate = () => {
                   layout='fill'
                 />
               </figure>
-            </div>
+            </div> */}
           </main>
         </main>
       </section>

@@ -26,7 +26,7 @@ const ArticlePageTemplate = ({ article, page }: any) => {
       <h1>{title}</h1>
 
       <div className={styles.dateAndIcons}>
-        <p>{date}</p>
+        <p>Opublikowano: {date}</p>
         <div className={styles.icons}>
           <div
             className={styles.icon}
