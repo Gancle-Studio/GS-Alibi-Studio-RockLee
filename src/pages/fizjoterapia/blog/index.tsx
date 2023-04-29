@@ -30,7 +30,7 @@ const PhysiotherapistBlogPage = ({ articles }: any) => {
   );
 };
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const articles = await sanityClient.fetch(
     `
   *[
