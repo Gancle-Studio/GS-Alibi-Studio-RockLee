@@ -36,6 +36,60 @@ const PhysiotherapyAboutPage = () => {
           szczególnie kobietom.
         </p>
       )
+    },
+    {
+      imgSrc: '/personalTrainersImages/image5.jpg',
+      name: 'Maciej',
+      services: 'fizjoterapia, masaże',
+      description: (
+        <>
+          <p>
+            Cześć z tej strony Maciej.
+            <br />
+            <br />
+            Od 2021 roku licencjonowany masażysta oraz już niedługo absolwent
+            Śląskiego Uniwersytetu Medycznego na kierunku Fizjoterapia.
+            <br />
+            <br />
+            Specjalizuje się głównie w fizjoterapii ortopedycznej oraz
+            sportowej.
+            <br />
+            W swojej pracy opieram się przede wszystkim na terapii manualnej
+            oraz treningu funkcjonalnym.
+            <br />
+            <br />
+            Staram się ciągle poszerzać swoje horyzonty oraz zbierać
+            doświadczenie biorąc udział w wielu kursach takich jak :
+          </p>
+          <ul>
+            <li>
+              {' '}
+              Rekonstrukcja ACL – kompleksowo o diagnostyce, operacji,
+              postępowaniu fizjoterapeutycznym i ocenie motorycznej ( Bieruń-
+              Galen Rehabilitacja, 2023)
+            </li>
+            <li>
+              Kurs Masaż Tkanek Głębokich i techniki rozluźniania
+              mięśniowo-powięziowego, I i II Moduł (Ostrowiec Świętokrzyski,
+              2022)
+            </li>
+            <li>
+              Kurs Funkcjonalna Terapia Manualna I i II Moduł (Ostrowiec
+              Świętokrzyski, 2022)
+            </li>
+            <li>Kurs Functional Movement Screen (Warszawa,2021)</li>
+            <li>Kurs Fascial Distortion Model Taping</li>
+            <li>Technik masażysta </li>
+          </ul>
+          <br />
+          <br />
+          <p>
+            Świadomość pozytywnego wpływu aktywności fizycznej na jakość życia,
+            skłania mnie w wolnym czasie do korzystania z uroków górskich wypraw
+            oraz krajoznawczych wycieczek rowerowych w gronie znajomych.
+          </p>
+        </>
+      )
     }
   ];
 
