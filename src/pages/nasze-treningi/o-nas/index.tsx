@@ -100,22 +100,22 @@ const AboutPage = () => {
       services: 'trening personalny, kalistenika',
       description: (
         <p>
-          Aktywnosc fizyczna jest w moim sercu odkąd pamiętam.
+          Aktywność fizyczna jest w moim sercu odkąd pamiętam.
           <br />
           <br />
-          Już jako 8-latek uczęszczałem w zawodach tenisa stloowego oraz
+          Już jako 8-latek uczęszczałem w zawodach tenisa stłowego oraz
           biegowych.
           <br />
           Z czasem moją uwagę przyciagnął trening z własną masą ciała oraz sport
-          zwany Street-Workout, w tym też sie specjalizuej.
+          zwany Street-Workout, w tym też sie specjalizuję.
           <br />
           <br />
-          Odbyłem wiele kursów i szkoleń związanych ściśle z tym tematem.
-          Przeczytałem sporo książek i wciąż staram się poszerzaą swoją wiedzą.
+          Odbyłem wiele kursów i szkoleń związanych ściśle z tym tematem oraz
+          przeczytałem sporo książek i wciąż staram się poszerzać swoją wiedzą.
           <br />
           <br />
-          Jeśli chcesz poznać mozliwości jakimi dysponuje twoje ciało to
-          zapraszam, będziemy razem dzialać!
+          Jeśli chcesz poznać możliwości jakimi dysponuje twoje ciało to
+          zapraszam, będziemy razem działać!
         </p>
       )
     },
