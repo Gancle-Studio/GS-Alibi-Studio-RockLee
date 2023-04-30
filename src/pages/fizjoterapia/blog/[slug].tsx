@@ -58,7 +58,9 @@ export const getStaticProps = async (context: any) => {
     content,
     date,
     mainImage,
-    title
+    title,
+    teaser,
+    slug
   }
   `,
     { slug }
