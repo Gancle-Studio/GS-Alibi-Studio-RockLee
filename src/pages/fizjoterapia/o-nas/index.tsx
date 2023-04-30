@@ -39,7 +39,7 @@ const PhysiotherapyAboutPage = () => {
     },
     {
       imgSrc: '/personalTrainersImages/image5.jpg',
-      name: 'Maciej',
+      name: 'Maciej Jędrysiak',
       services: 'fizjoterapia, masaże',
       description: (
         <>

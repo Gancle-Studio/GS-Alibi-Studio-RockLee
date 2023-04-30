@@ -96,7 +96,7 @@ const AboutPage = () => {
     },
     {
       imgSrc: '/personalTrainersImages/image6.jpg',
-      name: 'Mateusz Patla',
+      name: 'Daniel Patla',
       services: 'trening personalny, kalistenika',
       description: (
         <p>
