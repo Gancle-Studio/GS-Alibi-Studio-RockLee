@@ -25,6 +25,7 @@ const PhysiotherapyAboutPageTemplate = ({
             alt='zdjęcie trenera personalnego'
             layout='fill'
           />
+          <div></div>
         </figure>
         <div className={classNames('container', styles.textContainer)}>
           <h1>To oni zadbają o Twoje zdrowie</h1>
