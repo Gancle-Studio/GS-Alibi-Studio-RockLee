@@ -133,11 +133,11 @@ const TrainingHomePageTemplate = ({
                 <br />W Alibi Studio nie obowiązują sztywne godziny otwarcia,
                 zawsze umawiamy{' '}
                 <span className={styles.goldText}>
-                  indywidualnie godziy treningów
+                  indywidualnie godziny treningów
                 </span>{' '}
                 tak aby dostosować je do{' '}
                 <span className={styles.goldText}>Twoich potrzeb</span> i{' '}
-                <span className={styles.goldText}>mozliwości</span>. Kameralna
+                <span className={styles.goldText}>możliwości</span>. Kameralna
                 atmosfera oraz industrialny wystrój sprawią, że poczujesz się
                 tutaj <span className={styles.goldText}>jak w domu</span>.
               </h4>
@@ -162,13 +162,13 @@ const TrainingHomePageTemplate = ({
               <h4>
                 Studio składa się z dwóch pomieszczeń. W jednym znajduje się
                 sprzęt do{' '}
-                <span className={styles.goldText}>treingu z obciązeniem</span>,
+                <span className={styles.goldText}>treingu z obciążeniem</span>,
                 w drugim natomiast świetnie wyposażona{' '}
                 <span className={styles.goldText}>strefa cardio</span> z
                 wielofunkcyjną bramą do ćwiczeń. Dodatkowo w okresie letnim
                 prowadzimy również{' '}
                 <span className={styles.goldText}>
-                  treningi na świezym powietrzu
+                  treningi na świeżym powietrzu
                 </span>{' '}
                 w naszym ogródku. Oprócz stref przeznaczonych do treningu i
                 fizjoterapii, znajduje się tu również{' '}

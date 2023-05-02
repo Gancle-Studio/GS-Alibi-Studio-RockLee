@@ -90,6 +90,26 @@ const PhysiotherapyAboutPage = () => {
           </p>
         </>
       )
+    },
+    {
+      imgSrc: '/personalTrainersImages/image7.jpg',
+      name: 'Patrycja Zaporowska',
+      services: 'fizjoterapia, masaże',
+      description: (
+        <>
+          <p>
+            Jestem absolwentką Akademii Wychowania Fizycznego w Katowicach na
+            kierunku fizjoterapia.
+            <br />
+            <br />
+            Doświadczenie zdobywałam głównie z pacjentami ortopedycznymi,
+            bólowymi i ze sportowcami, co utwierdziło mnie w przekonaniu, że
+            indywidualna praca z pacjentem, która łączy terapię manualną z
+            ruchem jest czymś w czym się odnajduję i w tym kierunku chciałabym
+            się rozwijać.
+          </p>
+        </>
+      )
     }
   ];
 
