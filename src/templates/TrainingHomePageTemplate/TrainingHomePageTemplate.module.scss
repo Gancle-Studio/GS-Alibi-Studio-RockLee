@@ -58,6 +58,11 @@
       display: flex;
       gap: 20px;
 
+      img {
+        object-fit: cover;
+        border-radius: 20px;
+      }
+
       @include media('<=laptop') {
         justify-content: center;
       }
@@ -85,11 +90,24 @@
           justify-content: center;
           flex-wrap: wrap;
           gap: 30px;
+          width: 90%;
         }
 
         .homePageImage {
           width: 272px;
           height: 153px;
+
+          @include media('<=tablet') {
+            width: 70%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+          }
+
+          @include media('<=mobile') {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+          }
         }
       }
     }
@@ -150,16 +168,24 @@
 
         .infoImage {
           width: 640px;
-          height: 360px;
+          height: auto;
+          aspect-ratio: 16 / 9;
+
+          img {
+            border-radius: 20px;
+            object-fit: cover;
+          }
 
           @include media('<=tablet') {
             width: 410px;
-            height: 230px;
+            height: auto;
+            aspect-ratio: 16 / 9;
           }
 
           @include media('<=mobile') {
             width: 300px;
-            height: 170px;
+            height: auto;
+            aspect-ratio: 16 / 9;
           }
         }
       }
@@ -209,7 +235,20 @@
 
         .smallImg {
           width: 336px;
-          height: 189px;
+          height: auto;
+          aspect-ratio: 16 / 9;
+
+          @include media('<=tablet') {
+            width: 410px;
+            height: auto;
+            aspect-ratio: 16 / 9;
+          }
+
+          @include media('<=mobile') {
+            width: 300px;
+            height: auto;
+            aspect-ratio: 16 / 9;
+          }
         }
       }
     }

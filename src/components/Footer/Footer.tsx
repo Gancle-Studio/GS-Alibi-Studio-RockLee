@@ -2,8 +2,11 @@ import Icon, { IconType } from 'components/Icon/Icon';
 import Image from 'next/image';
 import styles from './Footer.module.scss';
 import classNames from 'classnames';
+import { useContext } from 'react';
+import PageModeContext, { PageModeContextType } from 'contexts/PageModeContext';
 
 const Footer = () => {
+  const { mode } = useContext(PageModeContext) as PageModeContextType;
   return (
     <footer className={classNames('container', styles.footer)}>
       <div className={styles.logoAndIcons}>
@@ -15,12 +18,14 @@ const Footer = () => {
             }}
           >
             <Image
-              src='/alibi_studio.png'
-              alt='Gancle Studio - Footer'
+              src={
+                mode === 'PHYSIO' ? '/alibi_zdrowie.png' : '/alibi_studio.png'
+              }
+              alt='Alibi Studio - Footer'
               layout='fill'
             />
           </figure>
-          <h4>ALIBI STUDIO</h4>
+          <h4>{mode === 'TRAININGS' ? 'ALIBI STUDIO' : 'ALIBI ZDROWIE'}</h4>
         </div>
         <div className={styles.icons}>
           <div className={styles.icon}>
@@ -48,7 +53,11 @@ const Footer = () => {
           ul. Radomska 1 <br /> 40-757 Katowice
         </li>
         <li className='p'>tel: +48 728 974 997 </li>
-        <li className='p'>e-mail: alibi@alibistudio.pl</li>
+        <li className='p'>
+          {mode === 'TRAININGS'
+            ? 'e-mail: alibi@alibistudio.pl'
+            : 'e-mail: zdrowie@alibistudio.pl'}
+        </li>
         <li className='p'>projekt i wykonanie: gancle-studio.pl</li>
       </ul>
     </footer>

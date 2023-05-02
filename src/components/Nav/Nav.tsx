@@ -30,7 +30,7 @@ const Nav = ({ page }: INavProps) => {
         >
           <Image
             src={mode === 'PHYSIO' ? '/alibi_zdrowie.png' : '/alibi_studio.png'}
-            alt='Gancle Studio - Footer'
+            alt='Alibi studio'
             layout='fill'
           />
         </figure>

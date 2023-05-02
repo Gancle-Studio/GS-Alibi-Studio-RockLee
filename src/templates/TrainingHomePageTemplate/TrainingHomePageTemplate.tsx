@@ -9,6 +9,7 @@ import getUUID from 'utility/getUUID';
 import { useContext } from 'react';
 import PageModeContext, { PageModeContextType } from 'contexts/PageModeContext';
 import Link from 'next/link';
+import Gallery from 'components/Gallery/Gallery';
 
 interface ITrainingHomePageTemplateProps {
   facilityTilesConfig: {
@@ -145,6 +146,7 @@ const TrainingHomePageTemplate = ({
                   src='/trainingHomePageImages/image5.png'
                   alt='zdjęcie z treningu'
                   layout='fill'
+                  style={{ objectPosition: '0 -10px' }}
                 />
               </figure>
             </div>
@@ -181,66 +183,36 @@ const TrainingHomePageTemplate = ({
             </div>
           </main>
         </section>
-
-        <section className={styles.imagesSection}>
-          <main className={styles.imagesContainer}>
-            <span>
-              <figure className={styles.img}>
-                <Image
-                  src='/imagesSectionImages/image1.png'
-                  alt='zdjęcie z treningu'
-                  layout='fill'
-                />
-              </figure>
-
-              <div className={styles.doubleImg}>
-                <figure className={styles.smallImg}>
-                  <Image
-                    src='/imagesSectionImages/image2.png'
-                    alt='zdjęcie z treningu'
-                    layout='fill'
-                  />
-                </figure>
-
-                <figure className={styles.smallImg}>
-                  <Image
-                    src='/imagesSectionImages/image3.png'
-                    alt='zdjęcie z treningu'
-                    layout='fill'
-                  />
-                </figure>
-              </div>
-            </span>
-
-            <span>
-              <figure className={styles.img}>
-                <Image
-                  src='/imagesSectionImages/image4.png'
-                  alt='zdjęcie z treningu'
-                  layout='fill'
-                />
-              </figure>
-
-              <div className={styles.doubleImg}>
-                <figure className={styles.smallImg}>
-                  <Image
-                    src='/imagesSectionImages/image5.png'
-                    alt='zdjęcie z treningu'
-                    layout='fill'
-                  />
-                </figure>
-
-                <figure className={styles.smallImg}>
-                  <Image
-                    src='/imagesSectionImages/image6.png'
-                    alt='zdjęcie z treningu'
-                    layout='fill'
-                  />
-                </figure>
-              </div>
-            </span>
-          </main>
-        </section>
+        <Gallery
+          bigImages={[
+            {
+              src: '/trainingsHomepageGallerySectionImages/image1.png',
+              alt: 'zdjęcie z treningu'
+            },
+            {
+              src: '/trainingsHomepageGallerySectionImages/image4.png',
+              alt: 'zdjęcie z treningu'
+            }
+          ]}
+          smallImages={[
+            {
+              src: '/trainingsHomepageGallerySectionImages/image2.png',
+              alt: 'zdjęcie z treningu'
+            },
+            {
+              src: '/trainingsHomepageGallerySectionImages/image3.png',
+              alt: 'zdjęcie z treningu'
+            },
+            {
+              src: '/trainingsHomepageGallerySectionImages/image5.png',
+              alt: 'zdjęcie z treningu'
+            },
+            {
+              src: '/trainingsHomepageGallerySectionImages/image6.png',
+              alt: 'zdjęcie z treningu'
+            }
+          ]}
+        />
 
         <section className={styles.opinionsSection}>
           <header className={styles.opinionsHeader}>

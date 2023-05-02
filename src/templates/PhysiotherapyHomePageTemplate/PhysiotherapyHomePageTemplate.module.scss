@@ -11,6 +11,11 @@
     }
   }
 
+  img {
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
   span {
     color: $goldColor;
   }
@@ -218,7 +223,7 @@
           }
 
           img {
-            object-fit: fill;
+            object-fit: cover;
             border-radius: 20px;
           }
         }

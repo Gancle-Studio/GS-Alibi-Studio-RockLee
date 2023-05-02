@@ -38,14 +38,24 @@ const ContactForm = () => {
                 </div>
               </Link>
 
-              <Link href='mailto:alibi@alibistudio.pl'>
+              <Link
+                href={
+                  mode === 'TRAININGS'
+                    ? 'mailto:alibi@alibistudio.pl'
+                    : 'mailto:zdrowie@alibistudio.pl'
+                }
+              >
                 <div className={styles.contactFiled}>
                   <div className={styles.icon}>
                     <Icon icon={IconType.Mail} />
                   </div>
                   <div className={styles.contactText}>
                     <h4>NAPISZ</h4>
-                    <p>alibi@alibistudio.pl</p>
+                    <p>
+                      {mode === 'TRAININGS'
+                        ? 'alibi@alibistudio.pl'
+                        : 'zdrowie@alibistudio.pl'}
+                    </p>
                   </div>
                 </div>
               </Link>

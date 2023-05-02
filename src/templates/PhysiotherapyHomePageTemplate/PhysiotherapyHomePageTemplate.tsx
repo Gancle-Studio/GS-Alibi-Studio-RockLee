@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import getUUID from 'utility/getUUID';
 import styles from './PhysiotherapyHomePageTemplate.module.scss';
+import Gallery from 'components/Gallery/Gallery';
 
 interface IPhysiotherapyHomePageTemplateProps {
   physiotherapyFacilityTilesConfig: {
@@ -80,8 +81,8 @@ const PhysiotherapyHomePageTemplate = ({
             <h4>ZADZWOŃ: +48 728 974 997</h4>
           </Link>
           <div className={styles.verticalBelt}></div>
-          <Link href='mailto:alibi@alibistudio.pl'>
-            <h4>NAPISZ DO NAS: alibi@alibistudio.pl</h4>
+          <Link href='mailto:zdrowie@alibistudio.pl'>
+            <h4>NAPISZ DO NAS: zdrowie@alibistudio.pl</h4>
           </Link>
         </div>
       </div>
@@ -194,65 +195,36 @@ const PhysiotherapyHomePageTemplate = ({
           </main>
         </section>
 
-        <section className={styles.imagesSection}>
-          <main className={styles.imagesContainer}>
-            <span>
-              <figure className={styles.img}>
-                <Image
-                  src='/imagesSectionImages/image1.png'
-                  alt='zdjęcie z treningu'
-                  layout='fill'
-                />
-              </figure>
-
-              <div className={styles.doubleImg}>
-                <figure className={styles.smallImg}>
-                  <Image
-                    src='/imagesSectionImages/image2.png'
-                    alt='zdjęcie z treningu'
-                    layout='fill'
-                  />
-                </figure>
-
-                <figure className={styles.smallImg}>
-                  <Image
-                    src='/imagesSectionImages/image3.png'
-                    alt='zdjęcie z treningu'
-                    layout='fill'
-                  />
-                </figure>
-              </div>
-            </span>
-
-            <span>
-              <figure className={styles.img}>
-                <Image
-                  src='/imagesSectionImages/image4.png'
-                  alt='zdjęcie z treningu'
-                  layout='fill'
-                />
-              </figure>
-
-              <div className={styles.doubleImg}>
-                <figure className={styles.smallImg}>
-                  <Image
-                    src='/imagesSectionImages/image5.png'
-                    alt='zdjęcie z treningu'
-                    layout='fill'
-                  />
-                </figure>
-
-                <figure className={styles.smallImg}>
-                  <Image
-                    src='/imagesSectionImages/image6.png'
-                    alt='zdjęcie z treningu'
-                    layout='fill'
-                  />
-                </figure>
-              </div>
-            </span>
-          </main>
-        </section>
+        <Gallery
+          bigImages={[
+            {
+              src: '/physioHomepageGallerySectionImages/image1.png',
+              alt: 'zdjęcie z treningu'
+            },
+            {
+              src: '/physioHomepageGallerySectionImages/image4.png',
+              alt: 'zdjęcie z treningu'
+            }
+          ]}
+          smallImages={[
+            {
+              src: '/physioHomepageGallerySectionImages/image2.png',
+              alt: 'zdjęcie z treningu'
+            },
+            {
+              src: '/physioHomepageGallerySectionImages/image3.png',
+              alt: 'zdjęcie z treningu'
+            },
+            {
+              src: '/physioHomepageGallerySectionImages/image5.png',
+              alt: 'zdjęcie z treningu'
+            },
+            {
+              src: '/physioHomepageGallerySectionImages/image6.png',
+              alt: 'zdjęcie z treningu'
+            }
+          ]}
+        />
 
         <section className={styles.opinionsSection}>
           <header className={styles.opinionsHeader}>
