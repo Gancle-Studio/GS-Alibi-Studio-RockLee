@@ -8,14 +8,30 @@
   align-items: flex-end;
   margin-bottom: 50px;
 
+  @include media('<=tablet') {
+    height: 200px;
+  }
+
   .textContainer {
     position: relative;
     margin-bottom: 50px;
+
+    @include media('<=tablet') {
+      text-align: center;
+    }
   }
 
   .landingImage {
-    height: 500px;
+    height: 400px;
     @include landingImageStyles;
+
+    img {
+      object-fit: cover;
+    }
+
+    @include media('<=tablet') {
+      height: 300px;
+    }
   }
 }
 
