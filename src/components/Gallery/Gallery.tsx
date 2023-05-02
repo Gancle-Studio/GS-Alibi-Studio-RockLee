@@ -16,8 +16,8 @@ const Gallery = ({ bigImages, smallImages }: IGalleryProps) => {
         </figure>
       </div>
       {[0, 1].map((index) => (
-        <div>
-          <figure key={getUUID()} className={styles.smallImg}>
+        <div key={getUUID()}>
+          <figure className={styles.smallImg}>
             <Image
               src={smallImages[index].src}
               alt={smallImages[index].alt}
@@ -36,8 +36,8 @@ const Gallery = ({ bigImages, smallImages }: IGalleryProps) => {
         </figure>
       </div>
       {[2, 3].map((index) => (
-        <div>
-          <figure key={getUUID()} className={styles.smallImg}>
+        <div key={getUUID()}>
+          <figure className={styles.smallImg}>
             <Image
               src={smallImages[index].src}
               alt={smallImages[index].alt}
