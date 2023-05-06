@@ -28,10 +28,30 @@
     }
   }
 
+  ul {
+    color: $whiteColor;
+    list-style-type: disc;
+    margin-left: 20px;
+
+    @include media('<=tablet') {
+      margin-left: 20px;
+    }
+  }
+
+  ul li {
+    padding: 10px 0;
+
+    &::before {
+      content: '';
+      width: 10px;
+      display: inline-block;
+    }
+  }
+
   ol {
     color: $whiteColor;
     list-style-type: decimal;
-    margin-left: 12px;
+    margin-left: 20px;
 
     @include media('<=tablet') {
       margin-left: 20px;
