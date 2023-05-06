@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './MedicalTrainigPageTemplate.module.scss';
 import commonStyles from '../trainingPage.module.scss';
+import Gallery from 'components/Gallery/Gallery';
 
 const MedicalTrainigPageTemplate = () => {
   return (
@@ -65,10 +66,10 @@ const MedicalTrainigPageTemplate = () => {
               Więcej informacji na ten temat znajdziesz w zakładce przygotowanie
               motoryczne.
             </h4>
-            {/* <div className={commonStyles.images}>
+            <div className={commonStyles.images}>
               <figure className={commonStyles.img}>
                 <Image
-                  src={'/aboutPageLandingImage.png'}
+                  src={'/trainings/medical/image1.png'}
                   alt='zdjęcie trenera personalnego'
                   layout='fill'
                 />
@@ -76,30 +77,65 @@ const MedicalTrainigPageTemplate = () => {
               <div className={commonStyles.smallImages}>
                 <figure className={commonStyles.img}>
                   <Image
-                    src={'/aboutPageLandingImage.png'}
+                    src={'/trainings/medical/image2.png'}
                     alt='zdjęcie trenera personalnego'
                     layout='fill'
                   />
                 </figure>
                 <figure className={commonStyles.img}>
                   <Image
-                    src={'/aboutPageLandingImage.png'}
+                    src={'/trainings/medical/image3.png'}
                     alt='zdjęcie trenera personalnego'
                     layout='fill'
                   />
                 </figure>
                 <figure className={commonStyles.img}>
                   <Image
-                    src={'/aboutPageLandingImage.png'}
+                    src={'/trainings/medical/image4.png'}
                     alt='zdjęcie trenera personalnego'
                     layout='fill'
                   />
                 </figure>
               </div>
-            </div> */}
+            </div>
           </div>
 
-          <div className={commonStyles.textAndImages}>
+          <section className={styles.galleries}>
+            <Gallery
+              bigImages={[
+                {
+                  src: '/trainings/medical/image5.png',
+                  alt: 'zdjęcie z treningu'
+                },
+                {
+                  src: '/trainings/medical/image6.png',
+                  alt: 'zdjęcie z treningu'
+                }
+              ]}
+              smallImages={[
+                {
+                  src: '/trainings/medical/image7.png',
+                  alt: 'zdjęcie z treningu'
+                },
+                {
+                  src: '/trainings/medical/image8.png',
+                  alt: 'zdjęcie z treningu'
+                },
+                {
+                  src: '/trainings/medical/image9.png',
+                  alt: 'zdjęcie z treningu'
+                },
+                {
+                  src: '/trainings/medical/image10.png',
+                  alt: 'zdjęcie z treningu'
+                }
+              ]}
+            />
+          </section>
+
+          <div
+            className={classNames(commonStyles.textAndImages, styles.elastic)}
+          >
             <h3>Elastyczne podejście</h3>
             <div className={commonStyles.belt}></div>
             <div className={commonStyles.textAndImages}>

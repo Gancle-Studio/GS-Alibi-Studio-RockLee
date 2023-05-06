@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './MotorPreparationPageTemplate.module.scss';
 import commonStyles from '../trainingPage.module.scss';
+import Gallery from 'components/Gallery/Gallery';
 
 const MotorPreparationPageTemplate = () => {
   return (
@@ -72,10 +73,10 @@ const MotorPreparationPageTemplate = () => {
                 <h3 className={styles.marginBottom50}>
                   Popraw siłę, szybkość i wytrzymałość
                 </h3>
-                {/* <div className={commonStyles.images}>
+                <div className={commonStyles.images}>
                   <figure className={commonStyles.img}>
                     <Image
-                      src={'/aboutPageLandingImage.png'}
+                      src={'/trainings/motor/image1.png'}
                       alt='zdjęcie trenera personalnego'
                       layout='fill'
                     />
@@ -83,117 +84,92 @@ const MotorPreparationPageTemplate = () => {
                   <div className={commonStyles.smallImages}>
                     <figure className={commonStyles.img}>
                       <Image
-                        src={'/aboutPageLandingImage.png'}
+                        src={'/trainings/motor/image2.png'}
                         alt='zdjęcie trenera personalnego'
                         layout='fill'
                       />
                     </figure>
                     <figure className={commonStyles.img}>
                       <Image
-                        src={'/aboutPageLandingImage.png'}
+                        src={'/trainings/motor/image3.png'}
                         alt='zdjęcie trenera personalnego'
                         layout='fill'
                       />
                     </figure>
                     <figure className={commonStyles.img}>
                       <Image
-                        src={'/aboutPageLandingImage.png'}
+                        src={'/trainings/motor/image4.png'}
                         alt='zdjęcie trenera personalnego'
                         layout='fill'
                       />
                     </figure>
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
 
-            {/* <div className={commonStyles.gallery}>
-              <figure className={commonStyles.verticalImg}>
-                <Image
-                  src={'/aboutPageLandingImage.png'}
-                  alt='zdjęcie trenera personalnego'
-                  layout='fill'
-                />
-              </figure>
-              <figure className={commonStyles.img}>
-                <Image
-                  src={'/aboutPageLandingImage.png'}
-                  alt='zdjęcie trenera personalnego'
-                  layout='fill'
-                />
-              </figure>
-              <figure className={commonStyles.img}>
-                <Image
-                  src={'/aboutPageLandingImage.png'}
-                  alt='zdjęcie trenera personalnego'
-                  layout='fill'
-                />
-              </figure>
-              <figure className={commonStyles.verticalImg}>
-                <Image
-                  src={'/aboutPageLandingImage.png'}
-                  alt='zdjęcie trenera personalnego'
-                  layout='fill'
-                />
-              </figure>
-              <figure className={commonStyles.img}>
-                <Image
-                  src={'/aboutPageLandingImage.png'}
-                  alt='zdjęcie trenera personalnego'
-                  layout='fill'
-                />
-              </figure>
-              <figure className={commonStyles.img}>
-                <Image
-                  src={'/aboutPageLandingImage.png'}
-                  alt='zdjęcie trenera personalnego'
-                  layout='fill'
-                />
-              </figure>
-
-              <figure className={commonStyles.verticalImg}>
-                <Image
-                  src={'/aboutPageLandingImage.png'}
-                  alt='zdjęcie trenera personalnego'
-                  layout='fill'
-                />
-              </figure>
-              <figure className={commonStyles.img}>
-                <Image
-                  src={'/aboutPageLandingImage.png'}
-                  alt='zdjęcie trenera personalnego'
-                  layout='fill'
-                />
-              </figure>
-              <figure className={commonStyles.img}>
-                <Image
-                  src={'/aboutPageLandingImage.png'}
-                  alt='zdjęcie trenera personalnego'
-                  layout='fill'
-                />
-              </figure>
-              <figure className={commonStyles.verticalImg}>
-                <Image
-                  src={'/aboutPageLandingImage.png'}
-                  alt='zdjęcie trenera personalnego'
-                  layout='fill'
-                />
-              </figure>
-              <figure className={commonStyles.img}>
-                <Image
-                  src={'/aboutPageLandingImage.png'}
-                  alt='zdjęcie trenera personalnego'
-                  layout='fill'
-                />
-              </figure>
-              <figure className={commonStyles.img}>
-                <Image
-                  src={'/aboutPageLandingImage.png'}
-                  alt='zdjęcie trenera personalnego'
-                  layout='fill'
-                />
-              </figure>
-            </div> */}
+            <section className={styles.galleries}>
+              <Gallery
+                bigImages={[
+                  {
+                    src: '/trainings/motor/image5.png',
+                    alt: 'zdjęcie z treningu'
+                  },
+                  {
+                    src: '/trainings/motor/image6.png',
+                    alt: 'zdjęcie z treningu'
+                  }
+                ]}
+                smallImages={[
+                  {
+                    src: '/trainings/motor/image9.png',
+                    alt: 'zdjęcie z treningu'
+                  },
+                  {
+                    src: '/trainings/motor/image10.png',
+                    alt: 'zdjęcie z treningu'
+                  },
+                  {
+                    src: '/trainings/motor/image11.png',
+                    alt: 'zdjęcie z treningu'
+                  },
+                  {
+                    src: '/trainings/motor/image12.png',
+                    alt: 'zdjęcie z treningu'
+                  }
+                ]}
+              />
+              <Gallery
+                bigImages={[
+                  {
+                    src: '/trainings/motor/image7.png',
+                    alt: 'zdjęcie z treningu'
+                  },
+                  {
+                    src: '/trainings/motor/image8.png',
+                    alt: 'zdjęcie z treningu'
+                  }
+                ]}
+                smallImages={[
+                  {
+                    src: '/trainings/motor/image13.png',
+                    alt: 'zdjęcie z treningu'
+                  },
+                  {
+                    src: '/trainings/motor/image14.png',
+                    alt: 'zdjęcie z treningu'
+                  },
+                  {
+                    src: '/trainings/motor/image15.png',
+                    alt: 'zdjęcie z treningu'
+                  },
+                  {
+                    src: '/trainings/motor/image16.png',
+                    alt: 'zdjęcie z treningu'
+                  }
+                ]}
+              />
+            </section>
           </main>
         </main>
       </section>

@@ -12,6 +12,7 @@ const PhysiotherapistPriceListTemplate = () => {
             alt='zdjęcie trenera personalnego'
             layout='fill'
           />
+          <div></div>
         </figure>
         <div className={classNames('container', styles.textContainer)}>
           <h1>Wybierz coś dla siebie</h1>

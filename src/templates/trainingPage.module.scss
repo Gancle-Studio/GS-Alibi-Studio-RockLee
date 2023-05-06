@@ -54,6 +54,10 @@
       border-radius: 20px;
     }
 
+    @include media('<=tablet') {
+      margin-bottom: 0;
+    }
+
     .text {
       max-width: 650px;
 
@@ -70,14 +74,20 @@
 
     .images {
       display: flex;
+      justify-content: center;
       gap: 20px;
 
-      @include media('<=tablet') {
-        gap: 30px;
+      img {
+        object-fit: cover;
+        border-radius: 20px;
       }
 
-      @include media('<=desktop') {
+      @include media('<=laptop') {
         justify-content: center;
+      }
+
+      figure {
+        position: relative;
       }
 
       .img {
@@ -99,6 +109,7 @@
           justify-content: center;
           flex-wrap: wrap;
           gap: 30px;
+          width: 90%;
         }
 
         .img {
@@ -106,7 +117,15 @@
           height: 153px;
 
           @include media('<=tablet') {
-            display: initial;
+            width: 70%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+          }
+
+          @include media('<=mobile') {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
           }
         }
       }
