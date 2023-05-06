@@ -8,9 +8,17 @@
   align-items: flex-end;
   margin-bottom: 50px;
 
+  @include media('<=tablet') {
+    height: 300px;
+  }
+
   .textContainer {
     position: relative;
     margin-bottom: 50px;
+
+    @include media('<=tablet') {
+      text-align: center;
+    }
   }
 
   .landingImage {

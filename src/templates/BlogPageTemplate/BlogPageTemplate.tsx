@@ -27,7 +27,7 @@ const BlogPageTemplate = ({ articles }: any) => {
           <div></div>
         </figure>
         <div className={classNames('container', styles.textContainer)}>
-          <h1>Zobacz co dla Ciebie przygotowaliśmy</h1>
+          <h1>Zobacz co u nas słychać</h1>
         </div>
       </section>
       <section className='container'>
