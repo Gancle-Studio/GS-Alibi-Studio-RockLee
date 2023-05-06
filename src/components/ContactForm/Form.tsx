@@ -1,7 +1,8 @@
 import styles from './ContactForm.module.scss';
 import { useFormik } from 'formik';
 import axios from 'axios';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import PageModeContext, { PageModeContextType } from 'contexts/PageModeContext';
 
 // const validate = (values: any) => {
 //   const errors = {};
@@ -24,6 +25,7 @@ import { useState } from 'react';
 // };
 
 const FormContact = () => {
+  const { mode } = useContext(PageModeContext) as PageModeContextType;
   const [isSubmitted, setIsSubmitted] = useState(false);
   const formik = useFormik({
     initialValues: {
@@ -33,7 +35,10 @@ const FormContact = () => {
     },
     // validate,
     onSubmit: (values: any, { resetForm }) => {
-      axios.post('/api/email', values);
+      axios.post(
+        mode === 'PHYSIO' ? '/api/email-zdrowie' : '/api/email-alibi',
+        values
+      );
       resetForm();
       setIsSubmitted(!isSubmitted);
     }
