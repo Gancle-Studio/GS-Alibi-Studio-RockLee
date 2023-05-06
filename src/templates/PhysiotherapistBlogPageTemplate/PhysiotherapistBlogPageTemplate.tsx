@@ -24,6 +24,7 @@ const PhysiotherapistBlogPageTemplate = ({ articles }: any) => {
             alt='zdjęcie trenera personalnego'
             layout='fill'
           />
+          <div></div>
         </figure>
         <div className={classNames('container', styles.textContainer)}>
           <h1>Zobacz co u nas słychać</h1>
