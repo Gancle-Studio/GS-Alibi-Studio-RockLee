@@ -32,22 +32,7 @@ const ArticlePage = ({ article }: any) => {
 
 export default ArticlePage;
 
-export const getStaticPaths = async () => {
-  const paths = await sanityClient.fetch(`
-    *[_type == "articles" && date < now()][].slug.current
-  `);
-
-  return {
-    paths: paths.map((slug: string) => ({
-      params: {
-        slug
-      }
-    })),
-    fallback: true
-  };
-};
-
-export const getStaticProps = async (context: any) => {
+export const getServerSideProps = async (context: any) => {
   const { slug = '' } = context.params;
   const article = await sanityClient.fetch(
     `

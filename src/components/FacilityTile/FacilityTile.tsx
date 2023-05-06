@@ -1,5 +1,6 @@
 import { ReactElement } from 'react';
 import styles from './FacilityTile.module.scss';
+import Link from 'next/link';
 
 interface IFacilityTileProps {
   icon: JSX.Element;
@@ -16,7 +17,9 @@ const FacilityTile = ({ icon, title, text, link }: IFacilityTileProps) => {
       {text}
       {link && (
         <div className={styles.linkContainer}>
-          <p className={styles.link}>Dowiedz się więcej</p>
+          <Link href='/fizjoterapia' className={styles.link}>
+            Dowiedz się więcej
+          </Link>
         </div>
       )}
     </div>
