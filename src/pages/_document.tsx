@@ -5,6 +5,10 @@ export default function Document() {
     <Html lang='pl'>
       <Head>
         <meta
+          name='google-site-verification'
+          content='0nKdyUdkLX8Uu9DNovFhIlLm6dvYMjrCA5TetDFxGxI'
+        />
+        <meta
           name='facebook-domain-verification'
           content='yesnehg2w2m7fyj7snl4kv5p8w9ngk'
         />
