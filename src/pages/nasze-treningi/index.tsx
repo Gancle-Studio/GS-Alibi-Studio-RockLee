@@ -6,6 +6,7 @@ import Nav from '../../components/Nav/Nav';
 import Icon, { IconType } from 'components/Icon/Icon';
 import { useContext } from 'react';
 import PageModeContext, { PageModeContextType } from 'contexts/PageModeContext';
+import { NextSeo } from 'next-seo';
 
 const TrainingsHomePage = () => {
   const { handleThemeChange } = useContext(
@@ -67,6 +68,7 @@ const TrainingsHomePage = () => {
 
   return (
     <>
+      <NextSeo canonical='https://www.alibistudio.pl/nasze-treningi' />
       <Nav page='HOME' />
       <TrainingHomePageTemplate facilityTilesConfig={facilityTilesConfig} />
       <ContactForm />

@@ -3,6 +3,7 @@ import ContactForm from 'components/ContactForm/ContactForm';
 import Footer from 'components/Footer/Footer';
 import Nav from 'components/Nav/Nav';
 import PageModeContext, { PageModeContextType } from 'contexts/PageModeContext';
+import { NextSeo } from 'next-seo';
 import { useContext } from 'react';
 import PhysiotherapyAboutPageTemplate from 'templates/PhysiotherapyAboutPageTemplate/PhysiotherapyAboutPageTemplate';
 
@@ -115,6 +116,7 @@ const PhysiotherapyAboutPage = () => {
 
   return (
     <>
+      <NextSeo canonical='https://www.alibistudio.pl/fizjoterapia/o-nas' />
       <Nav page='O NAS' />
       <PhysiotherapyAboutPageTemplate
         physiotherapistsConfig={physiotherapistsConfig}

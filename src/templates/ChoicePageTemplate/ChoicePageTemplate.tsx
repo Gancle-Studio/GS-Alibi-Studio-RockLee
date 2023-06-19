@@ -23,7 +23,7 @@ const ChoicePageTemplate = () => {
     <main className={styles.choicePage}>
       <header className={styles.header}>
         <Icon icon={IconType.AlibiChoiceLogo} />
-        <p>ALIBI STUDIO</p>
+        <h1>ALIBI STUDIO</h1>
       </header>
       <section className={styles.trainings}>
         <div onClick={(e) => handleClick(e, 'TRAININGS', '/nasze-treningi')}>

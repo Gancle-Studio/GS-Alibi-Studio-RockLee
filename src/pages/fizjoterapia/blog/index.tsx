@@ -5,6 +5,7 @@ import PhysiotherapistBlogPageTemplate from 'templates/PhysiotherapistBlogPageTe
 import { createClient } from 'next-sanity';
 import { useContext } from 'react';
 import PageModeContext, { PageModeContextType } from 'contexts/PageModeContext';
+import { NextSeo } from 'next-seo';
 
 const sanityClient = createClient({
   projectId: 'mkxtoiab',
@@ -22,6 +23,7 @@ const PhysiotherapistBlogPage = ({ articles }: any) => {
 
   return (
     <>
+      <NextSeo canonical={`https://www.alibistudio.pl/fizjoterapia/blog`} />
       <Nav page='BLOG' />
       <PhysiotherapistBlogPageTemplate articles={articles} />
       <ContactForm />

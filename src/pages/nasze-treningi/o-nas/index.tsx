@@ -3,6 +3,7 @@ import ContactForm from 'components/ContactForm/ContactForm';
 import Footer from 'components/Footer/Footer';
 import Nav from 'components/Nav/Nav';
 import PageModeContext, { PageModeContextType } from 'contexts/PageModeContext';
+import { NextSeo } from 'next-seo';
 import { useContext } from 'react';
 import TrainingAboutPageTemplate from 'templates/TrainingAboutPageTemplate/TrainingAboutPageTemplate';
 
@@ -146,6 +147,7 @@ const AboutPage = () => {
 
   return (
     <>
+      <NextSeo canonical='https://www.alibistudio.pl/nasze-treningi/o-nas' />
       <Nav page='O NAS' />
       <TrainingAboutPageTemplate
         personaleTrainersConfig={personaleTrainersConfig}

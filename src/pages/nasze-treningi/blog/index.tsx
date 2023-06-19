@@ -5,6 +5,7 @@ import BlogPageTemplate from 'templates/BlogPageTemplate/BlogPageTemplate';
 import { createClient } from 'next-sanity';
 import { useContext } from 'react';
 import PageModeContext, { PageModeContextType } from 'contexts/PageModeContext';
+import { NextSeo } from 'next-seo';
 
 const sanityClient = createClient({
   projectId: 'mkxtoiab',
@@ -22,6 +23,7 @@ const Blog = ({ articles }: any) => {
 
   return (
     <>
+      <NextSeo canonical='https://www.alibistudio.pl/nasze-treningi/blog' />
       <Nav page='BLOG' />
       <BlogPageTemplate articles={articles} />
       <ContactForm />

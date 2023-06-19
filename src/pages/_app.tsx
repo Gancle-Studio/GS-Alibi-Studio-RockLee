@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <NextSeo
         title='Alibi Studio - trening personalny i fizjoterapia'
         description='W Alibi Studio zadbamy o Twoje zdrowie. U nas potrenujesz 1:1 z trenerem personalnym, przygotujesz się do zawodów (sporty walki, biegi i inne sporty), poprawisz kondycję i siłę, a przede wszystkim zadbasz o swoje ciało i będziesz się dobrze bawił'
-        canonical='www.alibistudio.pl'
+        canonical='https://www.alibistudio.pl/'
         openGraph={{
           type: 'website',
           locale: 'pl',

@@ -4,6 +4,7 @@ import Footer from 'components/Footer/Footer';
 import Icon, { IconType } from 'components/Icon/Icon';
 import Nav from 'components/Nav/Nav';
 import PageModeContext, { PageModeContextType } from 'contexts/PageModeContext';
+import { NextSeo } from 'next-seo';
 import { useContext } from 'react';
 import PhysiotherapyHomePageTemplate from 'templates/PhysiotherapyHomePageTemplate/PhysiotherapyHomePageTemplate';
 
@@ -34,6 +35,7 @@ const PhysiotherapyHomePage = () => {
   ];
   return (
     <>
+      <NextSeo canonical='https://www.alibistudio.pl/fizjoterapia' />
       <Nav page='HOME' />
       <PhysiotherapyHomePageTemplate
         physiotherapyFacilityTilesConfig={physiotherapyFacilityTilesConfig}
