@@ -221,7 +221,7 @@ const PhysiotherapyHomePageTemplate = ({
               </div>
 
               <h4>
-                W naszej ofercie "Odnowy biologicznej" możesz skorzystać z
+                W naszej ofercie Odnowy Biologicznej możesz skorzystać z
                 relaksujących masażów, które pozwolą Ci odzyskać wewnętrzną
                 harmonię i głęboki relaks. Nasi masażyści specjalizują się w
                 masażu relaksacyjnym całego ciała, który przywróci Ci równowagę
