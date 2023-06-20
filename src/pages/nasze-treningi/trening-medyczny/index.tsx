@@ -16,7 +16,10 @@ const MedicalTrainingPage = () => {
 
   return (
     <>
-      <NextSeo canonical='https://www.alibistudio.pl/nasze-treningi/trening-medyczny' />
+      <NextSeo
+        description='Odkryj potencjał treningu medycznego! Indywidualne podejście, profesjonalne przygotowanie motoryczne i skuteczne treningi zdrowotne. Popraw swoje zdrowie, redukuj ból i zwiększ funkcjonalność dzięki naszym specjalistycznym treningom medycznym. Zacznij teraz i odzyskaj kontrolę nad swoim ciałem!'
+        canonical='https://www.alibistudio.pl/nasze-treningi/trening-medyczny'
+      />
       <Nav page='TRENING' />
       <MedicalTrainigPageTemplate />
       <ContactForm />

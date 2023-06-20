@@ -35,7 +35,10 @@ const PhysiotherapyHomePage = () => {
   ];
   return (
     <>
-      <NextSeo canonical='https://www.alibistudio.pl/fizjoterapia' />
+      <NextSeo
+        description='Zapraszamy do zapoznania się z naszym działem fizjoterapii! Oferujemy profesjonalne usługi fizjoterapeutyczne, które pomogą Ci w rehabilitacji, redukcji bólu i poprawie funkcjonalności. Nasz wykwalifikowany zespół fizjoterapeutów zapewni Ci indywidualne podejście i skuteczne metody terapeutyczne. Odzyskaj pełną sprawność i lepsze samopoczucie dzięki naszej fizjoterapii. Skontaktuj się z nami i umów na wizytę już dziś!'
+        canonical='https://www.alibistudio.pl/fizjoterapia'
+      />
       <Nav page='HOME' />
       <PhysiotherapyHomePageTemplate
         physiotherapyFacilityTilesConfig={physiotherapyFacilityTilesConfig}

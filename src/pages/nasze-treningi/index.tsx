@@ -68,7 +68,10 @@ const TrainingsHomePage = () => {
 
   return (
     <>
-      <NextSeo canonical='https://www.alibistudio.pl/nasze-treningi' />
+      <NextSeo
+        description='Odkryj nasze różnorodne treningi: trening personalny, trening medyczny, trening przygotowania motorycznego. Doskonała oferta dla osób szukających profesjonalnego podejścia i efektywnych treningów. Zacznij dbać o swoje zdrowie już teraz!'
+        canonical='https://www.alibistudio.pl/nasze-treningi'
+      />
       <Nav page='HOME' />
       <TrainingHomePageTemplate facilityTilesConfig={facilityTilesConfig} />
       <ContactForm />

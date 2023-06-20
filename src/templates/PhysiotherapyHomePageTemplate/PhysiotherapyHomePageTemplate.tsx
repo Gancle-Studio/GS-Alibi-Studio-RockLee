@@ -125,7 +125,23 @@ const PhysiotherapyHomePageTemplate = ({
               </div>
 
               <h4>
-                W Alibi Zdrowie prowadzimy zabiegi fizjoterapii dla osób w
+                W Alibi Zdrowie specjalizujemy się w kompleksowej fizjoterapii,
+                która jest dostępna dla osób w każdym wieku. Nasz doświadczony
+                fizjoterapeuta zadba o Ciebie, przeprowadzając szczegółowy
+                wywiad i dobierając odpowiednie metody terapeutyczne, które będą
+                dopasowane do Twojego konkretnego problemu. Naszym celem jest
+                zapewnienie Ci jak najlepszych efektów terapii.
+                <br /> <br />
+                Zabiegi fizjoterapii, które oferujemy, mają na celu zwalczanie
+                bólu i stanów zapalnych, przywracanie sprawności po urazach,
+                poprawę funkcjonowania narządów ruchu oraz wspomaganie układu
+                krążenia, układu moczowego i trawiennego. Nasz wykwalifikowany
+                fizjoterapeuta jest zaangażowany w Twoje zdrowie i pomoże Ci
+                odzyskać pełną sprawność i dobre samopoczucie.
+                <br /> <br />
+                Przyjdź do Alibi Zdrowie i zaufaj naszemu profesjonalizmowi. Daj
+                nam szansę pomóc Ci w poprawie Twojego zdrowia i jakości życia.
+                {/* W Alibi Zdrowie prowadzimy zabiegi fizjoterapii dla osób w
                 każdym wieku. Nasz fizjoterapeuta przeprowadzi z Tobą
                 szczegółowy wywiad oraz dobierze metody pracy dopasowane pod
                 Twój problem tak, aby terapia przyniosła jak najlepsze efekty.
@@ -139,7 +155,7 @@ const PhysiotherapyHomePageTemplate = ({
                     poprawić działanie układu krążenia, układu moczowego oraz
                     trawiennego.
                   </li>
-                </ul>
+                </ul> */}
               </h4>
             </div>
 
@@ -158,13 +174,32 @@ const PhysiotherapyHomePageTemplate = ({
               </div>
 
               <h4>
-                Fizjoterapia uroginekologiczna obejmuje profilaktykę,
+                Oferujemy profesjonalną fizjoterapię uroginekologiczną,
+                skupiającą się na profilaktyce, diagnostyce i kompleksowym
+                leczeniu dysfunkcji mięśni dna miednicy oraz dolnych dróg
+                moczowych. Nasz wykwalifikowany zespół terapeutów ma głęboką
+                wiedzę i doświadczenie w obszarze kobiecych problemów
+                zdrowotnych. Bez względu na wiek, nasze usługi są dostępne dla
+                wszystkich kobiet, które borykają się z nietrzymaniem moczu,
+                obniżeniem narządów rodnych, zaburzeniami proktologicznymi i
+                innymi trudnościami związanymi z układem miednicy.
+                <br /> <br />
+                Opieramy się na indywidualnym podejściu do każdej pacjentki.
+                Przeprowadzamy dokładny wywiad i diagnozę, aby zrozumieć Twoje
+                potrzeby i cele. Następnie opracowujemy spersonalizowany plan
+                terapeutyczny, wykorzystując różnorodne metody i techniki, które
+                pomogą Ci poprawić kondycję mięśni dna miednicy, zwiększyć
+                kontrolę nad nietrzymaniem moczu, redukować ból i przywrócić
+                pełną funkcjonalność. Naszym celem jest zapewnienie Ci komfortu,
+                wsparcia i skutecznej opieki w procesie rehabilitacji i poprawy
+                jakości życia.
+                {/* Fizjoterapia uroginekologiczna obejmuje profilaktykę,
                 diagnostykę oraz leczenie dysfunkcji mięśni dna miednicy
                 mniejszej i dolnych dróg moczowych. Terapia skupia się na w
                 eliminacji problemów związanych z np. nietrzymaniem moczu,
                 obniżeniem narządów rodnych, zaburzeniami proktologicznymi. Z
                 fizjoterapii uroginekologicznej może skorzystać kobieta w każdym
-                wieku.
+                wieku. */}
               </h4>
             </div>
 
@@ -186,10 +221,21 @@ const PhysiotherapyHomePageTemplate = ({
               </div>
 
               <h4>
-                Nasze studio oferuje również zabiegi odnowy biologicznej.
+                W naszej ofercie "Odnowy biologicznej" możesz skorzystać z
+                relaksujących masażów, które pozwolą Ci odzyskać wewnętrzną
+                harmonię i głęboki relaks. Nasi masażyści specjalizują się w
+                masażu relaksacyjnym całego ciała, który przywróci Ci równowagę
+                i uwolni od napięcia. Poprzez precyzyjne i delikatne techniki,
+                zapewniamy Ci chwilę błogiego odprężenia i regeneracji.
                 <br /> <br />
-                Czujesz że potrzebujesz relaksu i rozluźnienia? Przyjdź do nas
-                na masaż gorącymi kamieniami czy bańką chińską.
+                Dodatkowo, oferujemy masaż częściowy, skupiający się na
+                konkretnych obszarach ciała, które wymagają uwagi i złagodzenia
+                napięcia. Nasz wykwalifikowany personel zadba o Twój komfort i
+                zastosuje odpowiednie techniki, aby odprężyć i zrelaksować Twoje
+                mięśnie. Ponadto, oferujemy masaż kamieniami, który wykorzystuje
+                ciepłe kamienie do głębszego rozluźnienia mięśni i stymulacji
+                krążenia. To wyjątkowe doświadczenie przyniesie Ci zarówno
+                relaks jak i korzyści terapeutyczne dla całego ciała.
               </h4>
             </div>
           </main>

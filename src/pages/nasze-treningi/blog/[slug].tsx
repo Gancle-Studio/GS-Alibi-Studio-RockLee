@@ -24,6 +24,7 @@ const ArticlePage = ({ article }: any) => {
   return (
     <>
       <NextSeo
+        description={article.teaser}
         canonical={`https://www.alibistudio.pl/nasze-treningi/blog/${article.slug.current}`}
       />
       <Nav page='BLOG' />

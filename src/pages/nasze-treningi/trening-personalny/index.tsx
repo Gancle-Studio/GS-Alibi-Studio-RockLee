@@ -16,7 +16,10 @@ const PersonalTrainingPage = () => {
 
   return (
     <>
-      <NextSeo canonical='https://www.alibistudio.pl/nasze-treningi/trening-personalny' />
+      <NextSeo
+        description='Zdobądź doskonałą formę dzięki treningowi personalnemu! Indywidualne podejście, efektywny trening i przygotowanie motoryczne. Osiągnij swoje cele fitness z naszym trenerem personalnym. Zacznij już dziś!'
+        canonical='https://www.alibistudio.pl/nasze-treningi/trening-personalny'
+      />
       <Nav page='TRENING' />
       <PersonalTrainingPageTemplate />
       <ContactForm />
