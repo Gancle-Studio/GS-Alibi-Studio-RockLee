@@ -30,7 +30,7 @@ const ChoicePageTemplate = () => {
           <figure className={styles.trainingsImage}>
             <Image
               src='/choicePageImages/trainingsChoiceImage.jpeg'
-              alt='zdjęcie części treningowej'
+              alt='Trener personalny prowadzący trening siłowy'
               layout='fill'
             />
           </figure>
@@ -50,7 +50,7 @@ const ChoicePageTemplate = () => {
           <figure className={styles.physioImage}>
             <Image
               src='/choicePageImages/physioChoiceImage.jpeg'
-              alt='zdjęcie części fizjoterapii'
+              alt='Masaż terapeutyczny dla złagodzenia napięcia mięśniowego'
               layout='fill'
             />
           </figure>

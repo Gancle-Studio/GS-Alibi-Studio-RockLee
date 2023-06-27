@@ -53,7 +53,7 @@ const TrainingHomePageTemplate = ({
             <figure className={styles.biggerHomePageImage}>
               <Image
                 src='/trainingHomePageImages/image1.png'
-                alt='zdjęcie z treningu'
+                alt='Siłownia Katowice Ligota - idealne miejsce do treningu'
                 layout='fill'
               />
             </figure>
@@ -62,7 +62,7 @@ const TrainingHomePageTemplate = ({
               <figure className={styles.homePageImage}>
                 <Image
                   src='/trainingHomePageImages/image2.png'
-                  alt='zdjęcie z treningu'
+                  alt='Trener indywidualny wspierający Twoje cele'
                   layout='fill'
                 />
               </figure>
@@ -70,7 +70,7 @@ const TrainingHomePageTemplate = ({
               <figure className={styles.homePageImage}>
                 <Image
                   src='/trainingHomePageImages/image3.png'
-                  alt='zdjęcie z treningu'
+                  alt='Studio treningu z zespołem profesjonalnych trenerów personalnych i fizjoterapeutów'
                   layout='fill'
                 />
               </figure>
@@ -78,7 +78,7 @@ const TrainingHomePageTemplate = ({
               <figure className={styles.homePageImage}>
                 <Image
                   src='/trainingHomePageImages/image4.png'
-                  alt='zdjęcie z treningu'
+                  alt='Nasi trenerzy personalni kochają psy i zapraszają Cię z nimi na treningi'
                   layout='fill'
                 />
               </figure>
@@ -144,7 +144,7 @@ const TrainingHomePageTemplate = ({
               <figure className={styles.infoImage}>
                 <Image
                   src='/trainingHomePageImages/image5.png'
-                  alt='zdjęcie z treningu'
+                  alt='Indywidualny trening dla maksymalnych rezultatów'
                   layout='fill'
                   style={{ objectPosition: '0 -10px' }}
                 />
@@ -155,7 +155,7 @@ const TrainingHomePageTemplate = ({
               <figure className={styles.infoImage}>
                 <Image
                   src='/trainingHomePageImages/image6.png'
-                  alt='zdjęcie z treningu'
+                  alt='Zdrowy styl życia poprzez regularny trening i aktywność fizyczną'
                   layout='fill'
                 />
               </figure>
@@ -187,29 +187,29 @@ const TrainingHomePageTemplate = ({
           bigImages={[
             {
               src: '/trainingsHomepageGallerySectionImages/image1.png',
-              alt: 'zdjęcie z treningu'
+              alt: 'Trening funkcjonalny dla poprawy wydolności fizycznej'
             },
             {
               src: '/trainingsHomepageGallerySectionImages/image4.png',
-              alt: 'zdjęcie z treningu'
+              alt: 'Profesjonalna opieka nad Twoim ciałem'
             }
           ]}
           smallImages={[
             {
               src: '/trainingsHomepageGallerySectionImages/image2.png',
-              alt: 'zdjęcie z treningu'
+              alt: 'Trening siłowy z profesjonalnym trenerem personalnym'
             },
             {
               src: '/trainingsHomepageGallerySectionImages/image3.png',
-              alt: 'zdjęcie z treningu'
+              alt: 'Gdzie zacząć ćwiczyć? Odpowiedź znajdziesz u nas!'
             },
             {
               src: '/trainingsHomepageGallerySectionImages/image5.png',
-              alt: 'zdjęcie z treningu'
+              alt: 'Trening personalny dla utraty wagi i formy'
             },
             {
               src: '/trainingsHomepageGallerySectionImages/image6.png',
-              alt: 'zdjęcie z treningu'
+              alt: 'Trening stretchingowy dla zwiększenia elastyczności i redukcji napięcia mięśniowego'
             }
           ]}
         />

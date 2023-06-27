@@ -148,6 +148,7 @@ const AboutPage = () => {
   return (
     <>
       <NextSeo
+        title='Doświadczeni Trenerzy Personalni w Katowicach Ligocie'
         description='Witaj w naszym treningowym świecie! Jesteśmy zespołem doświadczonych trenerów, specjalizujących się w różnych dziedzinach. Zapewniamy indywidualne podejście, profesjonalne wsparcie i skuteczne treningi zdrowotne. Nasza lista trenerów obejmuje ekspertów z dziedziny treningu personalnego, treningu medycznego oraz przygotowania motorycznego. Wybierz nas i rozpocznij swoją drogę do osiągnięcia najlepszych wyników!'
         canonical='https://www.alibistudio.pl/nasze-treningi/o-nas'
       />

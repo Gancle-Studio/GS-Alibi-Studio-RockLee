@@ -117,6 +117,7 @@ const PhysiotherapyAboutPage = () => {
   return (
     <>
       <NextSeo
+        title='Doświadczony Zespół Fizjoterapeutów w Katowicach Ligocie'
         description='Jesteśmy zespołem doświadczonych fizjoterapeutów, gotowych pomóc Ci w procesie rehabilitacji i poprawie funkcjonalności ciała. Nasza lista fizjoterapeutów obejmuje wykwalifikowanych specjalistów, którzy zapewnią Ci indywidualne podejście i skuteczną opiekę. Zaufaj naszemu profesjonalizmowi i doświadczeniu, aby odzyskać pełną sprawność i cieszyć się lepszym zdrowiem. '
         canonical='https://www.alibistudio.pl/fizjoterapia/o-nas'
       />

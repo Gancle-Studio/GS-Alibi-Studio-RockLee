@@ -69,6 +69,7 @@ const TrainingsHomePage = () => {
   return (
     <>
       <NextSeo
+        title='Profesjonalny Trening Personalny, Medyczny i Przygotowanie Motoryczne Sportowców w Katowicach'
         description='Odkryj nasze różnorodne treningi: trening personalny, trening medyczny, trening przygotowania motorycznego. Doskonała oferta dla osób szukających profesjonalnego podejścia i efektywnych treningów. Zacznij dbać o swoje zdrowie już teraz!'
         canonical='https://www.alibistudio.pl/nasze-treningi'
       />

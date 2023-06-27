@@ -36,6 +36,7 @@ const PhysiotherapyHomePage = () => {
   return (
     <>
       <NextSeo
+        title='Fizjoterapia, Fizjoterapia Uroginekologiczna oraz Odnowa Biologiczna w Katowicach'
         description='Zapraszamy do zapoznania się z naszym działem fizjoterapii! Oferujemy profesjonalne usługi fizjoterapeutyczne, które pomogą Ci w rehabilitacji, redukcji bólu i poprawie funkcjonalności. Nasz wykwalifikowany zespół fizjoterapeutów zapewni Ci indywidualne podejście i skuteczne metody terapeutyczne. Odzyskaj pełną sprawność i lepsze samopoczucie dzięki naszej fizjoterapii. Skontaktuj się z nami i umów na wizytę już dziś!'
         canonical='https://www.alibistudio.pl/fizjoterapia'
       />
