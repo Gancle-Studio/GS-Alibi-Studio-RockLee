@@ -4,6 +4,7 @@ import styles from './PersonalTrainerDescription.module.scss';
 
 interface IPersonalTrainerDescriptionProps {
   imgSrc: string;
+  alt: string;
   name: string;
   services: string;
   description: JSX.Element;
@@ -11,6 +12,7 @@ interface IPersonalTrainerDescriptionProps {
 
 const PersonalTrainerDescription = ({
   imgSrc,
+  alt,
   name,
   services,
   description
@@ -18,7 +20,7 @@ const PersonalTrainerDescription = ({
   return (
     <div className={styles.personContainer}>
       <figure className={styles.personImg}>
-        <Image src={imgSrc} alt='zdjęcie trenera personalnego' layout='fill' />
+        <Image src={imgSrc} alt={alt} layout='fill' />
       </figure>
       <div className={styles.content}>
         <h2>{name}</h2>

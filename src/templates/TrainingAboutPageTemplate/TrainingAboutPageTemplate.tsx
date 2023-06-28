@@ -7,6 +7,7 @@ import styles from './TrainingAboutPageTemplate.module.scss';
 interface ITrainingAboutPageTemplateProps {
   personaleTrainersConfig: {
     imgSrc: string;
+    alt: string;
     name: string;
     services: string;
     description: JSX.Element;
@@ -22,7 +23,7 @@ const TrainingAboutPageTemplate = ({
         <figure className={styles.landingImage}>
           <Image
             src={'/aboutPageLandingImage.png'}
-            alt='zdjęcie trenera personalnego'
+            alt='Zespół profesjonalnych trenerów personalnych oraz fizjoterapeutów liczy wiele osób'
             layout='fill'
           />
           <div></div>
@@ -37,6 +38,7 @@ const TrainingAboutPageTemplate = ({
         {personaleTrainersConfig.map((personaleTrainer) => (
           <PersonalTrainerDescription
             key={getUUID()}
+            alt={personaleTrainer.alt}
             imgSrc={personaleTrainer.imgSrc}
             name={personaleTrainer.name}
             services={personaleTrainer.services}

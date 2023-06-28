@@ -17,6 +17,7 @@ const AboutPage = () => {
   const personaleTrainersConfig = [
     {
       imgSrc: '/personalTrainersImages/image1.png',
+      alt: 'Lila Bienek - trener personalny, przygotowanie motoryczne sportowców',
       name: 'Lila Bienek',
       services:
         'szefowa, trening siłowy, przygotowanie motoryczne w sportach walki',
@@ -44,6 +45,7 @@ const AboutPage = () => {
     },
     {
       imgSrc: '/personalTrainersImages/image2.png',
+      alt: 'Adam Pinocy - trener personalny, trening medyczny, przygotowanie motoryczne sportowców, dietetyk',
       name: 'Adam Pinocy',
       services: 'trening siłowy, trening medyczny',
       description: (
@@ -71,6 +73,7 @@ const AboutPage = () => {
     },
     {
       imgSrc: '/personalTrainersImages/image3.png',
+      alt: 'Bartek Golik - trener personalny, przygotowanie motoryczne sportowców',
       name: 'Bartek Golik',
       services: 'trening siłowy, przygotowanie motoryczne sportowców',
       description: (
@@ -97,6 +100,7 @@ const AboutPage = () => {
     },
     {
       imgSrc: '/personalTrainersImages/image6.jpg',
+      alt: 'Daniel Patla - trener personalny, kalistenika',
       name: 'Daniel Patla',
       services: 'trening personalny, kalistenika',
       description: (
@@ -122,6 +126,7 @@ const AboutPage = () => {
     },
     {
       imgSrc: '/personalTrainersImages/image4.png',
+      alt: 'Kasia Szlendak - trener personalny i fizjoterapeuta - trening personalny, trening medyczny, fizjoterapia, fizjoterapia uroginekologiczna, odnowa biologiczna',
       name: 'Kasia Szlendak',
       services: 'fizjoterapia, masaże, trening medyczny',
       description: (

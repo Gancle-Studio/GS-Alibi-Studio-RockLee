@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <NextSeo
-        title='Trening Personalny i Fizjoterapia w Katowicach Ligocie - Alibi Studio'
+        title='Trening Personalny i Fizjoterapia w Katowicach Ligocie - Studio Treningu'
         description='Nasze studio treningowe w Ligocie oferuje treningi personalne, masaż relaksacyjny i fizjoterapię. Specjalizujemy się w treningu indywidualnym, rehabilitacji i treningu zdrowotnym. Skorzystaj z naszego doświadczenia i rozpocznij ćwiczenia już dziś!'
         canonical='https://www.alibistudio.pl/'
         openGraph={{
