@@ -17,6 +17,7 @@ const PhysiotherapyAboutPage = () => {
   const physiotherapistsConfig = [
     {
       imgSrc: '/personalTrainersImages/image4.png',
+      alt: 'Kasia Szlendak - trener personalny i fizjoterapeuta - trening personalny, trening medyczny, fizjoterapia, fizjoterapia uroginekologiczna, odnowa biologiczna',
       name: 'Kasia Szlendak',
       services: 'fizjoterapia, masaże, trening medyczny',
       description: (
@@ -41,6 +42,7 @@ const PhysiotherapyAboutPage = () => {
     {
       imgSrc: '/personalTrainersImages/image5.jpg',
       name: 'Maciej Jędrysiak',
+      alt: 'Maciej Jędrysiak - fizjoterapeuta - masaże, odnowa biologiczna, fizjoterapia',
       services: 'fizjoterapia, masaże',
       description: (
         <>
@@ -94,6 +96,7 @@ const PhysiotherapyAboutPage = () => {
     },
     {
       imgSrc: '/personalTrainersImages/image7.jpg',
+      alt: 'Patrycja Zaporowska - fizjoterapeutka - fizjoterapia, masaże, odnowa biologiczna',
       name: 'Patrycja Zaporowska',
       services: 'fizjoterapia, masaże',
       description: (

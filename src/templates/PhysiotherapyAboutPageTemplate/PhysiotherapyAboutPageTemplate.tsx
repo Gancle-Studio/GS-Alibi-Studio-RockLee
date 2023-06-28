@@ -7,6 +7,7 @@ import styles from './PhysiotherapyAboutPageTemplate.module.scss';
 interface IPhysiotherapyAboutPageTemplateProps {
   physiotherapistsConfig: {
     imgSrc: string;
+    alt: string;
     name: string;
     services: string;
     description: JSX.Element;
@@ -38,6 +39,7 @@ const PhysiotherapyAboutPageTemplate = ({
           <PersonalTrainerDescription
             key={getUUID()}
             imgSrc={physiotherapist.imgSrc}
+            alt={physiotherapist.alt}
             name={physiotherapist.name}
             services={physiotherapist.services}
             description={physiotherapist.description}
