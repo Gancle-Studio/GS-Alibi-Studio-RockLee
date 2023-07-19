@@ -56,6 +56,12 @@ export const getServerSideProps = async (context: any) => {
     { slug }
   );
 
+  if (!article) {
+    return {
+      notFound: true
+    };
+  }
+
   return {
     props: {
       article
