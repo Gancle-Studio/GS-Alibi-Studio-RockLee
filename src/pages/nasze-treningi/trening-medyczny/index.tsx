@@ -19,7 +19,7 @@ const MedicalTrainingPage = () => {
       <NextSeo
         title='Trening Medyczny w Katowicach - Rozwiążemy Każdy Problem'
         description='Odkryj potencjał treningu medycznego! Indywidualne podejście, profesjonalne przygotowanie motoryczne i skuteczne treningi zdrowotne. Popraw swoje zdrowie, redukuj ból i zwiększ funkcjonalność dzięki naszym specjalistycznym treningom medycznym. Zacznij teraz i odzyskaj kontrolę nad swoim ciałem!'
-        canonical='https://www.alibistudio.pl/nasze-treningi/trening-medyczny'
+        // canonical='https://www.alibistudio.pl/nasze-treningi/trening-medyczny'
       />
       <Nav page='TRENING' />
       <MedicalTrainigPageTemplate />

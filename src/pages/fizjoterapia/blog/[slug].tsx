@@ -25,7 +25,7 @@ const ArticlePage = ({ article }: any) => {
     <>
       <NextSeo
         description={article.teaser}
-        canonical={`https://www.alibistudio.pl/fizjoterapia/blog/${article.slug.current}`}
+        // canonical={`https://www.alibistudio.pl/fizjoterapia/blog/${article.slug.current}`}
       />
       <Nav page='BLOG' />
       <ArticlePageTemplate article={article} page={'PHYSIO'} />
