@@ -26,7 +26,7 @@ const PhysiotherapistBlogPage = ({ articles }: any) => {
       <NextSeo
         title='Blog o Fizjoterapii i Zdrowym Stylu Życia - Katowice Ligota'
         description='Witaj na naszym blogu! Tutaj znajdziesz ciekawe artykuły i porady dotyczące treningu, zdrowia i aktywnego stylu życia. Nasz zespół ekspertów regularnie publikuje nowe treści, które pomogą Ci poszerzyć wiedzę i inspirują do działania. Przeczytaj nasze wpisy, dowiedz się więcej i zacznij wprowadzać pozytywne zmiany w swoim życiu!'
-        // canonical={`https://www.alibistudio.pl/fizjoterapia/blog`}
+        canonical={`https://www.alibistudio.pl/nasze-treningi/blog`}
       />
       <Nav page='BLOG' />
       <PhysiotherapistBlogPageTemplate articles={articles} />

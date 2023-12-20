@@ -19,7 +19,7 @@ const PriceList = () => {
       <NextSeo
         title='Sprawdź Nasze Atrakcyjne Ceny Treningów Personalnych'
         description='Zapoznaj się z naszym cennikiem treningów! Oferujemy różnorodne programy treningowe, takie jak trening personalny, przygotowanie motoryczne i trening medyczny. Skontaktuj się z nami, aby uzyskać szczegółowe informacje na temat naszych usług i cen. Wybierz odpowiedni plan dla siebie i rozpocznij swoją drogę do lepszej kondycji!'
-        // canonical='https://www.alibistudio.pl/nasze-treningi/cennik'
+        canonical='https://www.alibistudio.pl/nasze-treningi/cennik'
       />
       <Nav page='CENNIK' />
       <PriceListTemplate />
